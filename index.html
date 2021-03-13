@@ -1,0 +1,149 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name='keywords' content='your, tags'>
+        <meta name='description' content='150 words'>
+        <meta name='subject' content='your website is subject'>
+        <meta name="author" content="Josh BTW">
+        <meta name="theme-color" content="#db5945">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Travel Seller</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="shortcut icon" type="image/x-icon" href="assets/img/logo.png">
+        <!-- Place favicon.ico in the root directory -->
+        
+		<!-- CSS here -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/nice-select.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css"> 
+        <style>
+            .PASS {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    background: #171717;
+    width: 100%;
+    height: 100vh;
+}
+
+.frm {
+    display: flex;
+    width: max-content;
+    align-items: center;
+}
+
+.frm input {
+    height: 40px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.frm input::placeholder {
+    text-transform: capitalize;
+}
+
+.frm  input[type="submit"] {
+    padding: 0 20px;
+    text-transform: capitalize;
+    background: black;
+    outline: none;
+    border: none;
+    color: #fff;
+    transition: .3s;
+    border: 3px solid #fff;
+}
+
+.frm input[type="submit"]:hover {
+    background: #226201;
+}
+        </style>
+    </head>
+    <body class="flights">
+ 
+
+        <div class="PASS">
+            <div class="frm">
+                <input type="password" placeholder="give me password">
+                <input type="submit" value="go">
+            </div>
+            
+        </div>
+
+        <!-- Preloader  -->
+        <div class="preloader">
+            <div class="l-inners">
+                <img src="assets/img/logo.png" alt="">
+                <div class="loader-cylon"></div> 
+            </div>
+        </div> 
+        <!-- Preloader -->
+
+        <!-- Home-wrp area START -->
+        <div class="page-wrp cd-main">
+
+            <div class="ken-img"> 
+                <img class="backg" src="assets/img/back.png"alt="">
+                <img class="backg" src="assets/img/a-bac.png"alt="">
+                <img class="backg" src="assets/img/a-bac8.png"alt="">
+                <img class="backg" src="assets/img/a-bac7.png"alt=""> 
+            </div>
+
+
+            <a href="javascript:void(0)" class="logo"><img src="assets/img/logo.png" alt=""></a>
+            <a href="javascript:void(0)" class="menuIcon"><span class="menuBar"></span></a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="inner-wrp text-center">
+                            <h1>Travel seller</h1>
+                            <h5>creating unforgettable journeys</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <up class="menu-list cd-gallery">
+                <li class="cd-item"><a aria-label='about' class='h-button centered' data-text='about' href='about.html' style="position: relative; "><span>a</span><span>b</span><span>o</span><span>u</span><span>t</span></a> </li>
+                <li class="cd-item"><a aria-label='services' class='h-button centered' data-text='services' href='service.html' style="position: relative; "><span>s</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span></a> </li>
+                <li class="cd-item"><a aria-label='contact' class='h-button centered' data-text='contact' href='contact.html' style="position: relative; "><span>c</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span></a> </li>
+                <li class="cd-item"><a aria-label='get a quote' class='h-button centered' data-text='getaquote' href='qoute.html' style="position: relative; "><span>g</span><span>e</span><span>t</span> <span> </span> <span>a</span>  <span> </span> <span>q</span><span>u</span><span>o</span><span>t</span><span>e</span></a> </li>
+            </up>
+        </div>
+        <!-- Home-wrp area END -->
+
+
+        <div class="cd-folding-panel"> 
+            <div class="cd-fold-content"><!-- content will be loaded using javascript --></div>  
+        </div> 
+  
+
+		<!-- JS here --> 
+        <script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/vendor/main.js"></script> 
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <script src="assets/js/main.js"></script>  
+
+
+        <script>
+            let frm = document.querySelector('.PASS')
+            function done() {
+                let input = document.querySelector('input[type="password"]')
+                let submit = document.querySelector('input[type="submit"]')
+                submit.addEventListener('click', () => { 
+                    if (input.value == 'abcd123') {
+                        frm.style.display = 'none'
+                    }
+                })
+            }
+            done()
+        </script>
+    </body>
+</html>

@@ -1,0 +1,680 @@
+/* Big screen :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+    .inner-wrp h1 {
+        font-size: 120px;
+        line-height: 180.98px;
+    }
+    .right-wrp {
+        padding: 70px;
+        padding-bottom: 0;
+    }
+    
+    body.sspIn .service-sub-pages .pShow { 
+        min-height: 970px;
+    }
+    .all-flights ul li h1 {
+        font-size: 52px;
+        line-height: 62px; 
+    }
+
+
+
+
+    
+}
+
+
+/* Normal screen :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .inner-wrp h1 {
+        font-size: 92px;
+        line-height: 130.98px;
+    }
+    .page-wrp up.menu-list li a {
+        font-size: 20px;
+        line-height: 30px;
+        width: 200px;
+        height: 60px;
+        margin: 10px 0;
+    } 
+    .right-wrp {
+        padding: 0 40px;
+    }
+    .right-wrp p {
+        margin-bottom: 60px;
+    }
+    h1.countit {
+        font-size: 80px;
+        line-height: 120px;
+    }
+    .ex-numbs .single-num h5 {
+        margin: 0;
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .ex-numbs .single-num {
+        margin-bottom: 50px;
+    }
+    .ser-details ul li h1 {
+        font-size: 82px;
+        line-height: 100.66px;
+    }
+    body.sspIn .service-sub-pages .pShow { 
+        min-height: 970px;
+    }
+    .all-flights ul li h1 {
+        font-size: 52px;
+        line-height: 62px; 
+    }
+    ul#pills-tab li button { 
+        margin-right: 10px;
+        width: 125px; 
+    }
+
+
+
+}
+
+ 
+/* Tablet screen :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .menuIcon {
+        opacity: 1;
+        visibility: visible;
+    }
+    .page-wrp up.menu-list {
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        position: absolute; 
+        transform: translate(-50%, -50%);
+        width: max-content;
+    }
+    .page-wrp.addedMenu up.menu-list {
+        opacity: 1;
+        visibility: visible;
+    } 
+    .page-wrp up.menu-list li a {
+        font-size: 20px;
+        line-height: 30px;
+        width: 200px;
+        height: 60px;
+        margin: 20px 0;
+    }
+    .page-wrp up.menu-list li {
+        margin-right: -40px;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+    .page-wrp up.menu-list li:nth-child(2){
+        transition-delay: .1s;
+    }
+    .page-wrp up.menu-list li:nth-child(3){
+        transition-delay: .2s;
+    }
+    .page-wrp up.menu-list li:nth-child(4){
+        transition-delay: .3s;
+    }
+    
+
+    .page-wrp.addedMenu up.menu-list li {
+        margin-right: 0px;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .inner-wrp h1 {
+        font-size: 102px;
+        text-transform: uppercase;
+        line-height: 120.98px;
+    }
+    .right-wrp {
+        padding: 0 40px;
+        text-align: center;
+    } 
+    .ex-numbs .single-num {
+        margin-bottom: 50px;
+    } 
+    .left-wrp h1 {
+        margin-bottom: 20px;
+        font-size: 90px;
+        line-height: 110px;
+    }
+    .left-wrp h5 {
+        font-size: 17px;
+        line-height: 20px;
+        text-transform: uppercase;
+    }
+    .left-side a.logo { 
+        left: 30px;
+    }
+
+    body {
+        font-size: 16px;
+    } 
+.sub-page-area {
+    background: url(../img/a-bac.png);
+    background-size: cover;
+    background-position: center;
+    display: block;
+    z-index: 2;
+}
+body.pageIn .all-inner .upNow {
+    min-height: 1000px;
+}
+.sub-page-area:after {content: "";position: absolute;width: 100%;height: 100%;background: #00000099;top: 0;left: 0;z-index: -1;}
+.left-side {
+    background: none !important; 
+    max-height: 180px;
+    width: 100%;
+    padding-left: 30px;
+}
+body.flights .left-side{
+    background: none !important; 
+}
+body.hotel .left-side{
+    background: none !important; 
+}
+body.experinces .left-side{
+    background: none !important; 
+}
+.left-side .left-wrp {
+    display: none;
+}
+
+.right-side {
+    width: 100%;
+}
+.right-wrp p {
+    width: 500px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.ser-details ul li h1 {
+    font-size: 74px;
+    line-height: 85.66px; 
+}
+
+
+.ssp {
+    background: url(../img/a-bac.png);
+    background-size: cover;
+    background-position: center;
+    display: block;
+    z-index: 2;
+}
+.ssp:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #00000099;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.left-side.blk-in-md .left-wrp {
+    display: block;
+    padding-top: 180px;
+}
+.left-side.blk-in-md .left-wrp h1 {
+    margin-bottom: 20px;
+    font-size: 144px;
+    line-height: 180px;
+}
+.left-side.blk-in-md {
+    max-height: 450px;
+    padding-left: 20px;
+}
+body.sspIn .service-sub-pages .pShow {
+    max-height: 100vh !important;
+    top: 0px;
+    min-height: 1260px;
+}
+.fclasse {
+    display: block;
+}
+.left-wrp a.theme-btn {
+    display: none;
+}
+.fclasse .left-side.blk-in-md .left-wrp h1 { 
+    font-size: 72px;
+    line-height: 90px;
+}
+.features ul li h1 {
+    margin-bottom: 15px;
+}
+.features ul li p {
+    margin-bottom: 90px;
+}
+body.pageIn.sspIn.f_class .fclasse.cl_Show { 
+    min-height: 1350px; 
+}
+.features ul li.touch-btn {
+    display: block;
+    margin-top: 120px;
+}
+.first {
+    background: url(../img/a-bac3.png);
+    background-size: cover;
+    background-position: center;
+}
+.business {
+    background: url(../img/a-bac4.png);
+    background-size: cover;
+    background-position: center;
+}
+.premium {
+    background: url(../img/a-bac5.png);
+    background-size: cover;
+    background-position: center;
+}
+.sub-page-area.contact {
+    background: url(../img/a-bac6.png);
+    background-size: cover;
+    background-position: center;
+}
+.ssp.flights {
+    background: url(../img/a-bac2.png);
+    background-size: cover;
+    background-position: center;
+}
+.sub-page-area.services {
+    background: url(../img/a-bac2.png);
+    background-size: cover;
+    background-position: center;
+}
+.first::after,
+.business::after,
+.premium::after 
+{
+    visibility: visible;
+    display: block;
+}
+ul#pills-tab{
+    justify-content: center;
+}
+
+body.flights .sub-page-area.getaquote{
+    background: url(../img/a-bac7.png) !important;
+    background-size: cover !important;
+}
+body.hotel .sub-page-area.getaquote{
+    background: url(../img/a-bac8.png) !important;
+    background-size: cover !important;
+}
+body.experinces .sub-page-area.getaquote{
+    background: url(../img/a-bac9.png) !important;
+    background-size: cover !important;
+}
+.left-side:after{
+    display: none;
+}
+.left-side .ken-img {
+    display: none;
+}
+
+.sub-page-area .ken-img.first{
+    display: block;
+}
+
+
+
+
+
+
+
+
+}
+
+ 
+/* small screen :320px. */
+@media (max-width: 767px) {
+    .menuIcon {
+        opacity: 1;
+        visibility: visible;
+        top: 68px;
+        right: 20px;
+        height: 35px;
+    }
+    .menuBar {
+        top: 5px;
+    }
+    .page-wrp.addedMenu a.menuIcon span.menuBar {
+        top: 15px;
+    }
+    .page-wrp up.menu-list li a {
+        font-size: 16px;
+        line-height: 20px;
+        width: 200px;
+        height: 46px;
+        margin: 20px 0;
+    }
+    .page-wrp up.menu-list {
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        position: absolute; 
+        transform: translate(-50%, -50%);
+        width: max-content;
+    }
+    .page-wrp.addedMenu up.menu-list {
+        opacity: 1;
+        visibility: visible;
+    } 
+    .page-wrp.addedMenu up.menu-list {
+        opacity: 1;
+        visibility: visible;
+    } 
+    .page-wrp up.menu-list li {
+        margin-right: -40px;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+    .page-wrp up.menu-list li:nth-child(2){
+        transition-delay: .1s;
+    }
+    .page-wrp up.menu-list li:nth-child(3){
+        transition-delay: .2s;
+    }
+    .page-wrp up.menu-list li:nth-child(4){
+        transition-delay: .3s;
+    } 
+    .page-wrp.addedMenu up.menu-list li {
+        margin-right: 0px;
+        opacity: 1;
+        visibility: visible;
+    }
+    .inner-wrp h1 {
+        font-size: 52px;
+        text-transform: uppercase;
+        line-height: 65.98px;
+    }
+    .inner-wrp h5 {
+        font-size: 16px;
+        line-height: 30px;
+        text-transform: uppercase;
+    }
+    .page-wrp a.logo {
+        top: 30px;
+        left: 25px;
+    }
+    .menuIcon {
+        top: 60px;
+        right: 20px;
+    } 
+    .right-wrp {
+        padding: 30px 20px;
+        padding-bottom: 0;
+        text-align: center;
+    }
+    .right-wrp p {
+        margin-bottom: 40px;
+    } 
+    .ex-numbs .single-num {
+        margin-bottom: 30px; 
+        width: 100%;
+    }
+    .ex-numbs .single-num h1{
+        color: #A37B7F;
+    }
+    .left-wrp h1 {
+        margin-bottom: 20px;
+        font-size: 64px;
+        line-height: 110px;
+    }
+    .left-wrp h5 {
+        font-size: 17px;
+        line-height: 20px;
+        text-transform: uppercase;
+    } 
+    .left-side a.logo {
+        position: unset;
+        margin-left: 0px;
+        display: block;
+        width: max-content;
+        padding-top: 35px;
+        padding-bottom: 50px;
+    }
+    .sub-page-area {
+        display: block;
+        height: 100%;
+        min-height: auto;
+    }
+    .left-side{
+        width: 100%;
+        display: block;
+        padding: 0px;
+    }
+    .right-side{
+        width: 100%;
+    } 
+    .left-wrp {
+        padding: 0 20px;
+        padding-bottom: 50px;
+    } 
+    .right-wrp h5 {
+        margin-bottom: 20px;
+    }
+    body {
+        font-size: 16px;
+    } 
+.sub-page-area {
+    background: url(../img/a-bac.png);
+    background-size: cover;
+    background-position: center;
+    display: block;
+    z-index: 2;
+} 
+.sub-page-area:after {content: "";position: absolute;width: 100%;height: 100%;background: #00000099;top: 0;left: 0;z-index: -1;}
+.left-side {
+    background: none !important;
+    max-height: 180px;
+    width: 100%;
+    padding-left: 30px;
+}
+
+.left-side .left-wrp {
+    display: none;
+}
+
+.right-side {
+    width: 100%;
+}
+.right-wrp p {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+body.pageIn .all-inner .upNow {
+    max-height: max-content !important;
+    min-height: 100vh;
+}
+.ser-details ul li h1 {
+    font-size: 52px;
+    line-height: 60.66px;
+}
+.ser-details ul li h5 {
+    font-size: 18px;
+}
+.ser-details ul li { 
+    margin-bottom: 30px;
+}
+.all-flights ul li h1 {
+    font-size: 30px;
+    line-height: 30px; 
+}
+.all-flights ul li p {
+    margin-bottom: 50px;
+}
+.left-side.blk-in-md .left-wrp {
+    display: block;
+}
+
+.left-side.blk-in-md {
+    max-height: 370px;
+    padding-left: 20px;
+}
+body.sspIn .service-sub-pages .pShow {
+    max-height: max-content !important;
+    top: 0px;
+    min-height: 980px;
+}
+body.sspIn .service-sub-pages .pShow .left-wrp {
+    padding: 0 0px;
+    padding-bottom: 0px;
+    padding-top: 35px;
+}
+.ssp {
+    background: url(../img/a-bac.png);
+    background-size: cover;
+    background-position: center;
+    display: block;
+    z-index: 2;
+}
+.ssp:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #00000099;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.fclasse {
+    display: block;
+}
+.left-wrp a.theme-btn {
+    display: none;
+}
+.fclasse .left-side.blk-in-md .left-wrp h1 {
+    font-size: 50px;
+    line-height: 55px;
+    margin: 0;
+    margin-top: 45px;
+}
+.features ul li h1 {
+    margin-bottom: 8px;
+    font-size: 26px;
+}
+.features ul li p {
+    margin-bottom: 90px;
+}
+body.pageIn.sspIn.f_class .fclasse.cl_Show { 
+    min-height: 1350px; 
+}
+.features ul li.touch-btn {
+    display: block;
+    margin-top: 120px;
+}
+.class_back,.closeit {
+    right: 10px !important;
+    transform: scale(.6);
+}
+.first {
+    background: url(../img/a-bac3.png);
+    background-size: cover;
+    background-position: center;
+}
+.business {
+    background: url(../img/a-bac4.png);
+    background-size: cover;
+    background-position: center;
+}
+.premium {
+    background: url(../img/a-bac5.png);
+    background-size: cover;
+    background-position: center;
+}
+.sub-page-area.contact {
+    background: url(../img/a-bac6.png);
+    background-size: cover;
+    background-position: center;
+}
+.ssp.flights {
+    background: url(../img/a-bac2.png);
+    background-size: cover;
+    background-position: center;
+}
+.sub-page-area.services {
+    background: url(../img/a-bac2.png);
+    background-size: cover;
+    background-position: center;
+}
+form .inp-group.middle {
+    width: 100%;
+}
+ 
+body.flights .sub-page-area.getaquote{
+    background: url(../img/a-bac7.png) !important;
+    background-size: cover !important;
+}
+body.hotel .sub-page-area.getaquote{
+    background: url(../img/a-bac8.png) !important;
+    background-size: cover !important;
+}
+body.experinces .sub-page-area.getaquote{
+    background: url(../img/a-bac9.png) !important;
+    background-size: cover !important;
+}
+
+
+body.flights .left-side{
+    background: none !important; 
+}
+body.hotel .left-side{
+    background: none !important; 
+}
+body.experinces .left-side{
+    background: none !important; 
+}
+
+
+.left-side:after{
+    display: none;
+}
+.left-side .ken-img {
+    display: none;
+}
+.sub-page-area .ken-img.first{
+    display: block;
+}
+
+
+.first::after,
+.business::after,
+.premium::after 
+{
+    visibility: visible;
+    display: block;
+}
+ul#pills-tab li button {
+    padding: 0 13px;
+    margin-right: 4px;
+    width: auto;
+    height: 35px;
+    font-size: 14px;
+}
+ul#pills-tab { 
+    justify-content: space-between;
+}
+.inp-group label {
+    width: 100%;
+    margin-bottom: 30px;
+}
+.inp-group { 
+    display: block; 
+    margin-bottom: 0px;
+}
+
+
+
+} 
