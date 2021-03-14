@@ -791,12 +791,15 @@ body.pageIn .left-side {
   transition: 1s;
   opacity: 0;
   z-index: 2;
-  left: -5000px;
+  /* left: -5000px; */
+  left: 0px;
+  transform: scale(1.5);
 }
 .ssp.flights.showMe{
   visibility: visible;
   opacity: 1;
   left: 0;
+  transform: scale(1);
 }
 .all-flights ul li {
   cursor: pointer;
@@ -916,10 +919,16 @@ body.pageIn .left-side {
   transition: 1s;
   position: absolute;
   top: 0;
-  right: -5000px;
+  /* right: -5000px; */
+  left: 0px;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(1.5);
 }
 .fclasse.showMeAsClasses {
-  right: 0;
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
 } 
 .features ul  li h1 {
   font-size: 36px;
