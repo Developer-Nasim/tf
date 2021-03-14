@@ -166,7 +166,7 @@
         closeIt()
     })
 
-    // Slide animations for the sub pages (e.g flight classes)
+    // Get the the sub pages (e.g flight classes)
     function Fnc() {
         let services      = document.querySelectorAll('.ser-details li')
         let servicesPages = document.querySelectorAll('.service-sub-pages .ssp')
@@ -233,8 +233,26 @@
 
         
         $('select').niceSelect();
-    }
-
+    } 
     Fnc()
+
+
+    // Give Password to get access of the pages
+    function done() {
+        let frm = document.querySelector('.PASS')
+        if (frm) { 
+            let input = document.querySelector('input[type="password"]')
+            let submit = document.querySelector('input[type="submit"]')
+            submit.addEventListener('click', () => { 
+                if (input.value == 'abcd123') {
+                    frm.style.display = 'none'
+                }
+            })
+        }
+    } 
+    done()
+
+
+
  }) 
 

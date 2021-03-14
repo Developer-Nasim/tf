@@ -97,6 +97,90 @@ a{
 
 
 
+/* back */
+.PASS {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  background: #171717;
+  width: 100%;
+  height: 100vh;
+}
+
+.frm {
+  display: flex;
+  width: max-content;
+  align-items: center;
+}
+
+.frm input {
+  height: 40px;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.frm input::placeholder {
+  text-transform: capitalize;
+}
+
+.frm  input[type="submit"] {
+  padding: 0 20px;
+  text-transform: capitalize;
+  background: black;
+  outline: none;
+  border: none;
+  color: #fff;
+  transition: .3s;
+  border: 3px solid #fff;
+}
+
+.frm input[type="submit"]:hover {
+  background: #226201;
+}
+
+
+.vBack{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+.vBack:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .5;
+  top: 0;
+  left: 0;
+
+}
+/* back */
+
+
+
+
+
+
+
+
 /* Prealoder css START */
 .preloader {
   position: fixed;
@@ -678,8 +762,10 @@ body.pageIn .left-side {
 }
 .right-side {
   width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
-
 .left-side a.logo {
   position: absolute;
   top: 35px;
@@ -852,7 +938,7 @@ body.pageIn .left-side {
 
 /* Close btn 2 START */
 
-.right-wrp .thisClose {
+.thisClose.allcr {
   display: block;
   width: max-content;
   height: max-content;
@@ -862,26 +948,20 @@ body.pageIn .left-side {
   position: absolute;
   top: 60px;
   right: 60px;
-  z-index: 2;
+  z-index: 99;
 }
-.right-wrp .thisClose svg {
+.thisClose.allcr svg {
   width: 39px;
   height: 36px;
 }
 
-.right-wrp .thisClose svg path {
+.thisClose.allcr svg path {
   fill: #313131 !IMPORTANT;
   stroke: #313131;
+} 
+.fclasse .right-side {
+  min-height: 100vh;
 }
-
-.right-wrp .right-wrp .thisClose {
-  cursor: pointer;
-  position: absolute;
-  right: 62px;
-  top: 59px;
-  z-index: 2;
-}
-
 /* Close btn 2 START */
 
 
@@ -1265,7 +1345,7 @@ button.theme-btn.addMore {
 
 
 
-.cd-fold-content {
+.cd-folding-panel.homePanel .cd-fold-content {
   position: absolute;
   top: 0;
   left: 0;
@@ -1284,16 +1364,4 @@ button.theme-btn.addMore {
 } 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 

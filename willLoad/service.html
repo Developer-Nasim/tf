@@ -18,72 +18,12 @@
         <link rel="stylesheet" href="assets/css/nice-select.css">
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
-        <style>
-            .left-side .thisClose{
-                z-index: 9;
-            }
-            .left-side{
-                height: 100vh;
-            }
-            .left-side:after { 
-                z-index: 4;
-                opacity: .4; 
-            }
-            .left-side a.logo{
-                z-index: 9;
-            }
-            .sub-page-area.about .thisClose{
-                z-index: 9;
-            }
-            .left-wrp{
-                position: relative;
-                z-index: 9;
-            }
-            .left-side .ken-img { 
-                z-index: 1;
-            }
-            .sub-page-area{
-                min-height: 100vh;
-            }
-            .all-inner {
-                overflow: hidden;
-                position: relative;
-            }
-
-
-            @media (min-width: 992px) and (max-width: 1500px){
-                .right-wrp p {
-                    margin-bottom: 45px;
-                    font-size: 16px;
-                }
-                .ser-details ul li h1 {
-                    font-size: 38px;
-                    line-height: 40.66px;
-                }
-                .right-wrp h5 {
-                    margin-bottom: 25px;
-                    font-size: 19px;
-                }
-            }
-            @media (max-width: 767px){
-                .left-side.blk-in-md {
-                    max-height: 309px;
-                    padding-left: 20px;
-                }
-                .features ul li p {
-                    margin-bottom: 30px;
-                }
-                .features ul li.touch-btn { 
-                    margin-top: 40px;
-                }
-            }
-        </style>
     </head>
     <body class="flights">
 
  
         <!-- All-inner pages START -->
-        <div class="all-inner"> 
+        <div class="all-inner cd-fold-content single-page"style="visibility: visible;opacity: 1;position: unset;"> 
             
             <!-- Services-area START  -->
             <div class="sub-page-area services">
@@ -113,7 +53,7 @@
                         <h1>Travel seller</h1>
                         <h5>creating unforgettable journeys</h5>
                     </div>
-                    <div class="thisClose mainPageClose"><a href="index.html">Close <span><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.75 5.25L5.25 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.25 5.25L15.75 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></div>
+                    <div class="thisClose mainPageClose">Close <span><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.75 5.25L5.25 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.25 5.25L15.75 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
                 </div>
                 <div class="right-side">
                     <div class="right-wrp">
@@ -377,69 +317,7 @@
         <script src="assets/js/popper.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/jquery.nice-select.min.js"></script>
-        <script src="assets/js/main.js"></script>
-        <script> 
-            function getPage() {
-                let services      = document.querySelectorAll('.ser-details li')
-                let servicesPages = document.querySelectorAll('.service-sub-pages .ssp')
-                services.forEach(btn => {
-                    btn.addEventListener('click', () => {
-                        servicesPages.forEach(pages => {
-                            pages.classList.remove('showMe')
-                        })
-
-                        servicesPages.forEach(pages => {
-                            if (pages.classList.contains(btn.dataset.page)) {
-                                pages.classList.add('showMe')
-                            } 
-                        })
-                    })
-
-                }) 
-
-                let classMenu    = document.querySelectorAll('.all-flights ul li')
-                let flightClasse = document.querySelectorAll('.flight-pages .fclasse')
-                classMenu.forEach(btn => {
-                    btn.addEventListener('click', () => {
-                        flightClasse.forEach(pages => {
-                            pages.classList.remove('showMeAsClasses')
-                        }) 
-                        flightClasse.forEach(pages => {
-                            if (pages.classList.contains(btn.dataset.page)) {
-                                pages.classList.add('showMeAsClasses')
-                            } 
-                        })
-                    })
-
-                }) 
-
-                // Input animation
-                let closeBlk = document.querySelectorAll('.thisClose')
-                let closeBlksp = document.querySelectorAll('.thisClose span')
-                closeBlk.forEach(cBlk => { 
-                    cBlk.addEventListener('click', (e) => {
-                        if (e.target.parentElement.parentElement.classList.contains('showMe') || e.target.parentElement.parentElement.parentElement.classList.contains('showMe') || e.target.parentElement.parentElement.parentElement.parentElement.classList.contains('showMe')) {
-                            e.target.parentElement.parentElement.parentElement.classList.remove('showMe') || e.target.parentElement.parentElement.classList.remove('showMe') || e.target.parentElement.parentElement.parentElement.parentElement.classList.remove('showMe')
-                        } 
-                        if (e.target.parentElement.parentElement.classList.contains('showMeAsClasses') || e.target.parentElement.parentElement.parentElement.classList.contains('showMeAsClasses') || e.target.parentElement.parentElement.parentElement.parentElement.classList.contains('showMeAsClasses')) {
-                            e.target.parentElement.parentElement.parentElement.classList.remove('showMeAsClasses') || e.target.parentElement.parentElement.classList.remove('showMeAsClasses') || e.target.parentElement.parentElement.parentElement.parentElement.classList.remove('showMeAsClasses')
-                        } 
-                    })
-                })
-
-                closeBlksp.forEach(cBlksp => { 
-                    cBlksp.addEventListener('click', (e) => {
-                        console.log(cBlksp.parentElement.parentElement.parentElement.parentElement)
-                        if (cBlksp.parentElement.parentElement.parentElement.parentElement.classList.contains('showMeAsClasses')) {
-                            cBlksp.parentElement.parentElement.parentElement.parentElement.classList.remove('showMeAsClasses')
-                        }
-                        if (cBlksp.parentElement.parentElement.parentElement.parentElement.classList.contains('showMe')) {
-                            cBlksp.parentElement.parentElement.parentElement.parentElement.classList.remove('showMe')
-                        }
-                    })
-                }) 
-            } 
-            getPage()
-        </script>
+        <script src="assets/js/main.js"></script>  
+        <script src="assets/js/vendor/main.js"></script>  
     </body>
 </html>

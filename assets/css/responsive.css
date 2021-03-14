@@ -70,7 +70,7 @@
         margin-right: 10px;
         width: 125px; 
     }
-    .right-wrp .thisClose {  
+    .thisClose.allcr {  
         top: 30px;
         right: 30px; 
         transform: scale(.5);
@@ -92,6 +92,14 @@
     .ssp.flights .right-wrp .all-flights p {
         margin-bottom: 50px;
     }
+    .left-wrp h1 {
+        font-size: 100px; 
+        line-height: 130.98px;
+    }
+    .fclasse{
+        height: 100%;
+    }
+
 
 }
 
@@ -360,10 +368,13 @@ body.experinces .sub-page-area.getaquote{
     font-size: 52px;
     line-height: 68px; 
 }
-
-
-
-
+.fclasse .right-side {
+    min-height: 100%;
+}
+.right-side{
+    justify-content: center;
+    align-items: baseline;
+}  
 
 
 }
@@ -721,17 +732,9 @@ ul#pills-tab li button {
     display: block; 
     margin-bottom: 0px;
 }
-.right-wrp .thisClose {
-    display: block;
-    width: max-content;
-    height: max-content;
-    padding: 10px;
-    background: var(--themeWhite);
-    border-radius: 5px;
-    position: absolute;
+.thisClose.allcr { 
     top: 55px;
-    right: 20px;
-    z-index: 2;
+    right: 20px; 
     transform: scale(.6);
 }
 .fclasse .left-side{
@@ -741,6 +744,13 @@ ul#pills-tab li button {
     min-height: 1060px;
 }
 
+.fclasse .right-side {
+    min-height: 100%;
+}
+.right-side{
+    justify-content: center;
+    align-items: baseline;
+} 
 
 
 

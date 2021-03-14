@@ -18,84 +18,70 @@
         <link rel="stylesheet" href="assets/css/nice-select.css">
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
-        <style>
-            .left-side .thisClose{
-                z-index: 9;
-            }
-            .left-side{
-                height: 100vh;
-            }
-            .left-side:after { 
-                z-index: 4;
-                opacity: .4; 
-            }
-            .left-side a.logo{
-                z-index: 9;
-            }
-            .sub-page-area.about .thisClose{
-                z-index: 9;
-            }
-            .left-wrp{
-                position: relative;
-                z-index: 9;
-            }
-            .left-side .ken-img { 
-                z-index: 1;
-            }
-            .sub-page-area{
-                min-height: 100vh;
-            }
-        </style>
     </head>
-    <body class="flights">
-
+    <body>
  
+
         <!-- All-inner pages START -->
-        <div class="all-inner">   
-             
-           <!-- Contact-area START -->
-           <div class="sub-page-area contact">
-                
+        <div class="all-inner cd-fold-content single-page"> 
+
+            <!-- About-area START -->
+            <div class="sub-page-area about">
+
                 <!-- sub-page-ken-animation -->
                 <div class="ken-img first"> 
+                    <img class="backg" src="assets/img/a-bac.png"alt="">
+                    <img class="backg" src="assets/img/a-bac7.png"alt="">
+                    <img class="backg" src="assets/img/a-bac8.png"alt="">
                     <img class="backg" src="assets/img/a-bac6.png"alt=""> 
-                    <img class="backg" src="assets/img/a-bac9.png"alt="">
-                    <img class="backg" src="assets/img/a-bac2.png"alt="">
-                    <img class="backg" src="assets/img/a-bac3.png"alt="">
                 </div>
                 <!-- sub-page-ken-animation -->
 
-                <div class="left-side" style="background-image: url(assets/img/a-bac6.png);">
-                    <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>
+                <div class="left-side">
+                    
                     <!-- left-side-ken-animation -->
                     <div class="ken-img"> 
+                        <img class="backg" src="assets/img/a-bac.png"alt="">
+                        <img class="backg" src="assets/img/a-bac7.png"alt="">
+                        <img class="backg" src="assets/img/a-bac8.png"alt="">
                         <img class="backg" src="assets/img/a-bac6.png"alt=""> 
-                        <img class="backg" src="assets/img/a-bac9.png"alt="">
-                        <img class="backg" src="assets/img/a-bac2.png"alt="">
-                        <img class="backg" src="assets/img/a-bac3.png"alt="">
                     </div>
                     <!-- left-side-ken-animation -->
+
+                    <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>
                     <div class="left-wrp">
                         <h1>Travel seller</h1>
                         <h5>creating unforgettable journeys</h5>
                     </div>
-                    <div class="thisClose mainPageClose"><a href="index.html">Close <span><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.75 5.25L5.25 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.25 5.25L15.75 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></div>
+                    <div class="thisClose mainPageClose">Close <span><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.75 5.25L5.25 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.25 5.25L15.75 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
                 </div>
                 <div class="right-side">
                     <div class="right-wrp">
-                        <h5>contact</h5>
+                        <h5>about</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi blandit cursus risus at. Libero justo laoreet sit amet cursus sit amet dictum sit. Curabitur gravida arcu ac tortor. Consectetur a erat nam at lectus urna duis convallis</p>  
-                        <div class="ser-details">
-                            <ul>
-                                <li><a href="mailto:hello@travelseller.com"><h1>email</h1> <h5>hello@travelseller.com</h5></a></li>
-                                <li><a href="tel:1-800-123-456"><h1>call</h1> <h5>1-800-123-456</h5></a></li>
-                            </ul>
+                        <div class="ex-numbs">
+                            <div class="single-num">
+                                <h1 class="countit" data-number="9">9</h1>
+                                <h5>years in business</h5>
+                            </div>
+                            <div class="single-num">
+                                <h1 class="countit" data-number="56">56</h1>
+                                <h5>happy clients</h5>
+                            </div>
+                            <div class="single-num">
+                                <h1 class="countit" data-number="4">4</h1>
+                                <h5>locations</h5>
+                            </div>
+                            <div class="single-num">
+                                <h1 class="countit" data-number="40">40</h1>
+                                <h5>destinations</h5>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-           <!-- Contact-area END -->  
-
+            <!-- About-area END -->
+            
         </div>
         <!-- All-inner pages END -->
  
@@ -110,6 +96,7 @@
         <script src="assets/js/popper.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/jquery.nice-select.min.js"></script>
-        <script src="assets/js/main.js"></script>
+        <script src="assets/js/main.js"></script>  
+        <script src="assets/js/vendor/main.js"></script> 
     </body>
 </html>
