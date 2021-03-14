@@ -294,11 +294,7 @@ body.pageIn.sspIn.f_class .fclasse.cl_Show {
 {
     visibility: visible;
     display: block;
-}
-ul#pills-tab{
-    justify-content: center;
-}
-
+} 
 body.flights .sub-page-area.getaquote{
     background: url(../img/a-bac7.png) !important;
     background-size: cover !important;
@@ -316,10 +312,12 @@ body.experinces .sub-page-area.getaquote{
 }
 .left-side .ken-img {
     display: none;
-}
-
-.sub-page-area .ken-img.first{
+} 
+.ken-img.first{
     display: block;
+}
+.fclasse .left-side{    
+    min-height: 180px; 
 }
 
 
@@ -426,9 +424,10 @@ body.experinces .sub-page-area.getaquote{
         color: #A37B7F;
     }
     .left-wrp h1 {
-        margin-bottom: 20px;
+        margin-bottom: 0px;
         font-size: 64px;
-        line-height: 110px;
+        line-height: 70px;
+        margin-top: 30px;
     }
     .left-wrp h5 {
         font-size: 17px;
@@ -644,7 +643,7 @@ body.experinces .left-side{
 .left-side .ken-img {
     display: none;
 }
-.sub-page-area .ken-img.first{
+.ken-img.first{
     display: block;
 }
 
@@ -662,10 +661,7 @@ ul#pills-tab li button {
     width: auto;
     height: 35px;
     font-size: 14px;
-}
-ul#pills-tab { 
-    justify-content: space-between;
-}
+} 
 .inp-group label {
     width: 100%;
     margin-bottom: 30px;
@@ -674,7 +670,21 @@ ul#pills-tab {
     display: block; 
     margin-bottom: 0px;
 }
-
-
+.right-wrp .thisClose {
+    display: block;
+    width: max-content;
+    height: max-content;
+    padding: 10px;
+    background: var(--themeWhite);
+    border-radius: 5px;
+    position: absolute;
+    top: 55px;
+    right: 20px;
+    z-index: 2;
+    transform: scale(.6);
+}
+.fclasse .left-side{
+    min-height: initial;
+}
 
 } 

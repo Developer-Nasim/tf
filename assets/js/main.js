@@ -145,7 +145,7 @@
  
     // close
     function closeIt() {
-        let closeIcon = document.querySelectorAll('.thisClose')
+        let closeIcon = document.querySelectorAll('.mainPageClose')
         closeIcon.forEach(close => { 
             close.addEventListener('click', () => {
                 let body  = document.querySelector('body')
@@ -166,7 +166,75 @@
         closeIt()
     })
 
+    // Slide animations for the sub pages (e.g flight classes)
+    function Fnc() {
+        let services      = document.querySelectorAll('.ser-details li')
+        let servicesPages = document.querySelectorAll('.service-sub-pages .ssp')
+        services.forEach(btn => {
+            btn.addEventListener('click', () => {
+                servicesPages.forEach(pages => {
+                    pages.classList.remove('showMe')
+                })
 
- 
+                servicesPages.forEach(pages => {
+                    if (pages.classList.contains(btn.dataset.page)) {
+                        pages.classList.add('showMe')
+                    } 
+                })
+            })
+
+        }) 
+
+        let classMenu    = document.querySelectorAll('.all-flights ul li')
+        let flightClasse = document.querySelectorAll('.flight-pages .fclasse')
+        classMenu.forEach(btn => {
+            btn.addEventListener('click', () => {
+                flightClasse.forEach(pages => {
+                    pages.classList.remove('showMeAsClasses')
+                }) 
+                flightClasse.forEach(pages => {
+                    if (pages.classList.contains(btn.dataset.page)) {
+                        pages.classList.add('showMeAsClasses')
+                    } 
+                })
+            })
+
+        }) 
+
+        // Input animation
+        let closeBlk = document.querySelectorAll('.thisClose')
+        let closeBlksp = document.querySelectorAll('.thisClose span')
+        closeBlk.forEach(cBlk => { 
+            cBlk.addEventListener('click', (e) => {
+                if (e.target.parentElement.parentElement.classList.contains('showMe') || e.target.parentElement.parentElement.parentElement.classList.contains('showMe') || e.target.parentElement.parentElement.parentElement.parentElement.classList.contains('showMe')) {
+                    e.target.parentElement.parentElement.parentElement.classList.remove('showMe') || e.target.parentElement.parentElement.classList.remove('showMe') || e.target.parentElement.parentElement.parentElement.parentElement.classList.remove('showMe')
+                } 
+                if (e.target.parentElement.parentElement.classList.contains('showMeAsClasses') || e.target.parentElement.parentElement.parentElement.classList.contains('showMeAsClasses') || e.target.parentElement.parentElement.parentElement.parentElement.classList.contains('showMeAsClasses')) {
+                    e.target.parentElement.parentElement.parentElement.classList.remove('showMeAsClasses') || e.target.parentElement.parentElement.classList.remove('showMeAsClasses') || e.target.parentElement.parentElement.parentElement.parentElement.classList.remove('showMeAsClasses')
+                } 
+            })
+        })
+
+        closeBlksp.forEach(cBlksp => { 
+            cBlksp.addEventListener('click', (e) => {
+                console.log(cBlksp.parentElement.parentElement.parentElement.parentElement)
+                if (cBlksp.parentElement.parentElement.parentElement.parentElement.classList.contains('showMeAsClasses')) {
+                    cBlksp.parentElement.parentElement.parentElement.parentElement.classList.remove('showMeAsClasses')
+                }
+                if (cBlksp.parentElement.parentElement.parentElement.parentElement.classList.contains('showMe')) {
+                    cBlksp.parentElement.parentElement.parentElement.parentElement.classList.remove('showMe')
+                }
+            })
+        })
+        
+        setTimeout(() => {
+            Fnc()
+        }, 2000);
+
+        
+        $('select').niceSelect();
+    }
+
+    Fnc()
  }) 
 
