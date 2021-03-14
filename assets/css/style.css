@@ -787,7 +787,8 @@ body.pageIn .left-side {
   position: absolute;
   top: 0;
   left: 0;
-  visibility: hidden; 
+  visibility: hidden;
+  min-height: 100%;
   transition: 1s;
   opacity: 0;
   z-index: 2;
@@ -1028,7 +1029,22 @@ body.sspIn .all-inner .sub-page-area.upNow {
   z-index: -1;
   visibility: hidden;
 }
-
+.fclasse .left-side, .fclasse .right-side {
+  opacity: 0;
+  transition: .3s;
+}
+.fclasse.showMeAsClasses .left-side, .fclasse.showMeAsClasses .right-side {
+  opacity: 1;
+  filter: blur(0px); 
+}
+.ssp .left-side, .ssp .right-side {
+  opacity: 0;
+  transition: .3s;
+}
+.ssp.showMe .left-side, .ssp.showMe .right-side {
+  opacity: 1;
+  filter: blur(0px); 
+}
 
 
 

@@ -56,8 +56,8 @@
         margin-bottom: 50px;
     }
     .ser-details ul li h1 {
-        font-size: 82px;
-        line-height: 100.66px;
+        font-size: 64px;
+        line-height: 80.66px;
     }
     body.sspIn .service-sub-pages .pShow { 
         min-height: 970px;
@@ -70,8 +70,28 @@
         margin-right: 10px;
         width: 125px; 
     }
+    .right-wrp .thisClose {  
+        top: 30px;
+        right: 30px; 
+        transform: scale(.5);
+    }
 
-
+ 
+    .fclasse .features h1 {
+        margin-bottom: 5px;
+        font-size: 32px;
+    }
+    .right-wrp {
+        padding-top: 50px;
+    }
+    
+    .ssp.flights .right-wrp .all-flights h1 {
+        font-size: 44px;
+    }
+    
+    .ssp.flights .right-wrp .all-flights p {
+        margin-bottom: 50px;
+    }
 
 }
 
@@ -223,7 +243,7 @@ body.experinces .left-side{
 }
 .left-side.blk-in-md .left-wrp h1 {
     margin-bottom: 20px;
-    font-size: 144px;
+    font-size: 118px;
     line-height: 180px;
 }
 .left-side.blk-in-md {
@@ -237,6 +257,7 @@ body.sspIn .service-sub-pages .pShow {
 }
 .fclasse {
     display: block;
+    height: 100%;
 }
 .left-wrp a.theme-btn {
     display: none;
@@ -282,6 +303,7 @@ body.pageIn.sspIn.f_class .fclasse.cl_Show {
     background: url(../img/a-bac2.png);
     background-size: cover;
     background-position: center;
+    height: 100%;
 }
 .sub-page-area.services {
     background: url(../img/a-bac2.png);
@@ -292,8 +314,8 @@ body.pageIn.sspIn.f_class .fclasse.cl_Show {
 .business::after,
 .premium::after 
 {
-    visibility: visible;
-    display: block;
+    /* visibility: visible; */
+    /* display: block; */
 } 
 body.flights .sub-page-area.getaquote{
     background: url(../img/a-bac7.png) !important;
@@ -320,7 +342,24 @@ body.experinces .sub-page-area.getaquote{
     min-height: 180px; 
 }
 
-
+.cd-folding-panel.is-open .cd-fold-content {
+    min-height: 1060px;
+}
+.fclasse .ken-img.first:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: .4;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+.all-flights ul li h1 {
+    font-size: 52px;
+    line-height: 68px; 
+}
 
 
 
@@ -443,8 +482,7 @@ body.experinces .sub-page-area.getaquote{
         padding-bottom: 50px;
     }
     .sub-page-area {
-        display: block;
-        height: 100%;
+        display: block; 
         min-height: auto;
     }
     .left-side{
@@ -550,6 +588,7 @@ body.sspIn .service-sub-pages .pShow .left-wrp {
 }
 .fclasse {
     display: block;
+    height: 100%;
 }
 .left-wrp a.theme-btn {
     display: none;
@@ -602,6 +641,7 @@ body.pageIn.sspIn.f_class .fclasse.cl_Show {
     background: url(../img/a-bac2.png);
     background-size: cover;
     background-position: center;
+    min-height: 100%;
 }
 .sub-page-area.services {
     background: url(../img/a-bac2.png);
@@ -652,8 +692,19 @@ body.experinces .left-side{
 .business::after,
 .premium::after 
 {
-    visibility: visible;
-    display: block;
+    /* visibility: visible; */
+    /* display: block; */
+} 
+.fclasse .ken-img.first:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: .4;
+    top: 0;
+    left: 0;
+    z-index: 3;
 }
 ul#pills-tab li button {
     padding: 0 13px;
@@ -686,5 +737,13 @@ ul#pills-tab li button {
 .fclasse .left-side{
     min-height: initial;
 }
+.cd-folding-panel.is-open .cd-fold-content {
+    min-height: 1060px;
+}
+
+
+
+
+
 
 } 
