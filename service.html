@@ -428,8 +428,7 @@
                 })
 
                 closeBlksp.forEach(cBlksp => { 
-                    cBlksp.addEventListener('click', (e) => {
-                        console.log(cBlksp.parentElement.parentElement.parentElement.parentElement)
+                    cBlksp.addEventListener('click', (e) => { 
                         if (cBlksp.parentElement.parentElement.parentElement.parentElement.classList.contains('showMeAsClasses')) {
                             cBlksp.parentElement.parentElement.parentElement.parentElement.classList.remove('showMeAsClasses')
                         }
