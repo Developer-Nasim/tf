@@ -1,5 +1,23 @@
-/*   Theme REST css START */
+/* Theme REST css START */
+
+
+/* Google font */
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fjalla+One&display=swap');
+
+/* Termina font from css folder */
+@import url('../css/font.css');
+
+
+/* 
+use it:-
+
+font-family: 'Terminas';
+if you will get any comment for font-weight then please un comment that and use weight as you wish
+*/
+
+
+
+
 :root{
   --themeWhite: #DCDCDC;
   --themeBlack: #0E1015;
@@ -45,6 +63,7 @@ h6 {
   font-family: var(--headingFont);
   color: var(--themeWhite);
   margin-top: 0px; 
+  /* font-weight: 700; */
  }
 
 h1 a,
@@ -54,13 +73,11 @@ h4 a,
 h5 a,
 h6 a {
   color: inherit; }
-
-h1 {
-  font-size: 144px;
-  text-transform: uppercase;
-  line-height: 180.98px; 
+  h1 {
+    font-size: 120px;
+    text-transform: uppercase;
+    line-height: 140.98px;
 }
-
 h2 {
   font-size: 35px; }
 
@@ -847,7 +864,9 @@ body.pageIn .left-side {
 .sub-page-area.about .right-side .right-wrp {
   padding-bottom: 70px;
 }
-
+.sub-page-area.about .right-side {
+  padding-top: 50px;
+}
 
 
 .footer {
@@ -1251,6 +1270,7 @@ form {
   border-bottom: 2px solid var(--themeWhite);
   transition: .3s;
   color: var(--themeWhite);
+  font-size: 16px;
 }
 
 .inp-group label  span.placeholder {
@@ -1311,9 +1331,9 @@ span.ckbx {
   display: inline-block;
   border-radius: 3px;
   position: relative;
-  margin-right: 15px;
-}
-
+  margin-right: 5px;
+  margin-bottom: -1px;
+} 
 span.ckbx:after {
   content: "";
   position: absolute;
@@ -1370,40 +1390,7 @@ button.theme-btn.addMore {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ /* Content-loading area START */ 
 .cd-folding-panel.homePanel .cd-fold-content {
   position: absolute;
   top: 0;
@@ -1420,7 +1407,82 @@ button.theme-btn.addMore {
 .cd-folding-panel.is-open .cd-fold-content {
   visibility: visible;  
   opacity: 1; 
-} 
-
+}   
+ /* Content-loading area START */
 
  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* inner_datail_pages area START */
+ .inner_datail_pages {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: #0f1016;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999999;
+  transform: scale(.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: .5s;
+}
+.inner_datail_pages.takeForm {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+.form-page {
+  text-align: center;
+}
+.form-page form {
+  width: 600px;
+}
+.form-page ul#pills-tab {
+  margin: 0;
+  margin-bottom: 60px;
+}
+.form-page form h1 {
+  font-size: 30px;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+}
+.form-page form .inp-group {
+  display: block;
+  margin-bottom: 10px;
+}
+.form-page form .inp-group label {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.form-page .forAgree label {
+  position: relative;
+  margin-bottom: 5px;
+  font-size: 16px;
+  transition: .3s;
+}
+.form-page form .forAgree button.theme-btn {
+  margin-bottom: 0;
+}
+/* inner_datail_pages area End */

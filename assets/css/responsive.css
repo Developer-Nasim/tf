@@ -392,7 +392,10 @@ body.experinces .sub-page-area.getaquote{
 .forAgree label { 
     margin-bottom: 10px; 
 }
-
+.inner_datail_pages.takeForm .thisClose.allcr {
+    top: 15px;
+    right: 15px;
+}
 
 
 }
@@ -789,6 +792,21 @@ ul#pills-tab li button {
 .sub-page-area.getaquote .footer {
     bottom: 160px;
 }
-
+.form-page { 
+    width: 90%;
+} 
+.form-page form {
+    width: 100%; 
+}
+.form-page form h1 {
+    font-size: 24px;  
+}
+form-page ul#pills-tab { 
+    margin-bottom: 40px;
+} 
+.inner_datail_pages.takeForm .thisClose.allcr {
+    top: 15px;
+    right: 15px;
+}
 
 } 

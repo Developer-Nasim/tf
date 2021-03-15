@@ -3,8 +3,10 @@
 
     // Preloader
     function Prealoder() { 
-        document.querySelector('.preloader').style.opacity = '0'
-        document.querySelector('.preloader').style.visibility = 'hidden'
+        if (document.querySelector('.preloader')) { 
+            document.querySelector('.preloader').style.opacity = '0'
+            document.querySelector('.preloader').style.visibility = 'hidden'
+        }
     } 
     Prealoder()
     
@@ -252,6 +254,30 @@
     } 
     done()
 
+
+    // Signup/contact/subscribe
+    function GetForm() {
+        let btn         = document.querySelector('.getForm')
+        let formBlock   = document.querySelector('.inner_datail_pages')
+        let closeBtn    = document.querySelector('.inner_datail_pages .thisClose')
+
+        // Form sention comming
+        window.addEventListener('click', (e) => {
+            e.preventDefault()
+            if (e.target.classList.contains('getForm')) {
+                formBlock.classList.add('takeForm')
+            } 
+        })
+        btn.addEventListener('click', () => {
+            formBlock.classList.add('takeForm')
+        })
+        // Form sention closing
+        closeBtn.addEventListener('click', () => {
+            formBlock.classList.remove('takeForm')
+        })
+
+    }
+    GetForm()
 
 
  }) 
