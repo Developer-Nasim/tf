@@ -804,6 +804,7 @@ body.pageIn .left-side {
   height: 100%;
   display: flex;
   align-items: center;
+  position: relative;
 }
 .left-side a.logo {
   position: absolute;
@@ -823,34 +824,54 @@ body.pageIn .left-side {
   cursor: pointer;
   font-size: 18px;
   font-family: var(--headingFont);
-}
-
+} 
 .sub-page-area.about .thisClose {
   border-bottom: 2px solid var(--themeWhite);
-}
-
+} 
 .left-wrp {
   text-align: center;
   padding: 0 50px;
-}
-
+} 
 .left-wrp h1 {
   margin-bottom: 30px;
-}
-
-
+}  
 .right-wrp {
   padding: 0 140px;
-}
-
+} 
 .right-wrp h5 {
   margin-bottom: 39px;
-}
- 
-
+}  
 .right-wrp p {
   margin-bottom: 95px;
 }
+.sub-page-area.about .right-side .right-wrp {
+  padding-bottom: 70px;
+}
+
+
+
+.footer {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%); 
+  width: max-content;
+  height: max-content;
+}
+
+.footer a {
+  display: inline-block;
+  text-transform: capitalize;
+  margin: 0 15px;
+  transition: .3s;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+
+
 
 .ex-numbs {
   display: flex;

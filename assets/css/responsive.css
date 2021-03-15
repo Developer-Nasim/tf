@@ -375,6 +375,24 @@ body.experinces .sub-page-area.getaquote{
     justify-content: center;
     align-items: baseline;
 }  
+.footer { 
+    bottom: 200px; 
+    z-index: 888; 
+}
+.all-flights ul li p {
+    margin-bottom: 50px;
+}
+.ssp .footer {
+    bottom: 470px;
+}
+.forAgree button.theme-btn {
+    margin-top: 16px;
+    margin-bottom: 20px; 
+}
+.forAgree label { 
+    margin-bottom: 10px; 
+}
+
 
 
 }
@@ -751,9 +769,26 @@ ul#pills-tab li button {
     justify-content: center;
     align-items: baseline;
 } 
-
-
-
+.footer { 
+    bottom: 200px; 
+    z-index: 888; 
+}
+.ssp .footer {
+    bottom: 400px;
+}
+.forAgree button.theme-btn {
+    margin-top: 16px;
+    margin-bottom: 20px; 
+}
+.forAgree label { 
+    margin-bottom: 10px; 
+}
+.sub-page-area.getaquote .left-side{
+    max-height: 150px;
+}
+.sub-page-area.getaquote .footer {
+    bottom: 160px;
+}
 
 
 } 
