@@ -1,6 +1,6 @@
 jQuery(document).ready(function($){
-	var gallery = $('.cd-gallery'),
-		foldingPanel = $('.cd-folding-panel'),
+	var gallery = $('.menuForLoading'),
+		foldingPanel = $('.willLoadContent'),
 		mainContent = $('.cd-main');
 	/* open folding content */
 	gallery.on('click', 'a', function(event){
@@ -14,21 +14,21 @@ jQuery(document).ready(function($){
 		toggleContent('', false);
 	});
 	gallery.on('click', function(event){
-		/* detect click on .cd-gallery::before when the .cd-folding-panel is open */
-		if($(event.target).is('.cd-gallery') && $('.fold-is-open').length > 0 ) toggleContent('', false);
+		/* detect click on .menuForLoading::before when the .willLoadContent is open */
+		if($(event.target).is('.menuForLoading') && $('.fold-is-open').length > 0 ) toggleContent('', false);
 	}) 
 	
 	function openItemInfo(url) {
 		var mq = viewportSize();
 		if( gallery.offset().top > $(window).scrollTop() && mq != 'mobile') {
-			/* if content is visible above the .cd-gallery - scroll before opening the folding panel */
+			/* if content is visible above the .menuForLoading - scroll before opening the folding panel */
 			$('body,html').animate({
 				'scrollTop': gallery.offset().top
 			}, 100, function(){ 
 	           	toggleContent(url, true);
 	        }); 
 	    } else if( gallery.offset().top + gallery.height() < $(window).scrollTop() + $(window).height()  && mq != 'mobile' ) {
-			/* if content is visible below the .cd-gallery - scroll before opening the folding panel */
+			/* if content is visible below the .menuForLoading - scroll before opening the folding panel */
 			$('body,html').animate({
 				'scrollTop': gallery.offset().top + gallery.height() - $(window).height()
 			}, 100, function(){ 
@@ -42,8 +42,8 @@ jQuery(document).ready(function($){
 	function toggleContent(url, bool) {
 		if( bool ) {
 			/* load and show new content */
-			var foldingContent = foldingPanel.find('.cd-fold-content');
-			foldingContent.load(url+' .cd-fold-content > *', function(event){
+			var foldingContent = foldingPanel.find('.load_this');
+			foldingContent.load(url+' .load_this > *', function(event){
 				setTimeout(function(){ 
 					foldingPanel.addClass('is-open');
 					mainContent.addClass('fold-is-open');
@@ -66,6 +66,6 @@ jQuery(document).ready(function($){
 
 	function viewportSize() {
 		/* retrieve the content value of .cd-main::before to check the actua mq */
-		return window.getComputedStyle(document.querySelector('.cd-main'), '::before').getPropertyValue('content').replace(/"/g, "").replace(/'/g, "");
+		return window.getComputedStyle(document.querySelector('.menuForLoading'), '::before').getPropertyValue('content').replace(/"/g, "").replace(/'/g, "");
 	}
 }); 

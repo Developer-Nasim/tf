@@ -151,12 +151,12 @@
         closeIcon.forEach(close => { 
             close.addEventListener('click', () => {
                 let body  = document.querySelector('body')
-                let panel = document.querySelector('.cd-folding-panel')
+                let panel = document.querySelector('.willLoadContent')
                 body.classList.remove('fold-is-open')
                 panel.classList.remove('is-open')
                 setTimeout(() => {
-                    document.querySelector('.cd-fold-content').innerHTML = " "
-                }, 1000);
+                    document.querySelector('.load_this').innerHTML = " "
+                }, 700);
             })
         })
         setTimeout(() => {

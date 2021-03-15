@@ -14,8 +14,7 @@ use it:-
 font-family: 'Terminas';
 if you will get any comment for font-weight then please un comment that and use weight as you wish
 */
-
-
+ 
 
 
 :root{
@@ -1058,7 +1057,7 @@ body.pageIn .left-side {
   opacity: 1;
   transition: 2s;
 }
-.cd-folding-panel.is-open .left-side:after{
+.willLoadContent.is-open .left-side:after{
   opacity: .4;
 }
 
@@ -1391,7 +1390,7 @@ button.theme-btn.addMore {
 
 
  /* Content-loading area START */ 
-.cd-folding-panel.homePanel .cd-fold-content {
+.willLoadContent.homePanel .load_this {
   position: absolute;
   top: 0;
   left: 0;
@@ -1404,7 +1403,7 @@ button.theme-btn.addMore {
   opacity: 0;
   overflow: hidden;
 }
-.cd-folding-panel.is-open .cd-fold-content {
+.willLoadContent.is-open .load_this {
   visibility: visible;  
   opacity: 1; 
 }   
