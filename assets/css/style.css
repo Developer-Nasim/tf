@@ -850,6 +850,8 @@ body.pageIn .left-side {
 } 
 .left-wrp h1 {
   margin-bottom: 30px;
+  font-size: 96px;
+  line-height: 110px;
 }  
 .right-wrp {
   padding: 0 140px;
@@ -960,7 +962,7 @@ body.pageIn .left-side {
   left: 0px;
   transform: scale(1.5);
 }
-.ssp.flights.showMe{
+.ssp.showMe{
   visibility: visible;
   opacity: 1;
   left: 0;
@@ -1009,6 +1011,14 @@ body.pageIn .left-side {
   color: #A37B7F;
 }
 
+.ssp.hotels .right-wrp p,
+.ssp.experiences .right-wrp p
+ {
+  margin-bottom: 20px;
+} 
+.right-wrp.p_spaceh p {
+  margin-bottom: 15px;
+}
 
 
 
@@ -1086,7 +1096,7 @@ body.pageIn .left-side {
 .fclasse.showMeAsClasses {
   visibility: visible;
   opacity: 1;
-  transform: scale(1);
+  transform: scale(1) !important;
 } 
 .features ul  li h1 {
   font-size: 36px;
@@ -1253,14 +1263,14 @@ form {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 }
 .inp-group label {
   width: 48%;
   position: relative;
 }
 
-.inp-group label input {
+.inp-group label input,.inp-group label textarea {
   display: block;
   width: 100%;
   height: 27px;
@@ -1271,6 +1281,13 @@ form {
   color: var(--themeWhite);
   font-size: 16px;
 }
+.inp-group label textarea {
+  height: 54px;
+}
+form .inp-group.middle label.typeNow span.placeholder {
+  bottom: 50px;
+}
+
 
 .inp-group label  span.placeholder {
   text-transform: uppercase;
@@ -1302,7 +1319,7 @@ label.typeNow span.placeholder {
 form .inp-group.middle {
   margin-left: auto;
   margin-right: auto;
-  width: 48%;
+  /* width: 48%; */
 }
 
 form .inp-group.middle label {
@@ -1310,8 +1327,8 @@ form .inp-group.middle label {
 }
 .forAgree label {
   position: relative;
-  margin-bottom: 20px;
-  font-size: 16px;
+  margin-bottom: 5px;
+  font-size: 15px;
   transition: .3s;
 }
 .forAgree p {
@@ -1498,7 +1515,11 @@ button.theme-btn.addMore {
 
 
  
- .inner_datail_pages {
+ .inner_datail_pages,
+ .getinTouches,
+ .privacy,
+ .cookie,
+ .blog {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -1514,10 +1535,41 @@ button.theme-btn.addMore {
   visibility: hidden;
   transition: .5s;
 }
-.inner_datail_pages.takeForm {
+.inner_datail_pages.takeForm,
+.getinTouches.touchNow,
+.privacy.touchNow,
+.cookie.touchNow,
+.blog.touchNow {
   opacity: 1;
   visibility: visible;
   transform: scale(1);
+}
+
+.privacy,
+.cookie,
+.blog{
+  padding: 50px;
+}
+
+.blog {
+  overflow: auto;
+  padding: 30px;
+  display: block;
+  padding-top: 130px;
+} 
+.blog .thisClose.allcr {
+  top: 30px; 
+  right: 30px;
+}
+
+.prck-wrp h5 {
+  margin-bottom: 30px;
+}
+.blog-blk img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 25px;
 }
 .form-page {
   text-align: center;
@@ -1553,7 +1605,9 @@ button.theme-btn.addMore {
 .form-page form .forAgree button.theme-btn {
   margin-bottom: 0;
 }
-
+.form-page ul#pills-tab li.nav-item {
+  margin-bottom: 10px;
+}
 
 /* Inner_datail_pages page css START 
 =================================== */

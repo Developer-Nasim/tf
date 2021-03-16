@@ -10,81 +10,267 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Travel Seller</title>
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
-		<link rel="shortcut icon" type="image/x-icon" href="assets/img/logo.png">
+		<link rel="shortcut icon" type="image/x-icon" href="../assets/img/logo.png">
         <!-- Place favicon.ico in the root directory -->
         
-		<!-- CSS here --> 
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/nice-select.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/responsive.css">   
+		<!-- CSS here -->
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/css/nice-select.css">
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/responsive.css">
+        <style>
+            .left-side .thisClose{
+                z-index: 9;
+            }
+            .left-side{
+                height: 100vh;
+            }
+            .left-side:after { 
+                z-index: 4;
+                opacity: .4; 
+            }
+            .left-side a.logo{
+                z-index: 9;
+            }
+            .sub-page-area.about .thisClose{
+                z-index: 9;
+            }
+            .left-wrp{
+                position: relative;
+                z-index: 9;
+            }
+            .left-side .ken-img { 
+                z-index: 1;
+            }
+            .sub-page-area{
+                min-height: 100vh;
+            }
+            .all-inner {
+                overflow: hidden;
+                position: relative;
+            }
+            .service-sub-pages .ssp{
+                position: relative;
+                visibility: visible;
+                opacity: 1;
+                transform: scale(1);
+            }
+
+
+            @media (min-width: 992px) and (max-width: 1500px){
+                .right-wrp p {
+                    margin-bottom: 45px;
+                    font-size: 16px;
+                }
+                .ser-details ul li h1 {
+                    font-size: 38px;
+                    line-height: 40.66px;
+                }
+                .right-wrp h5 {
+                    margin-bottom: 25px;
+                    font-size: 19px;
+                }
+                
+            }
+            @media (min-width: 766px) and (max-width: 991px){
+             
+                .ssp .footer {
+                    bottom: -40px;
+                }
+                .ssp.experiences{
+                    height: 100%;
+                    padding-bottom: 70px;
+                }
+                
+            }
+            @media (max-width: 767px){
+                .left-side.blk-in-md {
+                    max-height: 309px;
+                    padding-left: 20px;
+                }
+                .features ul li p {
+                    margin-bottom: 30px;
+                }
+                .features ul li.touch-btn { 
+                    margin-top: 40px;
+                }
+                .left-wrp h1 {
+                    margin-bottom: 0px;
+                    font-size: 54px;
+                    line-height: 70px;
+                    margin-left: -20px;
+                }
+                
+                .ssp .footer {
+                    bottom: -40px;
+                }
+                .ssp.experiences{
+                    height: 100%;
+                    padding-bottom: 70px;
+                }
+            }
+        </style>
     </head>
     <body>
- 
-        
-        <!-- Pass START -->
-        <!-- <div class="PASS">
-            <div class="frm">
-                <input type="password" placeholder="give me password">
-                <input type="submit" value="go">
-            </div> 
-        </div>  -->
-        <!-- Pass END -->
 
  
-        <!-- Preloader  -->
-        <div class="preloader">
-            <div class="l-inners">
-                <img src="assets/img/logo.png" alt="">
-                <div class="loader-cylon"></div> 
-            </div>
-        </div> 
-        <!-- Preloader -->
+        <!-- All-inner pages START -->
+        <div class="all-inner"> 
+             
 
-        <!-- Home-wrp area START -->
-        <div class="page-wrp main_content_toLoad">
+              <!--
+                    Service sub pages START 
+                -->
+                
+                <div class="service-sub-pages"> 
+                    <!-- experiences -->
+                    <div class="ssp experiences">
+                
+                        <div class="thisClose allcr"><a href="../index.html"><span><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.75 5.25L5.25 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.25 5.25L15.75 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></div>
 
-            <!-- Background-video START -->
-            <div class="vBack"> 
-                <video loop muted autoplay>
-                    <source type="video/mp4" src="https://flixels.s3.amazonaws.com/flixel/ct08dlpwq6eqp8yp1r6v.hd.mp4">
-                    <source type="video/webm" src="http://blucube.net/stuff/codepen-assets/html5vid/beepl-pink-vynil.webm">
-                    <source type="video/ogg" src="http://blucube.net/stuff/codepen-assets/html5vid/beepl-pink-vynil.ogv">
-                </video>
-            </div>
-            <!-- Background-video END -->  
-            <a href="javascript:void(0)" class="logo"><img src="assets/img/logo.png" alt=""></a>
-            <a href="javascript:void(0)" class="menuIcon"><span class="menuBar"></span></a>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="inner-wrp text-center">
-                            <h1>Travel seller</h1>
-                            <h5>creating unforgettable journeys</h5>
+                        <!-- sub-page-ken-animation -->
+                        <div class="ken-img first"> 
+                            <img class="backg" src="../assets/img/a-bac2.png"alt="">
+                            <img class="backg" src="../assets/img/a-bac7.png"alt="">
+                            <img class="backg" src="../assets/img/a-bac8.png"alt="">
+                            <img class="backg" src="../assets/img/a-bac6.png"alt=""> 
                         </div>
-                    </div>
-                </div>
-            </div>
-            <up class="menu-list menuForLoading">
-                <li class="cd-item"><a aria-label='about' class='h-button centered' data-text='about' href='./willLoad/about_page.html' style="position: relative; "><span>a</span><span>b</span><span>o</span><span>u</span><span>t</span></a> </li>
-                <li class="cd-item"><a aria-label='services' class='h-button centered' data-text='services' href='./willLoad/service_page.html' style="position: relative; "><span>s</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span></a> </li>
-                <li class="cd-item"><a aria-label='contact' class='h-button centered' data-text='contact' href='./willLoad/contact_page.html' style="position: relative; "><span>c</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span></a> </li>
-                <li class="cd-item"><a aria-label='get a quote' class='h-button centered qoutes' data-text='get a quote' href='./willLoad/qoute_page.html' style="position: relative; "><span>g</span><span>e</span><span>t</span> <span> </span> <span>a</span>  <span> </span> <span>q</span><span>u</span><span>o</span><span>t</span><span>e</span></a> </li>
-            </up>
+                        <!-- sub-page-ken-animation -->
+        
+                        <div class="left-side blk-in-md" style="background: url(../assets/img/a-bac2.png);background-size: cover;background-position: center;opacity: 1;"> 
+                            
+                            <!-- left-side-ken-animation -->
+                            <div class="ken-img"> 
+                                <img class="backg" src="../assets/img/a-bac2.png"alt="">
+                                <img class="backg" src="../assets/img/a-bac7.png"alt="">
+                                <img class="backg" src="../assets/img/a-bac8.png"alt="">
+                                <img class="backg" src="../assets/img/a-bac6.png"alt=""> 
+                            </div>
+                            <!-- left-side-ken-animation --> 
 
+                            <a href="../index.html" class="logo"><img src="../assets/img/logo.png" alt=""></a>
+                            <div class="left-wrp">
+                                <h1>experiences</h1>
+                                <a href="#" class="theme-btn getintouchnow">get in touch</a>
+                            </div>
+                        </div>
+                        <div class="right-side" style="opacity: 1;"> 
+                            <div class="right-wrp">
+                                <h5>experiences</h5>
+                                <div class="all-flights">
+                                    <ul>
+                                        <li data-page="citycountry"><h1>City/Country</h1> <p>Ensuring you are comfortable and well rested, First Class cabins will transform your journey into the ultimate luxury experience. </p></li>
+                                        <li data-page="tours"><h1>Tours </h1> <p>Successful business conferences and meetings require your full attention and concentration. Ensuring good sleep throughout your journey is a key step in this aspect.</p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer"> 
+                                <a href="#" class="getForm">newsletter / contact</a>
+                            </div>
+                        </div>
+                    </div>  
+                </div> 
+                <!-- 
+                    Service sub pages END 
+                -->
+                 
+                        <!-- 
+                            Flight sub pages START 
+                        -->
+                        <div class="flight-pages">
  
-            <!-- footer-area START -->
-            <div class="footer-area">
-                <ul>
-                    <li><a href="#" class="privacybtn">privacy</a></li>
-                    <li><a href="#" class="cookiebtn">cookie</a></li>
-                    <li><a href="#" class="blogbtn">blog</a></li>
-                    <li><a href="#" class="getForm">newsletter / signup / login / contact</a></li>
-                </ul>
-            </div>
-            <!-- footer-area END -->
+                            <!-- ========= Exprinces Sub pages ========= --> 
+                                <!-- city / country hotels -->
+                                <div class="fclasse citycountry">
+                    
+                                    <div class="thisClose allcr"><span><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.75 5.25L5.25 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.25 5.25L15.75 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+
+                                    <!-- sub-page-ken-animation -->
+                                    <div class="ken-img first"> 
+                                        <img class="backg" src="../assets/img/a-bac2.png"alt="">
+                                        <img class="backg" src="../assets/img/a-bac7.png"alt="">
+                                        <img class="backg" src="../assets/img/a-bac8.png"alt="">
+                                        <img class="backg" src="../assets/img/a-bac6.png"alt=""> 
+                                    </div>
+                                    <!-- sub-page-ken-animation -->
+                    
+                                    <div class="left-side" style="background-image: url(../assets/img/a-bac3.png);">
+                                
+                                        <!-- left-side-ken-animation -->
+                                        <div class="ken-img"> 
+                                            <img class="backg" src="../assets/img/a-bac2.png"alt="">
+                                            <img class="backg" src="../assets/img/a-bac7.png"alt="">
+                                            <img class="backg" src="../assets/img/a-bac8.png"alt="">
+                                            <img class="backg" src="../assets/img/a-bac6.png"alt=""> 
+                                        </div>
+                                        <!-- left-side-ken-animation -->  
+            
+                                        <a href="../index.html" class="logo"><img src="../assets/img/logo.png" alt=""></a>
+                                        <div class="left-wrp">
+                                            <h1>City/Country</h1>
+                                            <a href="#" class="theme-btn getintouchnow">get in touch</a>
+                                        </div>
+                                    </div>
+                                    <div class="right-side"> 
+                                        <div class="right-wrp p_spaceh">
+                                            <h5>City/Country</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus qui ipsa deleniti distinctio nesciunt architecto veritatis corporis debitis, officia ut in iusto neque sapiente quidem, earum quisquam tenetur deserunt. Magnam.</p>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus qui ipsa deleniti distinctio nesciunt architecto veritatis corporis debitis, officia ut in iusto neque sapiente quidem, earum quisquam tenetur deserunt. Magnam.</p>
+                                        </div>
+                                        <div class="footer">
+                                            <a href="#" class="getForm">newsletter / contact</a>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <!-- Tours hotels -->
+                                <div class="fclasse tours">
+                    
+                                    <div class="thisClose allcr"><span><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.75 5.25L5.25 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.25 5.25L15.75 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+
+                                    <!-- sub-page-ken-animation -->
+                                    <div class="ken-img first"> 
+                                        <img class="backg" src="../assets/img/a-bac2.png"alt="">
+                                        <img class="backg" src="../assets/img/a-bac7.png"alt="">
+                                        <img class="backg" src="../assets/img/a-bac8.png"alt="">
+                                        <img class="backg" src="../assets/img/a-bac6.png"alt=""> 
+                                    </div>
+                                    <!-- sub-page-ken-animation -->
+                    
+                                    <div class="left-side" style="background-image: url(../assets/img/a-bac3.png);">
+                                
+                                        <!-- left-side-ken-animation -->
+                                        <div class="ken-img"> 
+                                            <img class="backg" src="../assets/img/a-bac2.png"alt="">
+                                            <img class="backg" src="../assets/img/a-bac7.png"alt="">
+                                            <img class="backg" src="../assets/img/a-bac8.png"alt="">
+                                            <img class="backg" src="../assets/img/a-bac6.png"alt=""> 
+                                        </div>
+                                        <!-- left-side-ken-animation -->  
+            
+                                        <a href="../index.html" class="logo"><img src="../assets/img/logo.png" alt=""></a>
+                                        <div class="left-wrp">
+                                            <h1>Tours</h1>
+                                            <a href="#" class="theme-btn getintouchnow">get in touch</a>
+                                        </div>
+                                    </div>
+                                    <div class="right-side"> 
+                                        <div class="right-wrp p_spaceh">
+                                            <h5>Tours</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus qui ipsa deleniti distinctio nesciunt architecto veritatis corporis debitis, officia ut in iusto neque sapiente quidem, earum quisquam tenetur deserunt. Magnam.</p>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus qui ipsa deleniti distinctio nesciunt architecto veritatis corporis debitis, officia ut in iusto neque sapiente quidem, earum quisquam tenetur deserunt. Magnam.</p>
+                                        </div>
+                                        <div class="footer">
+                                            <a href="#" class="getForm">newsletter / contact</a>
+                                        </div>
+                                    </div>
+                                </div> 
+                        </div>
+                        <!-- 
+                            Flight sub pages END 
+                        -->
+
         </div>
-        <!-- Home-wrp area END -->
+        <!-- All-inner pages END -->
   
         <!-- Signup/subscribe/contact  area START --> 
         <div class="inner_datail_pages">
@@ -210,8 +396,8 @@
                 </div>
             </div>
         </div> 
-        <!-- Signup/subscribe/contact  area END -->
-  
+        <!-- Signup/subscribe/contact  area END --> 
+ 
         <!-- getinTouches area START --> 
         <div class="getinTouches">
             <div class="thisClose allcr"><span><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.75 5.25L5.25 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.25 5.25L15.75 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div>
@@ -244,74 +430,15 @@
         </div> 
         <!-- getinTouches area END --> 
 
-        <!-- Content will be load bellow from other pages -->
-        <div class="willLoadContent homePanel"> <div class="load_this"><!-- content will be load here from other pages --></div>  </div> 
-  
-
-
-
-
-        
-        <!-- Privacy / Cookie / Blog area START --> 
-        <div class="privacy">
-            <div class="thisClose allcr"><span><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.75 5.25L5.25 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.25 5.25L15.75 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div>
-            <div class="prck-wrp">
-                <h5>Privacy</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ut illo eaque, beatae maiores possimus dolorum corporis quasi ipsa aut ratione iste cum voluptatem tenetur fugit, accusantium recusandae, atque impedit laudantium. Ea at nobis quae sequi illo dolor ratione nesciunt sapiente dolores eaque, cum aspernatur consectetur earum maiores rem repellat eum suscipit, reiciendis voluptatem molestiae alias nemo vel sed? Temporibus quis eveniet, ipsam fugit, animi aliquid asperiores sit ea tempore vero autem voluptatum? Molestiae necessitatibus neque totam repudiandae expedita, optio iste reprehenderit voluptatibus quis, nobis est illum voluptatem autem? Repellendus id rem aliquid maxime, accusamus aut a earum incidunt ad.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ut illo eaque, beatae maiores possimus dolorum corporis quasi ipsa aut ratione iste cum voluptatem tenetur fugit, accusantium recusandae, atque impedit laudantium. Ea at nobis quae sequi illo dolor ratione nesciunt sapiente dolores eaque, cum aspernatur consectetur earum maiores rem repellat eum suscipit, reiciendis voluptatem molestiae alias nemo vel sed? Temporibus quis eveniet, ipsam fugit, animi aliquid asperiores sit ea tempore vero autem voluptatum? Molestiae necessitatibus neque totam repudiandae expedita, optio iste reprehenderit voluptatibus quis, nobis est illum voluptatem autem? Repellendus id rem aliquid maxime, accusamus aut a earum incidunt ad.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ut illo eaque, beatae maiores possimus dolorum corporis quasi ipsa aut ratione iste cum voluptatem tenetur fugit, accusantium recusandae, atque impedit laudantium. Ea at nobis quae sequi illo dolor ratione nesciunt sapiente dolores eaque, cum aspernatur consectetur earum maiores rem repellat eum suscipit, reiciendis voluptatem molestiae alias nemo vel sed? Temporibus quis eveniet, ipsam fugit, animi aliquid asperiores sit ea tempore vero autem voluptatum? Molestiae necessitatibus neque totam repudiandae expedita, optio iste reprehenderit voluptatibus quis, nobis est illum voluptatem autem? Repellendus id rem aliquid maxime, accusamus aut a earum incidunt ad.</p>
-            </div>
-        </div> 
-        <div class="cookie">
-            <div class="thisClose allcr"><span><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.75 5.25L5.25 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.25 5.25L15.75 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div>
-            <div class="prck-wrp">
-                <h5>Cookie</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ut illo eaque, beatae maiores possimus dolorum corporis quasi ipsa aut ratione iste cum voluptatem tenetur fugit, accusantium recusandae, atque impedit laudantium. Ea at nobis quae sequi illo dolor ratione nesciunt sapiente dolores eaque, cum aspernatur consectetur earum maiores rem repellat eum suscipit, reiciendis voluptatem molestiae alias nemo vel sed? Temporibus quis eveniet, ipsam fugit, animi aliquid asperiores sit ea tempore vero autem voluptatum? Molestiae necessitatibus neque totam repudiandae expedita, optio iste reprehenderit voluptatibus quis, nobis est illum voluptatem autem? Repellendus id rem aliquid maxime, accusamus aut a earum incidunt ad.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ut illo eaque, beatae maiores possimus dolorum corporis quasi ipsa aut ratione iste cum voluptatem tenetur fugit, accusantium recusandae, atque impedit laudantium. Ea at nobis quae sequi illo dolor ratione nesciunt sapiente dolores eaque, cum aspernatur consectetur earum maiores rem repellat eum suscipit, reiciendis voluptatem molestiae alias nemo vel sed? Temporibus quis eveniet, ipsam fugit, animi aliquid asperiores sit ea tempore vero autem voluptatum? Molestiae necessitatibus neque totam repudiandae expedita, optio iste reprehenderit voluptatibus quis, nobis est illum voluptatem autem? Repellendus id rem aliquid maxime, accusamus aut a earum incidunt ad.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ut illo eaque, beatae maiores possimus dolorum corporis quasi ipsa aut ratione iste cum voluptatem tenetur fugit, accusantium recusandae, atque impedit laudantium. Ea at nobis quae sequi illo dolor ratione nesciunt sapiente dolores eaque, cum aspernatur consectetur earum maiores rem repellat eum suscipit, reiciendis voluptatem molestiae alias nemo vel sed? Temporibus quis eveniet, ipsam fugit, animi aliquid asperiores sit ea tempore vero autem voluptatum? Molestiae necessitatibus neque totam repudiandae expedita, optio iste reprehenderit voluptatibus quis, nobis est illum voluptatem autem? Repellendus id rem aliquid maxime, accusamus aut a earum incidunt ad.</p>
-            </div>
-        </div>
-        <div class="blog">
-            <div class="thisClose allcr"><span><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.75 5.25L5.25 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.25 5.25L15.75 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div>
-            <div class="conttainer">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="blog-blk">
-                            <img src="assets/img/a-bac5.png" alt="">
-                            <h5>Lorem ipsum dolor sit amet consectetur</h5>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, accusamus nostrum labore quam maxime magni sequi veniam quasi sed tenetur fuga! Exercitationem facere expedita nihil libero alias recusandae assumenda quo!</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="blog-blk">
-                            <img src="assets/img/a-bac5.png" alt="">
-                            <h5>Lorem ipsum dolor sit amet consectetur</h5>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, accusamus nostrum labore quam maxime magni sequi veniam quasi sed tenetur fuga! Exercitationem facere expedita nihil libero alias recusandae assumenda quo!</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="blog-blk">
-                            <img src="assets/img/a-bac5.png" alt="">
-                            <h5>Lorem ipsum dolor sit amet consectetur</h5>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, accusamus nostrum labore quam maxime magni sequi veniam quasi sed tenetur fuga! Exercitationem facere expedita nihil libero alias recusandae assumenda quo!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Privacy / Cookie / Blog area END -->
-
 
 
 
 
 		<!-- JS here --> 
-        <script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous"></script>
-        <script src="assets/js/popper.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/vendor/contentLoading.js"></script> 
-        <script src="assets/js/jquery.nice-select.min.js"></script>
-        <script src="assets/js/main.js"></script> 
+        <script src="../assets/js/vendor/jquery-3.4.1.min.js"></script>
+        <script src="../assets/js/popper.min.js"></script>
+        <script src="../assets/js/bootstrap.min.js"></script>
+        <script src="../assets/js/jquery.nice-select.min.js"></script>
+        <script src="../assets/js/main.js"></script> 
     </body>
 </html>

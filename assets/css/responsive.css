@@ -92,9 +92,9 @@
     .ssp.flights .right-wrp .all-flights p {
         margin-bottom: 50px;
     }
-    .left-wrp h1 {
-        font-size: 100px; 
-        line-height: 130.98px;
+    .left-wrp h1 {    
+        font-size: 78px;
+        line-height: 120.98px;
     }
     .fclasse{
         height: 100%;
@@ -317,6 +317,10 @@ body.pageIn.sspIn.f_class .fclasse.cl_Show {
     background: url(../img/a-bac2.png);
     background-size: cover;
     background-position: center;
+    padding-bottom: 250px;
+}
+.sub-page-area.services .footer {
+    bottom: -40px;
 }
 .first::after,
 .business::after,
@@ -397,12 +401,37 @@ body.experinces .sub-page-area.getaquote{
     right: 15px;
 }
 
+.blog .thisClose.allcr {
+    top: 5px;
+    transform: scale(.5);
+    right: 15px;
+}
+.blog { 
+  padding-top: 65px;
+}
+.sub-page-area.about {
+    padding-bottom: 150px;
+}
+.sub-page-area.about .footer {
+    bottom: 50px;
+}
 
 }
 
  
 /* small screen :320px. */
 @media (max-width: 767px) {
+    .theme-btn { 
+        padding: 10px 10px; 
+    }
+
+    .theme-btn:hover:after {
+        transform: translate(32px, -7px);
+    }
+    .blog .thisClose.allcr {
+        top: 5px;
+    }
+    
     .menuIcon {
         opacity: 1;
         visibility: visible;
@@ -496,9 +525,14 @@ body.experinces .sub-page-area.getaquote{
     }
     .left-wrp h1 {
         margin-bottom: 0px;
-        font-size: 64px;
+        font-size: 50px;
         line-height: 70px;
         margin-top: 30px;
+        margin-left: -20px;
+    }
+
+    .ssp.experiences .right-wrp h5 {
+        margin-bottom: 50px;
     }
     .left-wrp h5 {
         font-size: 17px;
@@ -588,7 +622,7 @@ body.pageIn .all-inner .upNow {
 }
 
 .left-side.blk-in-md {
-    max-height: 370px;
+    max-height: 300px;
     padding-left: 20px;
 }
 body.sspIn .service-sub-pages .pShow {
@@ -668,6 +702,10 @@ body.pageIn.sspIn.f_class .fclasse.cl_Show {
     background: url(../img/a-bac6.png);
     background-size: cover;
     background-position: center;
+    padding-bottom: 40px;
+}
+.sub-page-area.contact .footer {
+    bottom: 160px;
 }
 .ssp.flights {
     background: url(../img/a-bac2.png);
@@ -679,6 +717,10 @@ body.pageIn.sspIn.f_class .fclasse.cl_Show {
     background: url(../img/a-bac2.png);
     background-size: cover;
     background-position: center;
+    padding-bottom: 50px;
+}
+.sub-page-area.services  .footer {
+    bottom: 145px; 
 }
 form .inp-group.middle {
     width: 100%;
@@ -777,7 +819,7 @@ ul#pills-tab li button {
     z-index: 888; 
 }
 .ssp .footer {
-    bottom: 400px;
+    bottom: 315px;
 }
 .forAgree button.theme-btn {
     margin-top: 16px;
@@ -808,5 +850,14 @@ form-page ul#pills-tab {
     top: 15px;
     right: 15px;
 }
+.blog { 
+  padding-top: 65px;
+}
+.ssp.hotels .left-side.blk-in-md {
+    max-height: 300px;
+}
 
+.ssp.hotels .right-side .footer {
+    bottom: 325px;
+}
 } 

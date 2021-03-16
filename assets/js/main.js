@@ -267,27 +267,118 @@
 
     // Signup/contact/subscribe
     function GetForm() {
-        let btn         = document.querySelector('.getForm')
-        let formBlock   = document.querySelector('.inner_datail_pages')
-        let closeBtn    = document.querySelector('.inner_datail_pages .thisClose')
 
-        // Form sention comming
-        window.addEventListener('click', (e) => {
-            e.preventDefault()
-            if (e.target.classList.contains('getForm')) {
+        // Signup/contact/subscribe
+        function SignupIn() { 
+            let btn         = document.querySelector('.getForm')
+            let formBlock   = document.querySelector('.inner_datail_pages')
+            let closeBtn    = document.querySelector('.inner_datail_pages .thisClose')
+
+            // Form section comming
+            window.addEventListener('click', (e) => {
+                if (e.target.classList.contains('getForm')) {
+                    e.preventDefault()
+                    formBlock.classList.add('takeForm')
+                } 
+            })
+            btn.addEventListener('click', () => {
                 formBlock.classList.add('takeForm')
-            } 
-        })
-        btn.addEventListener('click', () => {
-            formBlock.classList.add('takeForm')
-        })
-        // Form sention closing
-        closeBtn.addEventListener('click', () => {
-            formBlock.classList.remove('takeForm')
-        })
+            })
+            // Form sention closing
+            closeBtn.addEventListener('click', () => {
+                formBlock.classList.remove('takeForm')
+            })
+        }
+        SignupIn()
+
+        // Get in touch
+        function GetnTouch() {
+            let btn         = document.querySelector('.getintouchnow')
+            let formBlock   = document.querySelector('.getinTouches')
+            let closeBtn    = document.querySelector('.getinTouches .thisClose')
+
+            // Form section comming
+            window.addEventListener('click', (e) => {
+                if (e.target.classList.contains('getintouchnow')) {
+                    e.preventDefault()
+                    formBlock.classList.add('touchNow')
+                } 
+            })
+            // Form sention closing
+            closeBtn.addEventListener('click', () => {
+                formBlock.classList.remove('touchNow')
+            })
+
+        }
+        GetnTouch()
+ 
+        // privacy
+        function privacy() {
+            let btn         = document.querySelector('.privacybtn')
+            let formBlock   = document.querySelector('.privacy')
+            let closeBtn    = document.querySelector('.privacy .thisClose')
+
+            // Form section comming
+            window.addEventListener('click', (e) => {
+                if (e.target.classList.contains('privacybtn')) {
+                    e.preventDefault()
+                    formBlock.classList.add('touchNow')
+                } 
+            })
+            // Form sention closing
+            closeBtn.addEventListener('click', () => {
+                formBlock.classList.remove('touchNow')
+            })
+
+        }
+        privacy()
+ 
+        // cookie
+        function cookie() {
+            let btn         = document.querySelector('.cookiebtn')
+            let formBlock   = document.querySelector('.cookie')
+            let closeBtn    = document.querySelector('.cookie .thisClose')
+
+            // Form section comming
+            window.addEventListener('click', (e) => {
+                if (e.target.classList.contains('cookiebtn')) {
+                    e.preventDefault()
+                    formBlock.classList.add('touchNow')
+                } 
+            })
+            // Form sention closing
+            closeBtn.addEventListener('click', () => {
+                formBlock.classList.remove('touchNow')
+            })
+
+        }
+        cookie()
+ 
+        // blog
+        function blog() {
+            let btn         = document.querySelector('.blogbtn')
+            let formBlock   = document.querySelector('.blog')
+            let closeBtn    = document.querySelector('.blog .thisClose')
+
+            // Form section comming
+            window.addEventListener('click', (e) => {
+                if (e.target.classList.contains('blogbtn')) {
+                    e.preventDefault()
+                    formBlock.classList.add('touchNow')
+                } 
+            })
+            // Form sention closing
+            closeBtn.addEventListener('click', () => {
+                formBlock.classList.remove('touchNow')
+            })
+
+        }
+        blog()
 
     }
     GetForm()
+
+
 
 
     // Date-Picker

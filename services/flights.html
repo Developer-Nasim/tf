@@ -10,7 +10,7 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Travel Seller</title>
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
-		<link rel="shortcut icon" type="image/x-icon" href="assets/img/logo.png">
+		<link rel="shortcut icon" type="image/x-icon" href="../assets/img/logo.png">
         <!-- Place favicon.ico in the root directory -->
         
 		<!-- CSS here -->
@@ -49,11 +49,14 @@
                 overflow: hidden;
                 position: relative;
             }
+            .service-sub-pages .ssp{
+                position: relative;
+                visibility: visible;
+                opacity: 1;
+                transform: scale(1);
+            }
 
 
-            .sub-page-area .footer {
-                    bottom: -30px;
-                }
             @media (min-width: 992px) and (max-width: 1500px){
                 .right-wrp p {
                     margin-bottom: 45px;
@@ -69,13 +72,14 @@
                 }
             }
             @media (min-width: 766px) and (max-width: 991px){
-                .sub-page-area .footer {
-                    bottom: -20px;
+             
+                .ssp .footer {
+                    bottom: -40px;
                 }
-                .sub-page-area{
-                    height: 100%;
-                    padding-bottom: 50px;
-                } 
+                .service-sub-pages .ssp{
+                    padding-bottom: 70px;
+                }
+                
             }
             @media (max-width: 767px){
                 .left-side.blk-in-md {
@@ -88,20 +92,16 @@
                 .features ul li.touch-btn { 
                     margin-top: 40px;
                 }
-                .sub-page-area .footer {
-                    bottom: -20px;
+                .ssp .footer {
+                 bottom: -40px;
                 }
-                .sub-page-area{
+                .service-sub-pages .ssp{
+                    padding-bottom: 70px;
+                }
+                .ssp.flights{
                     height: 100%;
-                    padding-bottom: 50px;
-                } 
+                }
             }
-
-
-
-
-
-
         </style>
     </head>
     <body>
@@ -109,56 +109,7 @@
  
         <!-- All-inner pages START -->
         <div class="all-inner"> 
-            
-            <!-- Services-area START  -->
-            <div class="sub-page-area services">
-                
-                <!-- sub-page-ken-animation -->
-                <div class="ken-img first"> 
-                    <img class="backg" src="../assets/img/a-bac2.png"alt="">
-                    <img class="backg" src="../assets/img/a-bac7.png"alt="">
-                    <img class="backg" src="../assets/img/a-bac8.png"alt="">
-                    <img class="backg" src="../assets/img/a-bac6.png"alt=""> 
-                </div>
-                <!-- sub-page-ken-animation -->
-
-                <div class="left-side" style="background: url(../assets/img/a-bac2.png);">
-                    <a href="../index.html" class="logo"><img src="../assets/img/logo.png" alt=""></a>
-
-                    <!-- left-side-ken-animation -->
-                    <div class="ken-img"> 
-                        <img class="backg" src="../assets/img/a-bac2.png"alt="">
-                        <img class="backg" src="../assets/img/a-bac7.png"alt="">
-                        <img class="backg" src="../assets/img/a-bac8.png"alt="">
-                        <img class="backg" src="../assets/img/a-bac6.png"alt=""> 
-                    </div>
-                    <!-- left-side-ken-animation -->
-
-                    <div class="left-wrp">
-                        <h1>Travel seller</h1>
-                        <h5>creating unforgettable journeys</h5>
-                    </div>
-                    <div class="thisClose mainPageClose"><a href="../index.html">Close <span><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.75 5.25L5.25 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.25 5.25L15.75 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></div>
-                </div>
-                <div class="right-side">
-                    <div class="right-wrp">
-                        <h5>services</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi blandit cursus risus at. Libero justo laoreet sit amet cursus sit amet dictum sit. Curabitur gravida arcu ac tortor. Consectetur a erat nam at lectus urna duis convallis</p>  
-                        <div class="ser-details">
-                            <ul>
-                                <li data-page="flights"><h1>flights</h1> <h5>luxury cabins</h5></li>
-                                <li data-page="hotels"><h1>hotels</h1> <h5>4+ stars</h5></li>
-                                <li data-page="experiences"><h1>experiences</h1> <h5>10+ types</h5></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="footer"> 
-                        <a href="#" class="getForm">newsletter / contact</a>
-                    </div>
-                </div>
-            </div>  
-           <!-- Services-area END -->
-  
+             
 
               <!--
                     Service sub pages START 
@@ -167,7 +118,7 @@
                     <!-- Flights -->
                     <div class="ssp flights">
                 
-                        <div class="thisClose allcr"><span><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.75 5.25L5.25 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.25 5.25L15.75 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+                        <div class="thisClose allcr"><a href="../index.html"><span><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.75 5.25L5.25 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.25 5.25L15.75 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></div>
 
                         <!-- sub-page-ken-animation -->
                         <div class="ken-img first"> 
@@ -178,7 +129,7 @@
                         </div>
                         <!-- sub-page-ken-animation -->
         
-                        <div class="left-side blk-in-md" style="background: url(../assets/img/a-bac2.png);background-size: cover;background-position: center;"> 
+                        <div class="left-side blk-in-md" style="background: url(../assets/img/a-bac2.png);background-size: cover;background-position: center;opacity: 1;"> 
                             
                             <!-- left-side-ken-animation -->
                             <div class="ken-img"> 
@@ -194,7 +145,7 @@
                                 <h1>flights</h1>
                             </div>
                         </div>
-                        <div class="right-side"> 
+                        <div class="right-side" style="opacity: 1;"> 
                             <div class="right-wrp">
                                 <div class="all-flights">
                                     <ul>
@@ -205,101 +156,6 @@
                                 </div>
                             </div>
                             <div class="footer"> 
-                                <a href="#" class="getForm">newsletter / contact</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- hotels -->
-                    <div class="ssp hotels">
-                
-                        <div class="thisClose allcr"><span><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.75 5.25L5.25 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.25 5.25L15.75 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-
-                        <!-- sub-page-ken-animation -->
-                        <div class="ken-img first"> 
-                            <img class="backg" src="../assets/img/a-bac2.png"alt="">
-                            <img class="backg" src="../assets/img/a-bac7.png"alt="">
-                            <img class="backg" src="../assets/img/a-bac8.png"alt="">
-                            <img class="backg" src="../assets/img/a-bac6.png"alt=""> 
-                        </div>
-                        <!-- sub-page-ken-animation -->
-        
-                        <div class="left-side blk-in-md" style="background: url(../assets/img/a-bac2.png);background-size: cover;background-position: center;"> 
-                            
-                            <!-- left-side-ken-animation -->
-                            <div class="ken-img"> 
-                                <img class="backg" src="../assets/img/a-bac2.png"alt="">
-                                <img class="backg" src="../assets/img/a-bac7.png"alt="">
-                                <img class="backg" src="../assets/img/a-bac8.png"alt="">
-                                <img class="backg" src="../assets/img/a-bac6.png"alt=""> 
-                            </div>
-                            <!-- left-side-ken-animation --> 
-
-                            <a href="../index.html" class="logo"><img src="../assets/img/logo.png" alt=""></a>
-                            <div class="left-wrp">
-                                <h1>hotels</h1>
-                            </div>
-                        </div>
-                        <div class="right-side"> 
-                            <div class="right-wrp">
-                                <h5>hotels</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quia minus delectus reprehenderit aspernatur? Eligendi consectetur, eos sapiente dolore nesciunt maxime quibusdam, velit odio maiores placeat doloribus ex error rem.</p>
-                                <div class="all-flights">
-                                    <ul>
-                                        <li data-page="luxury"><h1>luxury hotels</h1></li>
-                                        <li data-page="hotelscity"><h1>hotels in city </h1></li>
-                                        <li data-page="hotelpage"><h1>hotel page</h1></li>
-                                        <li data-page="luxuryvillas"><h1>luxury villas</h1></li>
-                                        <li data-page="city"><h1>city</h1></li>
-                                        <li data-page="villapage"><h1>villa page</h1></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="footer"> 
-                                <a href="#" class="getForm">newsletter / contact</a>
-                            </div>
-                        </div>
-                    </div> 
-                    <!-- experiences -->
-                    <div class="ssp experiences">
-                
-                        <div class="thisClose allcr"><span><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.75 5.25L5.25 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.25 5.25L15.75 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-
-                        <!-- sub-page-ken-animation -->
-                        <div class="ken-img first"> 
-                            <img class="backg" src="../assets/img/a-bac2.png"alt="">
-                            <img class="backg" src="../assets/img/a-bac7.png"alt="">
-                            <img class="backg" src="../assets/img/a-bac8.png"alt="">
-                            <img class="backg" src="../assets/img/a-bac6.png"alt=""> 
-                        </div>
-                        <!-- sub-page-ken-animation -->
-        
-                        <div class="left-side blk-in-md" style="background: url(../assets/img/a-bac2.png);background-size: cover;background-position: center;"> 
-                            
-                            <!-- left-side-ken-animation -->
-                            <div class="ken-img"> 
-                                <img class="backg" src="../assets/img/a-bac2.png"alt="">
-                                <img class="backg" src="../assets/img/a-bac7.png"alt="">
-                                <img class="backg" src="../assets/img/a-bac8.png"alt="">
-                                <img class="backg" src="../assets/img/a-bac6.png"alt=""> 
-                            </div>
-                            <!-- left-side-ken-animation --> 
-
-                            <a href="../index.html" class="logo"><img src="../assets/img/logo.png" alt=""></a>
-                            <div class="left-wrp">
-                                <h1>experiences</h1>
-                            </div>
-                        </div>
-                        <div class="right-side"> 
-                            <div class="right-wrp">
-                                <h5>experiences</h5>
-                                <div class="all-flights">
-                                    <ul>
-                                        <li data-page="citycountry"><h1>City/Country</h1> <p>Ensuring you are comfortable and well rested, First Class cabins will transform your journey into the ultimate luxury experience. </p></li>
-                                        <li data-page="tours"><h1>Tours </h1> <p>Successful business conferences and meetings require your full attention and concentration. Ensuring good sleep throughout your journey is a key step in this aspect.</p></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="footer">
                                 <a href="#" class="getForm">newsletter / contact</a>
                             </div>
                         </div>
@@ -375,7 +231,7 @@
                                 </div>
                                 <!-- sub-page-ken-animation -->
                 
-                                <div class="left-side" style="background-image: url(../assets/img/a-bac4.png);">
+                                <div class="left-side" style="background-image: url(assets/img/a-bac4.png);">
                             
                                     <!-- left-side-ken-animation -->
                                     <div class="ken-img"> 
@@ -453,6 +309,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <!-- ========= Hotels Sub pages ========= --> 
                                 <!-- Private Jets -->
                                 <div class="fclasse privatejets">
@@ -495,8 +352,7 @@
                                             <a href="#" class="getForm">newsletter / contact</a>
                                         </div>
                                     </div>
-                                </div>
-
+                                </div> 
                                 <!-- international -->
                                 <div class="fclasse international">
                     
@@ -538,8 +394,7 @@
                                             <a href="#" class="getForm">newsletter / contact</a>
                                         </div>
                                     </div>
-                                </div>
-
+                                </div> 
                                 <!-- Private Jets -->
                                 <div class="fclasse northamerica">
                     
@@ -581,355 +436,7 @@
                                             <a href="#" class="getForm">newsletter / contact</a>
                                         </div>
                                     </div>
-                                </div>
- 
-
-                            <!-- ========= Hotels Sub pages ========= -->
-
-                                <!-- luxury hotels -->
-                                <div class="fclasse luxury">
-                    
-                                    <div class="thisClose allcr"><span><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.75 5.25L5.25 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.25 5.25L15.75 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-
-                                    <!-- sub-page-ken-animation -->
-                                    <div class="ken-img first"> 
-                                        <img class="backg" src="../assets/img/a-bac2.png"alt="">
-                                        <img class="backg" src="../assets/img/a-bac7.png"alt="">
-                                        <img class="backg" src="../assets/img/a-bac8.png"alt="">
-                                        <img class="backg" src="../assets/img/a-bac6.png"alt=""> 
-                                    </div>
-                                    <!-- sub-page-ken-animation -->
-                    
-                                    <div class="left-side" style="background-image: url(../assets/img/a-bac3.png);">
-                                
-                                        <!-- left-side-ken-animation -->
-                                        <div class="ken-img"> 
-                                            <img class="backg" src="../assets/img/a-bac2.png"alt="">
-                                            <img class="backg" src="../assets/img/a-bac7.png"alt="">
-                                            <img class="backg" src="../assets/img/a-bac8.png"alt="">
-                                            <img class="backg" src="../assets/img/a-bac6.png"alt=""> 
-                                        </div>
-                                        <!-- left-side-ken-animation -->  
-            
-                                        <a href="../index.html" class="logo"><img src="../assets/img/logo.png" alt=""></a>
-                                        <div class="left-wrp">
-                                            <h1>luxury hotels</h1>
-                                            <a href="#" class="theme-btn getintouchnow">get in touch</a>
-                                        </div>
-                                    </div>
-                                    <div class="right-side"> 
-                                        <div class="right-wrp p_spaceh">
-                                            <h5>luxury hotels</h5>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus qui ipsa deleniti distinctio nesciunt architecto veritatis corporis debitis, officia ut in iusto neque sapiente quidem, earum quisquam tenetur deserunt. Magnam.</p>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus qui ipsa deleniti distinctio nesciunt architecto veritatis corporis debitis, officia ut in iusto neque sapiente quidem, earum quisquam tenetur deserunt. Magnam.</p>
-                                        </div>
-                                        <div class="footer">
-                                            <a href="#" class="getForm">newsletter / contact</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- hotels in city -->
-                                <div class="fclasse hotelscity">
-                    
-                                    <div class="thisClose allcr"><span><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.75 5.25L5.25 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.25 5.25L15.75 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-
-                                    <!-- sub-page-ken-animation -->
-                                    <div class="ken-img first"> 
-                                        <img class="backg" src="../assets/img/a-bac2.png"alt="">
-                                        <img class="backg" src="../assets/img/a-bac7.png"alt="">
-                                        <img class="backg" src="../assets/img/a-bac8.png"alt="">
-                                        <img class="backg" src="../assets/img/a-bac6.png"alt=""> 
-                                    </div>
-                                    <!-- sub-page-ken-animation -->
-                    
-                                    <div class="left-side" style="background-image: url(../assets/img/a-bac3.png);">
-                                
-                                        <!-- left-side-ken-animation -->
-                                        <div class="ken-img"> 
-                                            <img class="backg" src="../assets/img/a-bac2.png"alt="">
-                                            <img class="backg" src="../assets/img/a-bac7.png"alt="">
-                                            <img class="backg" src="../assets/img/a-bac8.png"alt="">
-                                            <img class="backg" src="../assets/img/a-bac6.png"alt=""> 
-                                        </div>
-                                        <!-- left-side-ken-animation -->  
-            
-                                        <a href="../index.html" class="logo"><img src="../assets/img/logo.png" alt=""></a>
-                                        <div class="left-wrp">
-                                            <h1>hotels in city</h1>
-                                            <a href="#" class="theme-btn getintouchnow">get in touch</a>
-                                        </div>
-                                    </div>
-                                    <div class="right-side"> 
-                                        <div class="right-wrp p_spaceh">
-                                            <h5>hotels in city</h5>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus qui ipsa deleniti distinctio nesciunt architecto veritatis corporis debitis, officia ut in iusto neque sapiente quidem, earum quisquam tenetur deserunt. Magnam.</p>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus qui ipsa deleniti distinctio nesciunt architecto veritatis corporis debitis, officia ut in iusto neque sapiente quidem, earum quisquam tenetur deserunt. Magnam.</p>
-                                        </div>
-                                        <div class="footer">
-                                            <a href="#" class="getForm">newsletter / contact</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- hotel page -->
-                                <div class="fclasse hotelpage">
-                    
-                                    <div class="thisClose allcr"><span><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.75 5.25L5.25 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.25 5.25L15.75 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-
-                                    <!-- sub-page-ken-animation -->
-                                    <div class="ken-img first"> 
-                                        <img class="backg" src="../assets/img/a-bac2.png"alt="">
-                                        <img class="backg" src="../assets/img/a-bac7.png"alt="">
-                                        <img class="backg" src="../assets/img/a-bac8.png"alt="">
-                                        <img class="backg" src="../assets/img/a-bac6.png"alt=""> 
-                                    </div>
-                                    <!-- sub-page-ken-animation -->
-                    
-                                    <div class="left-side" style="background-image: url(../assets/img/a-bac3.png);">
-                                
-                                        <!-- left-side-ken-animation -->
-                                        <div class="ken-img"> 
-                                            <img class="backg" src="../assets/img/a-bac2.png"alt="">
-                                            <img class="backg" src="../assets/img/a-bac7.png"alt="">
-                                            <img class="backg" src="../assets/img/a-bac8.png"alt="">
-                                            <img class="backg" src="../assets/img/a-bac6.png"alt=""> 
-                                        </div>
-                                        <!-- left-side-ken-animation -->  
-            
-                                        <a href="../index.html" class="logo"><img src="../assets/img/logo.png" alt=""></a>
-                                        <div class="left-wrp">
-                                            <h1>hotel page</h1>
-                                            <a href="#" class="theme-btn getintouchnow">get in touch</a>
-                                        </div>
-                                    </div>
-                                    <div class="right-side"> 
-                                        <div class="right-wrp p_spaceh">
-                                            <h5>hotel page</h5>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus qui ipsa deleniti distinctio nesciunt architecto veritatis corporis debitis, officia ut in iusto neque sapiente quidem, earum quisquam tenetur deserunt. Magnam.</p>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus qui ipsa deleniti distinctio nesciunt architecto veritatis corporis debitis, officia ut in iusto neque sapiente quidem, earum quisquam tenetur deserunt. Magnam.</p>
-                                        </div>
-                                        <div class="footer">
-                                            <a href="#" class="getForm">newsletter / contact</a>
-                                        </div>
-                                    </div>
                                 </div> 
-                                <!-- luxury villas -->
-                                <div class="fclasse luxuryvillas">
-                    
-                                    <div class="thisClose allcr"><span><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.75 5.25L5.25 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.25 5.25L15.75 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-
-                                    <!-- sub-page-ken-animation -->
-                                    <div class="ken-img first"> 
-                                        <img class="backg" src="../assets/img/a-bac2.png"alt="">
-                                        <img class="backg" src="../assets/img/a-bac7.png"alt="">
-                                        <img class="backg" src="../assets/img/a-bac8.png"alt="">
-                                        <img class="backg" src="../assets/img/a-bac6.png"alt=""> 
-                                    </div>
-                                    <!-- sub-page-ken-animation -->
-                    
-                                    <div class="left-side" style="background-image: url(../assets/img/a-bac3.png);">
-                                
-                                        <!-- left-side-ken-animation -->
-                                        <div class="ken-img"> 
-                                            <img class="backg" src="../assets/img/a-bac2.png"alt="">
-                                            <img class="backg" src="../assets/img/a-bac7.png"alt="">
-                                            <img class="backg" src="../assets/img/a-bac8.png"alt="">
-                                            <img class="backg" src="../assets/img/a-bac6.png"alt=""> 
-                                        </div>
-                                        <!-- left-side-ken-animation -->  
-            
-                                        <a href="../index.html" class="logo"><img src="../assets/img/logo.png" alt=""></a>
-                                        <div class="left-wrp">
-                                            <h1>luxury villas</h1>
-                                            <a href="#" class="theme-btn getintouchnow">get in touch</a>
-                                        </div>
-                                    </div>
-                                    <div class="right-side"> 
-                                        <div class="right-wrp p_spaceh">
-                                            <h5>luxury villas</h5>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus qui ipsa deleniti distinctio nesciunt architecto veritatis corporis debitis, officia ut in iusto neque sapiente quidem, earum quisquam tenetur deserunt. Magnam.</p>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus qui ipsa deleniti distinctio nesciunt architecto veritatis corporis debitis, officia ut in iusto neque sapiente quidem, earum quisquam tenetur deserunt. Magnam.</p>
-                                        </div>
-                                        <div class="footer">
-                                            <a href="#" class="getForm">newsletter / contact</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- city -->
-                                <div class="fclasse city">
-                    
-                                    <div class="thisClose allcr"><span><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.75 5.25L5.25 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.25 5.25L15.75 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-
-                                    <!-- sub-page-ken-animation -->
-                                    <div class="ken-img first"> 
-                                        <img class="backg" src="../assets/img/a-bac2.png"alt="">
-                                        <img class="backg" src="../assets/img/a-bac7.png"alt="">
-                                        <img class="backg" src="../assets/img/a-bac8.png"alt="">
-                                        <img class="backg" src="../assets/img/a-bac6.png"alt=""> 
-                                    </div>
-                                    <!-- sub-page-ken-animation -->
-                    
-                                    <div class="left-side" style="background-image: url(../assets/img/a-bac3.png);">
-                                
-                                        <!-- left-side-ken-animation -->
-                                        <div class="ken-img"> 
-                                            <img class="backg" src="../assets/img/a-bac2.png"alt="">
-                                            <img class="backg" src="../assets/img/a-bac7.png"alt="">
-                                            <img class="backg" src="../assets/img/a-bac8.png"alt="">
-                                            <img class="backg" src="../assets/img/a-bac6.png"alt=""> 
-                                        </div>
-                                        <!-- left-side-ken-animation -->  
-            
-                                        <a href="../index.html" class="logo"><img src="../assets/img/logo.png" alt=""></a>
-                                        <div class="left-wrp">
-                                            <h1>city</h1>
-                                            <a href="#" class="theme-btn getintouchnow">get in touch</a>
-                                        </div>
-                                    </div>
-                                    <div class="right-side"> 
-                                        <div class="right-wrp p_spaceh">
-                                            <h5>city</h5>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus qui ipsa deleniti distinctio nesciunt architecto veritatis corporis debitis, officia ut in iusto neque sapiente quidem, earum quisquam tenetur deserunt. Magnam.</p>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus qui ipsa deleniti distinctio nesciunt architecto veritatis corporis debitis, officia ut in iusto neque sapiente quidem, earum quisquam tenetur deserunt. Magnam.</p>
-                                        </div>
-                                        <div class="footer">
-                                            <a href="#" class="getForm">newsletter / contact</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- villa page -->
-                                <div class="fclasse villapage">
-                    
-                                    <div class="thisClose allcr"><span><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.75 5.25L5.25 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.25 5.25L15.75 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-
-                                    <!-- sub-page-ken-animation -->
-                                    <div class="ken-img first"> 
-                                        <img class="backg" src="../assets/img/a-bac2.png"alt="">
-                                        <img class="backg" src="../assets/img/a-bac7.png"alt="">
-                                        <img class="backg" src="../assets/img/a-bac8.png"alt="">
-                                        <img class="backg" src="../assets/img/a-bac6.png"alt=""> 
-                                    </div>
-                                    <!-- sub-page-ken-animation -->
-                    
-                                    <div class="left-side" style="background-image: url(../assets/img/a-bac3.png);">
-                                
-                                        <!-- left-side-ken-animation -->
-                                        <div class="ken-img"> 
-                                            <img class="backg" src="../assets/img/a-bac2.png"alt="">
-                                            <img class="backg" src="../assets/img/a-bac7.png"alt="">
-                                            <img class="backg" src="../assets/img/a-bac8.png"alt="">
-                                            <img class="backg" src="../assets/img/a-bac6.png"alt=""> 
-                                        </div>
-                                        <!-- left-side-ken-animation -->  
-            
-                                        <a href="../index.html" class="logo"><img src="../assets/img/logo.png" alt=""></a>
-                                        <div class="left-wrp">
-                                            <h1>villa page</h1>
-                                            <a href="#" class="theme-btn getintouchnow">get in touch</a>
-                                        </div>
-                                    </div>
-                                    <div class="right-side"> 
-                                        <div class="right-wrp p_spaceh">
-                                            <h5>villa page</h5>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus qui ipsa deleniti distinctio nesciunt architecto veritatis corporis debitis, officia ut in iusto neque sapiente quidem, earum quisquam tenetur deserunt. Magnam.</p>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus qui ipsa deleniti distinctio nesciunt architecto veritatis corporis debitis, officia ut in iusto neque sapiente quidem, earum quisquam tenetur deserunt. Magnam.</p>
-                                        </div>
-                                        <div class="footer">
-                                            <a href="#" class="getForm">newsletter / contact</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
-                            <!-- ========= Exprinces Sub pages ========= -->
-
-                                <!-- city / country hotels -->
-                                <div class="fclasse citycountry">
-                    
-                                    <div class="thisClose allcr"><span><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.75 5.25L5.25 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.25 5.25L15.75 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-
-                                    <!-- sub-page-ken-animation -->
-                                    <div class="ken-img first"> 
-                                        <img class="backg" src="../assets/img/a-bac2.png"alt="">
-                                        <img class="backg" src="../assets/img/a-bac7.png"alt="">
-                                        <img class="backg" src="../assets/img/a-bac8.png"alt="">
-                                        <img class="backg" src="../assets/img/a-bac6.png"alt=""> 
-                                    </div>
-                                    <!-- sub-page-ken-animation -->
-                    
-                                    <div class="left-side" style="background-image: url(../assets/img/a-bac3.png);">
-                                
-                                        <!-- left-side-ken-animation -->
-                                        <div class="ken-img"> 
-                                            <img class="backg" src="../assets/img/a-bac2.png"alt="">
-                                            <img class="backg" src="../assets/img/a-bac7.png"alt="">
-                                            <img class="backg" src="../assets/img/a-bac8.png"alt="">
-                                            <img class="backg" src="../assets/img/a-bac6.png"alt=""> 
-                                        </div>
-                                        <!-- left-side-ken-animation -->  
-            
-                                        <a href="../index.html" class="logo"><img src="../assets/img/logo.png" alt=""></a>
-                                        <div class="left-wrp">
-                                            <h1>City/Country</h1>
-                                            <a href="#" class="theme-btn getintouchnow">get in touch</a>
-                                        </div>
-                                    </div>
-                                    <div class="right-side"> 
-                                        <div class="right-wrp p_spaceh">
-                                            <h5>City/Country</h5>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus qui ipsa deleniti distinctio nesciunt architecto veritatis corporis debitis, officia ut in iusto neque sapiente quidem, earum quisquam tenetur deserunt. Magnam.</p>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus qui ipsa deleniti distinctio nesciunt architecto veritatis corporis debitis, officia ut in iusto neque sapiente quidem, earum quisquam tenetur deserunt. Magnam.</p>
-                                        </div>
-                                        <div class="footer">
-                                            <a href="#" class="getForm">newsletter / contact</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Tours hotels -->
-                                <div class="fclasse tours">
-                    
-                                    <div class="thisClose allcr"><span><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.75 5.25L5.25 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.25 5.25L15.75 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-
-                                    <!-- sub-page-ken-animation -->
-                                    <div class="ken-img first"> 
-                                        <img class="backg" src="../assets/img/a-bac2.png"alt="">
-                                        <img class="backg" src="../assets/img/a-bac7.png"alt="">
-                                        <img class="backg" src="../assets/img/a-bac8.png"alt="">
-                                        <img class="backg" src="../assets/img/a-bac6.png"alt=""> 
-                                    </div>
-                                    <!-- sub-page-ken-animation -->
-                    
-                                    <div class="left-side" style="background-image: url(../assets/img/a-bac3.png);">
-                                
-                                        <!-- left-side-ken-animation -->
-                                        <div class="ken-img"> 
-                                            <img class="backg" src="../assets/img/a-bac2.png"alt="">
-                                            <img class="backg" src="../assets/img/a-bac7.png"alt="">
-                                            <img class="backg" src="../assets/img/a-bac8.png"alt="">
-                                            <img class="backg" src="../assets/img/a-bac6.png"alt=""> 
-                                        </div>
-                                        <!-- left-side-ken-animation -->  
-            
-                                        <a href="../index.html" class="logo"><img src="../assets/img/logo.png" alt=""></a>
-                                        <div class="left-wrp">
-                                            <h1>Tours</h1>
-                                            <a href="#" class="theme-btn getintouchnow">get in touch</a>
-                                        </div>
-                                    </div>
-                                    <div class="right-side"> 
-                                        <div class="right-wrp p_spaceh">
-                                            <h5>Tours</h5>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus qui ipsa deleniti distinctio nesciunt architecto veritatis corporis debitis, officia ut in iusto neque sapiente quidem, earum quisquam tenetur deserunt. Magnam.</p>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus qui ipsa deleniti distinctio nesciunt architecto veritatis corporis debitis, officia ut in iusto neque sapiente quidem, earum quisquam tenetur deserunt. Magnam.</p>
-                                        </div>
-                                        <div class="footer">
-                                            <a href="#" class="getForm">newsletter / contact</a>
-                                        </div>
-                                    </div>
-                                </div>
-    
-
                         </div>
                         <!-- 
                             Flight sub pages END 
@@ -938,7 +445,6 @@
         </div>
         <!-- All-inner pages END -->
   
- 
         <!-- Signup/subscribe/contact  area START --> 
         <div class="inner_datail_pages">
             <div class="thisClose allcr"><span><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.75 5.25L5.25 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.25 5.25L15.75 15.75" stroke="#DCDCDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div>
@@ -1064,7 +570,6 @@
             </div>
         </div> 
         <!-- Signup/subscribe/contact  area END --> 
-  
  
         <!-- getinTouches area START --> 
         <div class="getinTouches">
@@ -1107,68 +612,6 @@
         <script src="../assets/js/popper.min.js"></script>
         <script src="../assets/js/bootstrap.min.js"></script>
         <script src="../assets/js/jquery.nice-select.min.js"></script>
-        <script src="../assets/js/main.js"></script>
-        <script> 
-            function getPage() {
-                let services      = document.querySelectorAll('.ser-details li')
-                let servicesPages = document.querySelectorAll('.service-sub-pages .ssp')
-                services.forEach(btn => {
-                    btn.addEventListener('click', () => {
-                        servicesPages.forEach(pages => {
-                            pages.classList.remove('showMe')
-                        })
-
-                        servicesPages.forEach(pages => {
-                            if (pages.classList.contains(btn.dataset.page)) {
-                                pages.classList.add('showMe')
-                            } 
-                        })
-                    })
-
-                }) 
-
-                let classMenu    = document.querySelectorAll('.all-flights ul li')
-                let flightClasse = document.querySelectorAll('.flight-pages .fclasse')
-                classMenu.forEach(btn => {
-                    btn.addEventListener('click', () => {
-                        flightClasse.forEach(pages => {
-                            pages.classList.remove('showMeAsClasses')
-                        }) 
-                        flightClasse.forEach(pages => {
-                            if (pages.classList.contains(btn.dataset.page)) {
-                                pages.classList.add('showMeAsClasses')
-                            } 
-                        })
-                    })
-
-                }) 
-
-                // Input animation
-                let closeBlk = document.querySelectorAll('.thisClose')
-                let closeBlksp = document.querySelectorAll('.thisClose span')
-                closeBlk.forEach(cBlk => { 
-                    cBlk.addEventListener('click', (e) => {
-                        if (e.target.parentElement.parentElement.classList.contains('showMe') || e.target.parentElement.parentElement.parentElement.classList.contains('showMe') || e.target.parentElement.parentElement.parentElement.parentElement.classList.contains('showMe')) {
-                            e.target.parentElement.parentElement.parentElement.classList.remove('showMe') || e.target.parentElement.parentElement.classList.remove('showMe') || e.target.parentElement.parentElement.parentElement.parentElement.classList.remove('showMe')
-                        } 
-                        if (e.target.parentElement.parentElement.classList.contains('showMeAsClasses') || e.target.parentElement.parentElement.parentElement.classList.contains('showMeAsClasses') || e.target.parentElement.parentElement.parentElement.parentElement.classList.contains('showMeAsClasses')) {
-                            e.target.parentElement.parentElement.parentElement.classList.remove('showMeAsClasses') || e.target.parentElement.parentElement.classList.remove('showMeAsClasses') || e.target.parentElement.parentElement.parentElement.parentElement.classList.remove('showMeAsClasses')
-                        } 
-                    })
-                })
-
-                closeBlksp.forEach(cBlksp => { 
-                    cBlksp.addEventListener('click', (e) => { 
-                        if (cBlksp.parentElement.parentElement.parentElement.parentElement.classList.contains('showMeAsClasses')) {
-                            cBlksp.parentElement.parentElement.parentElement.parentElement.classList.remove('showMeAsClasses')
-                        }
-                        if (cBlksp.parentElement.parentElement.parentElement.parentElement.classList.contains('showMe')) {
-                            cBlksp.parentElement.parentElement.parentElement.parentElement.classList.remove('showMe')
-                        }
-                    })
-                }) 
-            } 
-            getPage()
-        </script>
+        <script src="../assets/js/main.js"></script> 
     </body>
 </html>
