@@ -10,6 +10,7 @@
     } 
     Prealoder()
     
+
     // Cursor
     function Cursor() {
         const mouseCursor = document.querySelector(".cursor");
@@ -59,6 +60,7 @@
     } 
     Menus()
 
+
     // action stop of "A teg"
     function Actions() { 
         let all_a = document.querySelectorAll('up.menu-list a'); 
@@ -71,6 +73,7 @@
         }
     } 
     Actions()
+
 
     // Counter
     function Counters() { 
@@ -98,6 +101,7 @@
     } 
     Counters()
    
+
     // Get a Quote
     function Qetaquote() {
         let flight      = document.querySelector('#pills-flights-tab')
@@ -137,37 +141,44 @@
     }   
     Qetaquote()
     
-    // Input animation
-    window.addEventListener('click', (e) => {
-        let clickOneInp = e.target.classList.contains('placeholder') || e.target.classList.contains('inp') || e.target.classList.contains('icon')
-        if (clickOneInp) {
-            e.target.parentElement.classList.add('typeNow')
-        }
-    }) 
- 
-    // close
-    function closeIt() {
-        let closeIcon = document.querySelectorAll('.mainPageClose')
-        closeIcon.forEach(close => { 
-            close.addEventListener('click', () => {
-                let body  = document.querySelector('body')
-                let panel = document.querySelector('.willLoadContent')
-                body.classList.remove('fold-is-open')
-                panel.classList.remove('is-open')
-                setTimeout(() => {
-                    document.querySelector('.load_this').innerHTML = " "
-                }, 700);
-            })
-        })
-        setTimeout(() => {
-            closeIt()
-        }, 2000);
-    }
-    let tbcloso = document.querySelectorAll('.cd-item')
-    tbcloso.forEach(a => {
-        closeIt()
-    })
 
+    // Input animation
+    function InpAmi() { 
+        window.addEventListener('click', (e) => {
+            let clickOneInp = e.target.classList.contains('placeholder') || e.target.classList.contains('inp') || e.target.classList.contains('icon')
+            if (clickOneInp) {
+                e.target.parentElement.classList.add('typeNow')
+            }
+        }) 
+    }
+    InpAmi()
+
+
+    // close
+    function Closings() { 
+        function closeIt() {
+            let closeIcon = document.querySelectorAll('.mainPageClose')
+            closeIcon.forEach(close => { 
+                close.addEventListener('click', () => {
+                    let body  = document.querySelector('body')
+                    let panel = document.querySelector('.willLoadContent')
+                    body.classList.remove('fold-is-open')
+                    panel.classList.remove('is-open')
+                    setTimeout(() => {
+                        document.querySelector('.load_this').innerHTML = " "
+                    }, 700);
+                })
+            })
+            setTimeout(() => {
+                closeIt()
+            }, 2000);
+        }
+        let tbcloso = document.querySelectorAll('.cd-item')
+        tbcloso.forEach(a => {
+            closeIt()
+        }) 
+    }
+    Closings()
     // Get the the sub pages (e.g flight classes)
     function Fnc() {
         let services      = document.querySelectorAll('.ser-details li')
@@ -277,6 +288,229 @@
 
     }
     GetForm()
+
+
+    // Date-Picker
+    function DatePicker() {
+        let list = document.querySelector('.qoutes')
+        list.addEventListener('click', () => {
+            setInterval(() => { 
+                $( "#datepicker" ).datepicker({dateFormat: "dd-mm-yy",duration: "fast"});
+                $( "#datepicker2" ).datepicker({dateFormat: "dd-mm-yy",duration: "fast"});
+                $( "#activitystart" ).datepicker({dateFormat: "dd-mm-yy",duration: "fast"});
+                $( "#activityend" ).datepicker({dateFormat: "dd-mm-yy",duration: "fast"});
+                $( "#activityend2" ).datepicker({dateFormat: "dd-mm-yy",duration: "fast"});
+                $( "#activityend3" ).datepicker({dateFormat: "dd-mm-yy",duration: "fast"});
+            }, 100);
+        })
+    }
+    DatePicker()
+
+
+    // Auto complete now
+    function AutoComplate() {
+ 
+        // To
+        function To() {
+            window.addEventListener('keyup', (e) => {
+                let search = document.querySelector('.typeHere') 
+                if (e.target.classList.contains('typeHere')) {
+                    let search = document.querySelector('.typeHere') 
+                    CitySearch(search.value)
+                    CitySearchHtl(search.value)
+                    CitySearchExp(search.value)
+                    e.target.parentElement.classList.add('showAuto')
+                }
+                if (search.value >= 0) {
+                    e.target.parentElement.classList.remove('showAuto')
+                }  
+            }) 
+            function CitySearch(searchby) {
+                let ul = document.querySelector('.locationsto')
+                ul.innerHTML = " "
+                fetch('https://raw.githubusercontent.com/algolia/datasets/master/airports/airports.json')
+                .then(data => data.json())
+                .then(data => {
+                    let filtaring = data.filter(data => {  
+                        let rgx = new RegExp(searchby, 'gi')  
+                        let findit   =  data.city.match(rgx) || data.country.match(rgx) || data.iata_code.match(rgx) || data.name.match(rgx)
+                        if (findit) {
+                            return data
+                        }
+                    })
+                    filtaring.forEach(showData => { 
+                        let li = document.createElement('LI')
+                        li.classList.add('autolist')
+                        li.innerHTML = showData.city + " , " + showData.iata_code
+                        ul.append(li)
+                    });
+                
+                })
+                .catch(err => console.log(err.message))
+    
+            }  
+            function CitySearchHtl(searchby) {
+                let ul = document.querySelector('.locationst2')
+                ul.innerHTML = " "
+                fetch('https://raw.githubusercontent.com/algolia/datasets/master/airports/airports.json')
+                .then(data => data.json())
+                .then(data => {
+                    let filtaring = data.filter(data => {  
+                        let rgx = new RegExp(searchby, 'gi')  
+                        let findit   =  data.city.match(rgx) || data.country.match(rgx) || data.iata_code.match(rgx) || data.name.match(rgx)
+                        if (findit) {
+                            return data
+                        }
+                    })
+                    filtaring.forEach(showData => { 
+                        let li = document.createElement('LI')
+                        li.classList.add('autolist')
+                        li.innerHTML = showData.city + " , " + showData.iata_code
+                        ul.append(li)
+                    });
+                
+                })
+                .catch(err => console.log(err.message))
+    
+            } 
+            function CitySearchExp(searchby) {
+                let ul = document.querySelector('.locationst3')
+                ul.innerHTML = " "
+                fetch('https://raw.githubusercontent.com/algolia/datasets/master/airports/airports.json')
+                .then(data => data.json())
+                .then(data => {
+                    let filtaring = data.filter(data => {  
+                        let rgx = new RegExp(searchby, 'gi')  
+                        let findit   =  data.city.match(rgx) || data.country.match(rgx) || data.iata_code.match(rgx) || data.name.match(rgx)
+                        if (findit) {
+                            return data
+                        }
+                    })
+                    filtaring.forEach(showData => { 
+                        let li = document.createElement('LI')
+                        li.classList.add('autolist')
+                        li.innerHTML = showData.city + " , " + showData.iata_code
+                        ul.append(li)
+                    });
+                
+                })
+                .catch(err => console.log(err.message))
+    
+            } 
+            window.addEventListener('click', (e) => {
+                if (e.target.classList.contains('autolist')) {
+                    let inpbx = e.target.parentElement.parentElement.parentElement.querySelector('input')
+                    inpbx.value = e.target.innerHTML
+                    e.target.parentElement.parentElement.parentElement.classList.remove('showAuto')
+                }
+            }) 
+        }
+        To()
+
+        // from
+        function From() { 
+            window.addEventListener('keyup', (e) => {
+                let search = document.querySelector('.typeIn') 
+                if (e.target.classList.contains('typeIn')) {
+                    let search = document.querySelector('.typeIn') 
+                    CitySearch(search.value)
+                    CitySearchHtls(search.value)
+                    CitySearchExps(search.value)
+                    e.target.parentElement.classList.add('showAuto')
+                }
+                if (search.value >= 0) {
+                    e.target.parentElement.classList.remove('showAuto')
+                }  
+            }) 
+            function CitySearch(searchby) {
+                let ul = document.querySelector('.locations')
+                ul.innerHTML = " "
+                fetch('https://raw.githubusercontent.com/algolia/datasets/master/airports/airports.json')
+                .then(data => data.json())
+                .then(data => {
+                    let filtaring = data.filter(data => {  
+                        let rgx = new RegExp(searchby, 'gi')  
+                        let findit   =  data.city.match(rgx) || data.country.match(rgx) || data.iata_code.match(rgx) || data.name.match(rgx)
+                        if (findit) {
+                            return data
+                        }
+                    })
+                    filtaring.forEach(showData => { 
+                        let li = document.createElement('LI')
+                        li.classList.add('autolist')
+                        li.innerHTML = showData.city + " , " + showData.iata_code
+                        ul.append(li)
+                    });
+                
+                })
+                .catch(err => console.log(err.message))
+    
+            }  
+            function CitySearchHtls(searchby) {
+                let ul = document.querySelector('.locations2')
+                ul.innerHTML = " "
+                fetch('https://raw.githubusercontent.com/algolia/datasets/master/airports/airports.json')
+                .then(data => data.json())
+                .then(data => {
+                    let filtaring = data.filter(data => {  
+                        let rgx = new RegExp(searchby, 'gi')  
+                        let findit   =  data.city.match(rgx) || data.country.match(rgx) || data.iata_code.match(rgx) || data.name.match(rgx)
+                        if (findit) {
+                            return data
+                        }
+                    })
+                    filtaring.forEach(showData => { 
+                        let li = document.createElement('LI')
+                        li.classList.add('autolist')
+                        li.innerHTML = showData.city + " , " + showData.iata_code
+                        ul.append(li)
+                    });
+                
+                })
+                .catch(err => console.log(err.message))
+    
+            } 
+            function CitySearchExps(searchby) {
+                let ul = document.querySelector('.locations3')
+                ul.innerHTML = " "
+                fetch('https://raw.githubusercontent.com/algolia/datasets/master/airports/airports.json')
+                .then(data => data.json())
+                .then(data => {
+                    let filtaring = data.filter(data => {  
+                        let rgx = new RegExp(searchby, 'gi')  
+                        let findit   =  data.city.match(rgx) || data.country.match(rgx) || data.iata_code.match(rgx) || data.name.match(rgx)
+                        if (findit) {
+                            return data
+                        }
+                    })
+                    filtaring.forEach(showData => { 
+                        let li = document.createElement('LI')
+                        li.classList.add('autolist')
+                        li.innerHTML = showData.city + " , " + showData.iata_code
+                        ul.append(li)
+                    });
+                
+                })
+                .catch(err => console.log(err.message))
+    
+            } 
+            window.addEventListener('click', (e) => {
+                if (e.target.classList.contains('autolist')) {
+                    let inpbx = e.target.parentElement.parentElement.parentElement.querySelector('input')
+                    inpbx.value = e.target.innerHTML
+                    e.target.parentElement.parentElement.parentElement.classList.remove('showAuto')
+                }
+            }) 
+        }
+        From()
+
+   
+
+
+    }
+    AutoComplate()
+
+
 
 
  }) 

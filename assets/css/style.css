@@ -1206,7 +1206,7 @@ body.sspIn .all-inner .sub-page-area.upNow {
 
 
 /* Servicesbuot page css END && GetQuoute page css START 
-===========================================*/
+=======================================================*/
 
 
 
@@ -1362,73 +1362,142 @@ label input:checked ~ span.ckbx:after{
 button.theme-btn.addMore {
   margin: 50px auto;
 }
+.sub-page-area.getaquote .right-wrp {
+  padding-top: 20px;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- /* Content-loading area START */ 
-.willLoadContent.homePanel .load_this {
+.inp-group label .autoCmp {
   position: absolute;
-  top: 0;
+  top: 30px;
   left: 0;
   width: 100%;
-  min-height: 100vh;
-  display: flex;
-  transition: 1s;
-  z-index: 9; 
-  visibility: hidden;
+  background: #fff;
+  box-shadow: 0 10px 42px 18px #ffffff14;
+  z-index: 3;
+  max-height: 200px;
+  overflow: auto;
   opacity: 0;
-  overflow: hidden;
+  visibility: hidden;
+  transition: .2s;
 }
-.willLoadContent.is-open .load_this {
-  visibility: visible;  
-  opacity: 1; 
-}   
- /* Content-loading area START */
+.inp-group  label.showAuto .autoCmp {
+  visibility: visible;
+  opacity: 1;
+}
+.inp-group label ul.locations { 
+  width: 100%;  
+}
+
+.inp-group label  .autoCmp  li {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  transition: .3s;
+  cursor: pointer;
+  text-transform: capitalize;
+  text-align: left;
+}
+
+.inp-group label  .autoCmp  li:hover {
+  color: #000;
+}
+
+#ui-datepicker-div {
+	display: none;
+	background-color: #fff;
+	box-shadow: 0 0.125rem 0.5rem rgba(0,0,0,0.1);
+	margin-top: 0.25rem;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+  position: absolute;
+  z-index: 9 !important;
+}
+.wrapper table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.ui-datepicker-calendar thead th {
+	padding: 0.25rem 0;
+	text-align: center;
+	font-size: 0.75rem;
+	font-weight: 400;
+	color: #78909C;
+}
+.ui-datepicker-calendar tbody td {
+	width: 2.5rem;
+	text-align: center;
+	padding: 0;
+}
+.ui-datepicker-calendar tbody td a {
+	display: block;
+	border-radius: 0.25rem;
+	line-height: 2rem;
+	transition: 0.3s all;
+	color: #546E7A;
+	font-size: 0.875rem;
+	text-decoration: none;
+}
+.ui-datepicker-calendar tbody td a:hover {	
+	background-color: #E0F2F1;
+}
+.ui-datepicker-calendar tbody td a.ui-state-active {
+	background-color: #009688;
+	color: white;
+}
+.ui-datepicker-header a.ui-corner-all {
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	width: 2rem;
+	height: 2rem;
+	margin: 0.5rem;
+	border-radius: 0.25rem;
+	transition: 0.3s all;
+}
+.ui-datepicker-header a.ui-corner-all:hover {
+	background-color: #ECEFF1;
+}
+.ui-datepicker-header a.ui-datepicker-prev {	
+	left: 0;	
+	background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMyIgdmlld0JveD0iMCAwIDEzIDEzIj48cGF0aCBmaWxsPSIjNDI0NzcwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjI4OCA2LjI5NkwzLjIwMiAyLjIxYS43MS43MSAwIDAgMSAuMDA3LS45OTljLjI4LS4yOC43MjUtLjI4Ljk5OS0uMDA3TDguODAzIDUuOGEuNjk1LjY5NSAwIDAgMSAuMjAyLjQ5Ni42OTUuNjk1IDAgMCAxLS4yMDIuNDk3bC00LjU5NSA0LjU5NWEuNzA0LjcwNCAwIDAgMS0xLS4wMDcuNzEuNzEgMCAwIDEtLjAwNi0uOTk5bDQuMDg2LTQuMDg2eiIvPjwvc3ZnPg==");
+	background-repeat: no-repeat;
+	background-size: 0.5rem;
+	background-position: 50%;
+	transform: rotate(180deg);
+}
+.ui-datepicker-header a.ui-datepicker-next {
+	right: 0;
+	background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMyIgdmlld0JveD0iMCAwIDEzIDEzIj48cGF0aCBmaWxsPSIjNDI0NzcwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjI4OCA2LjI5NkwzLjIwMiAyLjIxYS43MS43MSAwIDAgMSAuMDA3LS45OTljLjI4LS4yOC43MjUtLjI4Ljk5OS0uMDA3TDguODAzIDUuOGEuNjk1LjY5NSAwIDAgMSAuMjAyLjQ5Ni42OTUuNjk1IDAgMCAxLS4yMDIuNDk3bC00LjU5NSA0LjU5NWEuNzA0LjcwNCAwIDAgMS0xLS4wMDcuNzEuNzEgMCAwIDEtLjAwNi0uOTk5bDQuMDg2LTQuMDg2eiIvPjwvc3ZnPg==');
+	background-repeat: no-repeat;
+	background-size: 10px;
+	background-position: 50%;
+}
+.ui-datepicker-header a>span {
+	display: none;
+}
+.ui-datepicker-title {
+	text-align: center;
+	line-height: 2rem;
+	margin-bottom: 0.25rem;
+	font-size: 0.875rem;
+	font-weight: 500;
+	padding-bottom: 0.25rem;
+    color: #000;
+}
+.ui-datepicker-week-col {
+	color: #78909C;
+	font-weight: 400;
+	font-size: 0.75rem;
+} 
+
+
+
+/* GetQuoute page css END && Inner_datail_pages page css START 
+===========================================================*/
+
 
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- /* inner_datail_pages area START */
  .inner_datail_pages {
   width: 100%;
   height: 100vh;
@@ -1484,4 +1553,46 @@ button.theme-btn.addMore {
 .form-page form .forAgree button.theme-btn {
   margin-bottom: 0;
 }
-/* inner_datail_pages area End */
+
+
+/* Inner_datail_pages page css START 
+=================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ /* Content-loading area START */ 
+.willLoadContent.homePanel .load_this {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  transition: 1s;
+  z-index: 9; 
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+}
+.willLoadContent.is-open .load_this {
+  visibility: visible;  
+  opacity: 1; 
+}   
+ /* Content-loading area START */ 
