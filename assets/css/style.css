@@ -827,23 +827,20 @@ body.pageIn .left-side {
   top: 35px;
   left: 70px;  
 }
-
 .left-side .thisClose {
   position: absolute;
-  top: 60px;
-  right: 5px;
+  top: 40px;
+  right: -10px;
   transform: rotate(-90deg);
 }
 
 .thisClose {
-  text-transform: capitalize; 
+  text-transform: uppercase; 
   cursor: pointer;
+  padding: 20px;
   font-size: 18px;
   font-family: var(--headingFont);
-} 
-.sub-page-area.about .thisClose {
-  border-bottom: 2px solid var(--themeWhite);
-} 
+}  
 .left-wrp {
   text-align: center;
   padding: 0 50px;
@@ -1565,11 +1562,18 @@ button.theme-btn.addMore {
 .prck-wrp h5 {
   margin-bottom: 30px;
 }
+.blog-blk {
+  padding-top: 30px;
+}
+.blog-blk h5 {
+  font-size: 28px;
+  line-height: initial;
+}
 .blog-blk img {
   height: 300px;
   width: 100%;
   object-fit: cover;
-  margin-bottom: 25px;
+  margin-top: 25px;
 }
 .form-page {
   text-align: center;
