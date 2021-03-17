@@ -1569,7 +1569,9 @@ button.theme-btn.addMore {
   visibility: visible;
   transform: scale(1);
 }
-
+.fclasse .features ul li h1 {
+  margin-bottom: 10px;
+}
 .privacy,
 .cookie,
 .blog{
