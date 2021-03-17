@@ -889,7 +889,20 @@ body.pageIn .left-side {
 
 
 
+.ex-numbs.blogs .single-num p {
+  margin-bottom: 25px;
+  width: auto;
+}
 
+.ex-numbs.blogs .single-num img {
+  height: 150px;
+  width: 80%;
+  object-fit: cover;
+}
+
+.ex-numbs.blogs .single-num {
+  margin-bottom: 35px;
+}
 .ex-numbs {
   display: flex;
   flex-wrap: wrap;
@@ -1378,9 +1391,29 @@ button.theme-btn.addMore {
 }
 .sub-page-area.getaquote .right-wrp {
   padding-top: 20px;
+  text-align: center;
+}
+.getinTouches .form-page form .inp-group {
+  display: flex;
 }
 
-
+.getinTouches .form-page form .inp-group label {
+  width: 45%;
+}
+.getinTouches .form-page form label.typeNow {
+  width: 100%;
+}
+.getinTouches h1 {
+  font-size: 38px;
+  line-height: 100px;
+}
+.getinTouches .form-page {
+  width: 90%;
+  height: 100vh;
+  overflow: auto;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
 .inp-group label .autoCmp {
   position: absolute;
   top: 30px;
@@ -1411,10 +1444,12 @@ button.theme-btn.addMore {
   cursor: pointer;
   text-transform: capitalize;
   text-align: left;
+  color: #000;
+  opacity: .5;
 }
 
 .inp-group label  .autoCmp  li:hover {
-  color: #000;
+  opacity: 1;
 }
 
 #ui-datepicker-div {
