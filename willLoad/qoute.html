@@ -167,8 +167,9 @@
                                         </label>
                                     </div>
                                     <div class="inp-group"> 
-                                        <label for="">
+                                        <label for="" class="autocompleted">
                                             <span class="placeholder">leaving from</span>
+                                            <div class="autoCmp"> <ul class="locations"> </ul> </div>  <!-- Auto complete block -->
                                             <input type="text" class="inp" id="">
                                             <span class="icon">
                                                 <svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -176,8 +177,9 @@
                                                 </svg>
                                             </span>
                                         </label>
-                                        <label for="">
+                                        <label for="" class="autocompleted">
                                             <span class="placeholder">going to</span>
+                                            <div class="autoCmp"> <ul class="locations"> </ul> </div>  <!-- Auto complete block -->
                                             <input type="text" class="inp" id="">
                                             <span class="icon">
                                                 <svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -185,7 +187,7 @@
                                                 </svg>
                                             </span>
                                         </label>
-                                    </div>
+                                    </div> 
                                     <div class="inp-group"> 
                                         <label for="">
                                             <span class="placeholder">departure date</span>
@@ -244,8 +246,8 @@
                                         </label>
                                     </div>
                                     <div class="forAgree">
-                                        <label for="firstCk1"><input type="checkbox" id="firstCk1"><span class="ckbx"></span>I would like to subscribe to the Travel Seller Newsletter.</label>
-                                        <label for="firstCk22"><input type="checkbox" id="firstCk22"><span class="ckbx"></span>I confirm that I have read and agree with the Terms & Conditions and Privacy Policy.</label>
+                                        <label for="firstCb"><input type="checkbox" id="firstCb"><span class="ckbx"></span>I would like to subscribe to the Travel Seller Newsletter.</label>
+                                        <label for="firstCkbx"><input type="checkbox" id="firstCkbx"><span class="ckbx"></span>I confirm that I have read and agree with the Terms & Conditions and Privacy Policy.</label>
                                         <button type="button" class="theme-btn">submit</button>
                                         <p>For information regarding the matter in which Travel Seller collects, stores, and uses your personal data, please refer to our Privacy Policy.</p> 
                                     </div>
@@ -295,18 +297,20 @@
                                         </label>
                                     </div>
                                     <div class="inp-group"> 
-                                        <label for="leaving" class="in-activeit">
+                                        <label for="" class="autocompleted">
                                             <span class="placeholder">leaving from</span>
-                                            <input type="text" class="inp" id="leaving">
+                                            <div class="autoCmp"> <ul class="locations"> </ul> </div>  <!-- Auto complete block -->
+                                            <input type="text" class="inp typeIn">
                                             <span class="icon">
                                                 <svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M8.4 4.2C8.4 3.64845 8.29136 3.1023 8.08029 2.59273C7.86922 2.08316 7.55985 1.62016 7.16985 1.23015C6.77984 0.840145 6.31684 0.530776 5.80727 0.319706C5.2977 0.108636 4.75155 0 4.2 0C3.64845 0 3.1023 0.108636 2.59273 0.319706C2.08316 0.530776 1.62016 0.840145 1.23015 1.23015C0.840145 1.62016 0.530776 2.08316 0.319706 2.59273C0.108636 3.1023 -8.21876e-09 3.64845 0 4.2C0 5.0322 0.246 5.8062 0.663 6.459H0.6582C2.0742 8.676 4.2 12 4.2 12L7.7418 6.459H7.7376C8.16985 5.78482 8.39973 5.00085 8.4 4.2ZM4.2 6C3.72261 6 3.26477 5.81036 2.92721 5.47279C2.58964 5.13523 2.4 4.67739 2.4 4.2C2.4 3.72261 2.58964 3.26477 2.92721 2.92721C3.26477 2.58964 3.72261 2.4 4.2 2.4C4.67739 2.4 5.13523 2.58964 5.47279 2.92721C5.81036 3.26477 6 3.72261 6 4.2C6 4.67739 5.81036 5.13523 5.47279 5.47279C5.13523 5.81036 4.67739 6 4.2 6Z" fill="#DCDCDC"/>
                                                 </svg>
                                             </span>
                                         </label>
-                                        <label for="going">
+                                        <label for="" class="autocompleted">
                                             <span class="placeholder">going to</span>
-                                            <input type="text" class="inp" id="going">
+                                            <div class="autoCmp"> <ul class="locationsto"> </ul> </div>  <!-- Auto complete block -->
+                                            <input type="text" class="inp typeHere">
                                             <span class="icon">
                                                 <svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M8.4 4.2C8.4 3.64845 8.29136 3.1023 8.08029 2.59273C7.86922 2.08316 7.55985 1.62016 7.16985 1.23015C6.77984 0.840145 6.31684 0.530776 5.80727 0.319706C5.2977 0.108636 4.75155 0 4.2 0C3.64845 0 3.1023 0.108636 2.59273 0.319706C2.08316 0.530776 1.62016 0.840145 1.23015 1.23015C0.840145 1.62016 0.530776 2.08316 0.319706 2.59273C0.108636 3.1023 -8.21876e-09 3.64845 0 4.2C0 5.0322 0.246 5.8062 0.663 6.459H0.6582C2.0742 8.676 4.2 12 4.2 12L7.7418 6.459H7.7376C8.16985 5.78482 8.39973 5.00085 8.4 4.2ZM4.2 6C3.72261 6 3.26477 5.81036 2.92721 5.47279C2.58964 5.13523 2.4 4.67739 2.4 4.2C2.4 3.72261 2.58964 3.26477 2.92721 2.92721C3.26477 2.58964 3.72261 2.4 4.2 2.4C4.67739 2.4 5.13523 2.58964 5.47279 2.92721C5.81036 3.26477 6 3.72261 6 4.2C6 4.67739 5.81036 5.13523 5.47279 5.47279C5.13523 5.81036 4.67739 6 4.2 6Z" fill="#DCDCDC"/>
@@ -370,8 +374,8 @@
                                         </label>
                                     </div>
                                     <div class="forAgree">
-                                        <label for="firstCk"><input type="checkbox" checked id="firstCk"><span class="ckbx"></span>I would like to subscribe to the Travel Seller Newsletter.</label>
-                                        <label for="firstCk2"><input type="checkbox" checked id="firstCk2"><span class="ckbx"></span>I confirm that I have read and agree with the Terms & Conditions and Privacy Policy.</label>
+                                        <label for="firstk"><input type="checkbox" checked id="firstk"><span class="ckbx"></span>I would like to subscribe to the Travel Seller Newsletter.</label>
+                                        <label for="firstCbk"><input type="checkbox" checked id="firstCbk"><span class="ckbx"></span>I confirm that I have read and agree with the Terms & Conditions and Privacy Policy.</label>
                                         <button type="button" class="theme-btn">submit</button>
                                         <p>For information regarding the matter in which Travel Seller collects, stores, and uses your personal data, please refer to our Privacy Policy.</p> 
                                     </div>
@@ -421,8 +425,9 @@
                                         </label>
                                     </div>
                                     <div class="inp-group"> 
-                                        <label for="" class="in-activeit">
+                                        <label for="" class="in-activeit autocompleted" >
                                             <span class="placeholder">leaving from</span>
+                                            <div class="autoCmp"> <ul class="locations"> </ul> </div>  <!-- Auto complete block -->
                                             <input type="text" class="inp" id="">
                                             <span class="icon">
                                                 <svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -430,8 +435,9 @@
                                                 </svg>
                                             </span>
                                         </label>
-                                        <label for="">
+                                        <label for="" class="autocompleted">
                                             <span class="placeholder">going to</span>
+                                            <div class="autoCmp"> <ul class="locations"> </ul> </div>  <!-- Auto complete block -->
                                             <input type="text" class="inp" id="">
                                             <span class="icon">
                                                 <svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -439,7 +445,7 @@
                                                 </svg>
                                             </span>
                                         </label>
-                                    </div>
+                                    </div> 
                                     <div class="inp-group"> 
                                         <label for="">
                                             <span class="placeholder">activity start date</span>
@@ -497,8 +503,8 @@
                                         </label>
                                     </div>
                                     <div class="forAgree">
-                                        <label for="firstCk3"><input type="checkbox" checked id="firstCk3"><span class="ckbx"></span>I would like to subscribe to the Travel Seller Newsletter.</label>
-                                        <label for="firstCk23"><input type="checkbox" checked id="firstCk23"><span class="ckbx"></span>I confirm that I have read and agree with the Terms & Conditions and Privacy Policy.</label>
+                                        <label for="fitCk"><input type="checkbox" checked id="fitCk"><span class="ckbx"></span>I would like to subscribe to the Travel Seller Newsletter.</label>
+                                        <label for="fisrstCk"><input type="checkbox" checked id="fisrstCk"><span class="ckbx"></span>I confirm that I have read and agree with the Terms & Conditions and Privacy Policy.</label>
                                         <button type="button" class="theme-btn">submit</button>
                                         <p>For information regarding the matter in which Travel Seller collects, stores, and uses your personal data, please refer to our Privacy Policy.</p> 
                                     </div>
@@ -578,8 +584,8 @@
                                 </label>
                             </div>
                             <div class="forAgree">
-                                <label for="firstCk"><input type="checkbox" id="firstCk"><span class="ckbx"></span>I would like to subscribe to the Travel Seller Newsletter.</label>
-                                <label for="firstCk2"><input type="checkbox" id="firstCk2"><span class="ckbx"></span>I confirm that I have read and agree with the Terms & Conditions and Privacy Policy.</label>
+                                <label for="ckbx"><input type="checkbox" id="ckbx"><span class="ckbx"></span>I would like to subscribe to the Travel Seller Newsletter.</label>
+                                <label for="tckb"><input type="checkbox" id="tckb"><span class="ckbx"></span>I confirm that I have read and agree with the Terms & Conditions and Privacy Policy.</label>
                                 <button type="button" class="theme-btn">submit</button>  
                             </div>
                         </form>
@@ -606,8 +612,8 @@
                                 </label>
                             </div>
                             <div class="forAgree">
-                                <label for="firstCk"><input type="checkbox" id="firstCk"><span class="ckbx"></span>I would like to subscribe to the Travel Seller Newsletter.</label>
-                                <label for="firstCk2"><input type="checkbox" id="firstCk2"><span class="ckbx"></span>I confirm that I have read and agree with the Terms & Conditions and Privacy Policy.</label>
+                                <label for="frsCk"><input type="checkbox" id="frsCk"><span class="ckbx"></span>I would like to subscribe to the Travel Seller Newsletter.</label>
+                                <label for="firstCkbox"><input type="checkbox" id="firstCkbox"><span class="ckbx"></span>I confirm that I have read and agree with the Terms & Conditions and Privacy Policy.</label>
                                 <button type="button" class="theme-btn">submit</button>  
                             </div>
                         </form>

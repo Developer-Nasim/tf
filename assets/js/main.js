@@ -355,10 +355,8 @@
         cookie()
  
         // blog
-        function blog() {
-            let btn         = document.querySelector('.blogbtn')
+        function blog() { 
             let formBlock   = document.querySelector('.blog')
-            let closeBtn    = document.querySelector('.blog .thisClose')
 
             // Form section comming
             window.addEventListener('click', (e) => {
@@ -366,11 +364,11 @@
                     e.preventDefault()
                     formBlock.classList.add('touchNow')
                 } 
-            })
-            // Form sention closing
-            closeBtn.addEventListener('click', () => {
-                formBlock.classList.remove('touchNow')
-            })
+                if (e.target.classList.contains('mainPageClose')) {
+                    e.preventDefault()
+                    formBlock.classList.remove('touchNow')
+                } 
+            }) 
 
         }
         blog()
@@ -401,202 +399,57 @@
     // Auto complete now
     function AutoComplate() {
  
-        // To
-        function To() {
-            window.addEventListener('keyup', (e) => {
-                let search = document.querySelector('.typeHere') 
-                if (e.target.classList.contains('typeHere')) {
-                    let search = document.querySelector('.typeHere') 
-                    CitySearch(search.value)
-                    CitySearchHtl(search.value)
-                    CitySearchExp(search.value)
-                    e.target.parentElement.classList.add('showAuto')
-                }
-                if (search.value >= 0) {
-                    e.target.parentElement.classList.remove('showAuto')
-                }  
-            }) 
-            function CitySearch(searchby) {
-                let ul = document.querySelector('.locationsto')
-                ul.innerHTML = " "
-                fetch('https://raw.githubusercontent.com/algolia/datasets/master/airports/airports.json')
-                .then(data => data.json())
-                .then(data => {
-                    let filtaring = data.filter(data => {  
-                        let rgx = new RegExp(searchby, 'gi')  
-                        let findit   =  data.city.match(rgx) || data.country.match(rgx) || data.iata_code.match(rgx) || data.name.match(rgx)
-                        if (findit) {
-                            return data
-                        }
-                    })
-                    filtaring.forEach(showData => { 
-                        let li = document.createElement('LI')
-                        li.classList.add('autolist')
-                        li.innerHTML = showData.city + " , " + showData.iata_code
-                        ul.append(li)
-                    });
-                
-                })
-                .catch(err => console.log(err.message))
-    
-            }  
-            function CitySearchHtl(searchby) {
-                let ul = document.querySelector('.locationst2')
-                ul.innerHTML = " "
-                fetch('https://raw.githubusercontent.com/algolia/datasets/master/airports/airports.json')
-                .then(data => data.json())
-                .then(data => {
-                    let filtaring = data.filter(data => {  
-                        let rgx = new RegExp(searchby, 'gi')  
-                        let findit   =  data.city.match(rgx) || data.country.match(rgx) || data.iata_code.match(rgx) || data.name.match(rgx)
-                        if (findit) {
-                            return data
-                        }
-                    })
-                    filtaring.forEach(showData => { 
-                        let li = document.createElement('LI')
-                        li.classList.add('autolist')
-                        li.innerHTML = showData.city + " , " + showData.iata_code
-                        ul.append(li)
-                    });
-                
-                })
-                .catch(err => console.log(err.message))
-    
-            } 
-            function CitySearchExp(searchby) {
-                let ul = document.querySelector('.locationst3')
-                ul.innerHTML = " "
-                fetch('https://raw.githubusercontent.com/algolia/datasets/master/airports/airports.json')
-                .then(data => data.json())
-                .then(data => {
-                    let filtaring = data.filter(data => {  
-                        let rgx = new RegExp(searchby, 'gi')  
-                        let findit   =  data.city.match(rgx) || data.country.match(rgx) || data.iata_code.match(rgx) || data.name.match(rgx)
-                        if (findit) {
-                            return data
-                        }
-                    })
-                    filtaring.forEach(showData => { 
-                        let li = document.createElement('LI')
-                        li.classList.add('autolist')
-                        li.innerHTML = showData.city + " , " + showData.iata_code
-                        ul.append(li)
-                    });
-                
-                })
-                .catch(err => console.log(err.message))
-    
-            } 
-            window.addEventListener('click', (e) => {
-                if (e.target.classList.contains('autolist')) {
-                    let inpbx = e.target.parentElement.parentElement.parentElement.querySelector('input')
-                    inpbx.value = e.target.innerHTML
-                    e.target.parentElement.parentElement.parentElement.classList.remove('showAuto')
-                }
-            }) 
-        }
-        To()
+        
+        let cityContry  = [] // stored data [ all the city and country ]
+        fetch('https://raw.githubusercontent.com/algolia/datasets/master/airports/airports.json')
+        .then(data => data.json())
+        .then(showthis => {
+            showthis.forEach(alldata => {  
+                let dataPass = alldata.country+","+alldata.city
+                cityContry.push(dataPass)
+            });
+        })
 
-        // from
-        function From() { 
-            window.addEventListener('keyup', (e) => {
-                let search = document.querySelector('.typeIn') 
-                if (e.target.classList.contains('typeIn')) {
-                    let search = document.querySelector('.typeIn') 
-                    CitySearch(search.value)
-                    CitySearchHtls(search.value)
-                    CitySearchExps(search.value)
-                    e.target.parentElement.classList.add('showAuto')
-                }
-                if (search.value >= 0) {
-                    e.target.parentElement.classList.remove('showAuto')
-                }  
-            }) 
-            function CitySearch(searchby) {
-                let ul = document.querySelector('.locations')
-                ul.innerHTML = " "
-                fetch('https://raw.githubusercontent.com/algolia/datasets/master/airports/airports.json')
-                .then(data => data.json())
-                .then(data => {
-                    let filtaring = data.filter(data => {  
-                        let rgx = new RegExp(searchby, 'gi')  
-                        let findit   =  data.city.match(rgx) || data.country.match(rgx) || data.iata_code.match(rgx) || data.name.match(rgx)
-                        if (findit) {
-                            return data
-                        }
-                    })
-                    filtaring.forEach(showData => { 
-                        let li = document.createElement('LI')
-                        li.classList.add('autolist')
-                        li.innerHTML = showData.city + " , " + showData.iata_code
-                        ul.append(li)
-                    });
-                
-                })
-                .catch(err => console.log(err.message))
-    
-            }  
-            function CitySearchHtls(searchby) {
-                let ul = document.querySelector('.locations2')
-                ul.innerHTML = " "
-                fetch('https://raw.githubusercontent.com/algolia/datasets/master/airports/airports.json')
-                .then(data => data.json())
-                .then(data => {
-                    let filtaring = data.filter(data => {  
-                        let rgx = new RegExp(searchby, 'gi')  
-                        let findit   =  data.city.match(rgx) || data.country.match(rgx) || data.iata_code.match(rgx) || data.name.match(rgx)
-                        if (findit) {
-                            return data
-                        }
-                    })
-                    filtaring.forEach(showData => { 
-                        let li = document.createElement('LI')
-                        li.classList.add('autolist')
-                        li.innerHTML = showData.city + " , " + showData.iata_code
-                        ul.append(li)
-                    });
-                
-                })
-                .catch(err => console.log(err.message))
-    
-            } 
-            function CitySearchExps(searchby) {
-                let ul = document.querySelector('.locations3')
-                ul.innerHTML = " "
-                fetch('https://raw.githubusercontent.com/algolia/datasets/master/airports/airports.json')
-                .then(data => data.json())
-                .then(data => {
-                    let filtaring = data.filter(data => {  
-                        let rgx = new RegExp(searchby, 'gi')  
-                        let findit   =  data.city.match(rgx) || data.country.match(rgx) || data.iata_code.match(rgx) || data.name.match(rgx)
-                        if (findit) {
-                            return data
-                        }
-                    })
-                    filtaring.forEach(showData => { 
-                        let li = document.createElement('LI')
-                        li.classList.add('autolist')
-                        li.innerHTML = showData.city + " , " + showData.iata_code
-                        ul.append(li)
-                    });
-                
-                })
-                .catch(err => console.log(err.message))
-    
-            } 
-            window.addEventListener('click', (e) => {
-                if (e.target.classList.contains('autolist')) {
-                    let inpbx = e.target.parentElement.parentElement.parentElement.querySelector('input')
-                    inpbx.value = e.target.innerHTML
-                    e.target.parentElement.parentElement.parentElement.classList.remove('showAuto')
-                }
-            }) 
-        }
-        From()
+        // Whil user will type on the input fileds them the autocomplete list will be show
+        window.addEventListener('keyup', (e) => {
+            let findExect       = e.target.parentElement
+            if (findExect.classList.contains('autocompleted')) {
+                let ul          = findExect.querySelector('ul')
+                let searchInp   = e.target
+                ul.innerHTML = " "; // at frst clear the ul list
 
-   
+                // Seach key filtaring
+                let filtaring       = cityContry.filter(filterElement => {
+                    let serachKey   = searchInp.value
+                    let regEx       = new RegExp(serachKey,'gi')
+                    let getIt       = filterElement.match(regEx)
+                    if (getIt) {
+                        return filterElement
+                    }
+                })
+                // filtard data showing
+                filtaring.forEach(data => {
+                    let li          = document.createElement('LI')
+                    li.innerHTML    = data
+                    ul.appendChild(li)
+                })
 
+                // if that input filed is empty then the ul will be clear
+                if (searchInp.value.length <= 0) {
+                    ul.innerHTML = " "
+                }
+
+                // click to add this content into the input value
+                let li = ul.querySelectorAll('li')
+                li.forEach(list => {
+                    list.addEventListener('click', () => {
+                        searchInp.value = list.innerHTML;
+                        ul.innerHTML = " "
+                    })
+                })
+            } 
+
+        }) 
 
     }
     AutoComplate()

@@ -1399,10 +1399,7 @@ button.theme-btn.addMore {
 
 .getinTouches .form-page form .inp-group label {
   width: 45%;
-}
-.getinTouches .form-page form label.typeNow {
-  width: 100%;
-}
+} 
 .getinTouches h1 {
   font-size: 38px;
   line-height: 100px;
@@ -1419,14 +1416,10 @@ button.theme-btn.addMore {
   top: 30px;
   left: 0;
   width: 100%;
-  background: #fff;
-  box-shadow: 0 10px 42px 18px #ffffff14;
+  background: #fff; 
   z-index: 3;
   max-height: 200px;
-  overflow: auto;
-  opacity: 0;
-  visibility: hidden;
-  transition: .2s;
+  overflow: auto; 
 }
 .inp-group  label.showAuto .autoCmp {
   visibility: visible;
@@ -1647,7 +1640,9 @@ button.theme-btn.addMore {
 .form-page ul#pills-tab li.nav-item {
   margin-bottom: 10px;
 }
-
+.getinTouches .form-page form {
+  width: 100%;
+}
 /* Inner_datail_pages page css START 
 =================================== */
 
