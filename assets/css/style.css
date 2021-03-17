@@ -1554,7 +1554,7 @@ button.theme-btn.addMore {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 99999999;
+  z-index: 9999;
   transform: scale(.5);
   opacity: 0;
   visibility: hidden;
