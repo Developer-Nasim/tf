@@ -145,15 +145,14 @@
     // Input animation
     function InpAmi() { 
         window.addEventListener('click', (e) => {
-            let clickOneInp = e.target.classList.contains('placeholder') || e.target.classList.contains('inp') || e.target.classList.contains('icon')
+            let clickOneInp = e.target.classList.contains('placeholder') || e.target.classList.contains('inp') || e.target.classList.contains('icon') || e.target.classList.contains('textareas')
             if (clickOneInp) {
                 e.target.parentElement.classList.add('typeNow')
             }
         }) 
     }
     InpAmi()
-
-
+ 
     // close
     function Closings() { 
         function closeIt() {
@@ -179,6 +178,8 @@
         }) 
     }
     Closings()
+
+
     // Get the the sub pages (e.g flight classes)
     function Fnc() {
         let services      = document.querySelectorAll('.ser-details li')
@@ -375,10 +376,7 @@
 
     }
     GetForm()
-
-
-
-
+ 
     // Date-Picker
     function DatePicker() {
         let list = document.querySelector('.qoutes')
@@ -405,7 +403,7 @@
         .then(data => data.json())
         .then(showthis => {
             showthis.forEach(alldata => {  
-                let dataPass = alldata.country+","+alldata.city
+                let dataPass = alldata.iata_code+","+alldata.city+","+alldata.country
                 cityContry.push(dataPass)
             });
         })

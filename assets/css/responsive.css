@@ -283,7 +283,7 @@ body.sspIn .service-sub-pages .pShow {
 body.pageIn.sspIn.f_class .fclasse.cl_Show { 
     min-height: 1350px; 
 }
-.features ul li.touch-btn {
+ul li.touch-btn {
     display: block;
     margin-top: 120px;
 }
@@ -416,6 +416,31 @@ body.experinces .sub-page-area.getaquote{
     bottom: 50px;
 }
 
+.load_this .sub-page-area {
+    padding-bottom: 200px;
+}
+.load_this .sub-page-area .footer {
+    bottom: 0;
+}  
+
+.ssp.hotels .footer {
+    bottom: 200px;
+}
+.getinTouches .sub-page-area .left-side {
+    min-height: 220px;
+}
+.getinTouches .sub-page-area .right-side h5 {
+    font-size: 50px;
+    margin-bottom: 76px;
+    line-height: initial;
+}
+.getinTouches .sub-page-area {
+    padding-bottom: 50px;
+}
+
+
+
+
 }
 
  
@@ -465,11 +490,7 @@ body.experinces .sub-page-area.getaquote{
     .page-wrp.addedMenu up.menu-list {
         opacity: 1;
         visibility: visible;
-    } 
-    .page-wrp.addedMenu up.menu-list {
-        opacity: 1;
-        visibility: visible;
-    } 
+    }
     .page-wrp up.menu-list li {
         margin-right: -40px;
         opacity: 0;
@@ -675,9 +696,9 @@ body.sspIn .service-sub-pages .pShow .left-wrp {
 body.pageIn.sspIn.f_class .fclasse.cl_Show { 
     min-height: 1350px; 
 }
-.features ul li.touch-btn {
+ul li.touch-btn {
     display: block;
-    margin-top: 120px;
+    margin-top: 40px;
 }
 .class_back,.closeit {
     right: 10px !important;
@@ -858,6 +879,34 @@ form-page ul#pills-tab {
 }
 
 .ssp.hotels .right-side .footer {
-    bottom: 325px;
+    bottom: 200px;
 }
+.fclasse .features ul li p {
+    margin-bottom: 50px;
+}
+
+.getinTouches .sub-page-area .left-side {
+    min-height: 220px;
+}
+.getinTouches .sub-page-area .right-side h5 {
+    font-size: 50px;
+    margin-bottom: 76px;
+    line-height: initial;
+}
+.getinTouches .sub-page-area {
+    padding-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 } 
