@@ -1393,20 +1393,7 @@ button.theme-btn.addMore {
 .sub-page-area.getaquote .right-wrp {
   padding-top: 20px;
   text-align: center;
-}
-.getinTouches .form-page form .inp-group {
-  display: flex;
-}
-
-.getinTouches .form-page form .inp-group label {
-  width: 45%;
-}  
-.getinTouches .form-page {
-  width: 90%;
-  height: 100vh;
-  overflow: auto;
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
 }
 .inp-group label .autoCmp {
   position: absolute;
@@ -1555,7 +1542,10 @@ button.theme-btn.addMore {
   visibility: hidden;
   transition: .5s;
 } 
- .getinTouches {
+ .getinTouches, 
+ .getinTouchetohotels,
+ .getinToucheforexp
+ {
   width: 100%;
   height: auto;  
   position: absolute;
@@ -1568,14 +1558,84 @@ button.theme-btn.addMore {
   transition: .5s;
 } 
 .inner_datail_pages.takeForm,
-.getinTouches.touchNow,
 .privacy.touchNow,
 .cookie.touchNow,
-.blog.touchNow {
+.blog.touchNow,
+.getinTouches.touchNow,
+.getinTouchetohotels.touchNow,
+.getinToucheforexp.touchNow {
   opacity: 1;
   visibility: visible;
   transform: scale(1);
 }
+.getinTouches .sub-page-area .left-side,
+.getinTouchetohotels .sub-page-area .left-side,
+.getinToucheforexp .sub-page-area .left-side
+{
+  min-height: 1020px
+} 
+.getinTouches .form-page form .inp-group,
+.getinTouchetohotels .form-page form .inp-group,
+.getinToucheforexp .form-page form .inp-group
+{
+  display: flex;
+} 
+.getinTouches .form-page form .inp-group label,
+.getinTouchetohotels .form-page form .inp-group label,
+.getinToucheforexp .form-page form .inp-group label
+{
+  width: 45%;
+}  
+.getinTouches .form-page, 
+.getinTouchetohotels .form-page, 
+.getinToucheforexp .form-page
+{
+  width: 90%;
+  height: 100vh;
+  overflow: auto;
+  padding-top: 100px;
+  padding-bottom: 50px;
+} 
+.getinTouches .form-page form,
+.getinTouchetohotels .form-page form,
+.getinToucheforexp .form-page form 
+{
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .fclasse .features ul li h1 {
   margin-bottom: 10px;
 }
@@ -1583,9 +1643,6 @@ button.theme-btn.addMore {
 .cookie,
 .blog{
   padding: 50px;
-}
-.getinTouches .sub-page-area .left-side {
-  min-height: 1020px
 }
 .blog {
   overflow: auto;
@@ -1650,9 +1707,6 @@ button.theme-btn.addMore {
 }
 .form-page ul#pills-tab li.nav-item {
   margin-bottom: 10px;
-}
-.getinTouches .form-page form {
-  width: 100%;
 }
 /* Inner_datail_pages page css START 
 =================================== */

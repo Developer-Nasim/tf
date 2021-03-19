@@ -266,7 +266,7 @@
     done()
 
 
-    // Signup/contact/subscribe
+    // Get_in_touch / Signup / contact / subscribe
     function GetForm() {
 
         // Signup/contact/subscribe
@@ -294,21 +294,63 @@
 
         // Get in touch
         function GetnTouch() {
-            let btn         = document.querySelector('.getintouchnow')
-            let formBlock   = document.querySelector('.getinTouches')
-            let closeBtn    = document.querySelector('.getinTouches .thisClose')
 
-            // Form section comming
-            window.addEventListener('click', (e) => {
-                if (e.target.classList.contains('getintouchnow')) {
-                    e.preventDefault()
-                    formBlock.classList.add('touchNow')
-                } 
-            })
-            // Form sention closing
-            closeBtn.addEventListener('click', () => {
-                formBlock.classList.remove('touchNow')
-            })
+            // Flights
+            function Flight() { 
+                let btn         = document.querySelector('.getintouchnow')
+                let formBlock   = document.querySelector('.getinTouches')
+                let closeBtn    = document.querySelector('.getinTouches .thisClose')
+
+                // Form section comming
+                window.addEventListener('click', (e) => {
+                    if (e.target.classList.contains('getintouchnow')) {
+                        e.preventDefault()
+                        formBlock.classList.add('touchNow')
+                    } 
+                })
+                // Form sention closing
+                closeBtn.addEventListener('click', () => {
+                    formBlock.classList.remove('touchNow')
+                }) 
+            }
+            Flight()
+            // hotels
+            function hotels() { 
+                let btn         = document.querySelector('.getintohotel')
+                let formBlock   = document.querySelector('.getinTouchetohotels')
+                let closeBtn    = document.querySelector('.getinTouchetohotels .thisClose')
+
+                // Form section comming
+                window.addEventListener('click', (e) => {
+                    if (e.target.classList.contains('getintohotel')) {
+                        e.preventDefault()
+                        formBlock.classList.add('touchNow')
+                    } 
+                })
+                // Form sention closing
+                closeBtn.addEventListener('click', () => {
+                    formBlock.classList.remove('touchNow')
+                }) 
+            }
+            hotels()
+            // experinces
+            function experinces() {  
+                let formBlock   = document.querySelector('.getinToucheforexp')
+                let closeBtn    = document.querySelector('.getinToucheforexp .thisClose')
+
+                // Form section comming
+                window.addEventListener('click', (e) => {
+                    if (e.target.classList.contains('getintoexperinces')) {
+                        e.preventDefault()
+                        formBlock.classList.add('touchNow')
+                    } 
+                })
+                // Form sention closing
+                closeBtn.addEventListener('click', () => {
+                    formBlock.classList.remove('touchNow')
+                }) 
+            }
+            experinces()
 
         }
         GetnTouch()
