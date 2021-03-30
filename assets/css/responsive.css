@@ -30,7 +30,7 @@
         font-size: 92px;
         line-height: 130.98px;
     }
-    .page-wrp up.menu-list li a {
+    .page-wrp ul.menu-list li a {
         font-size: 20px;
         line-height: 30px;
         width: 200px;
@@ -66,7 +66,7 @@
         font-size: 52px;
         line-height: 62px; 
     }
-    ul#pills-tab li button { 
+    ul.nav li button { 
         margin-right: 10px;
         width: 125px; 
     }
@@ -110,7 +110,7 @@
         opacity: 1;
         visibility: visible;
     }
-    .page-wrp up.menu-list {
+    .page-wrp ul.menu-list {
         opacity: 0;
         visibility: hidden;
         z-index: 1;
@@ -120,35 +120,35 @@
         transform: translate(-50%, -50%);
         width: max-content;
     }
-    .page-wrp.addedMenu up.menu-list {
+    .page-wrp.addedMenu ul.menu-list {
         opacity: 1;
         visibility: visible;
     } 
-    .page-wrp up.menu-list li a {
+    .page-wrp ul.menu-list li a {
         font-size: 20px;
         line-height: 30px;
         width: 200px;
         height: 60px;
         margin: 20px 0;
     }
-    .page-wrp up.menu-list li {
+    .page-wrp ul.menu-list li {
         margin-right: -40px;
         opacity: 0;
         visibility: hidden;
         transition: .5s;
     }
-    .page-wrp up.menu-list li:nth-child(2){
+    .page-wrp ul.menu-list li:nth-child(2){
         transition-delay: .1s;
     }
-    .page-wrp up.menu-list li:nth-child(3){
+    .page-wrp ul.menu-list li:nth-child(3){
         transition-delay: .2s;
     }
-    .page-wrp up.menu-list li:nth-child(4){
+    .page-wrp ul.menu-list li:nth-child(4){
         transition-delay: .3s;
     }
     
 
-    .page-wrp.addedMenu up.menu-list li {
+    .page-wrp.addedMenu ul.menu-list li {
         margin-right: 0px;
         opacity: 1;
         visibility: visible;
@@ -470,14 +470,14 @@ body.experinces .sub-page-area.getaquote{
     .page-wrp.addedMenu a.menuIcon span.menuBar {
         top: 15px;
     }
-    .page-wrp up.menu-list li a {
+    .page-wrp ul.menu-list li a {
         font-size: 16px;
         line-height: 20px;
         width: 200px;
         height: 46px;
         margin: 20px 0;
     }
-    .page-wrp up.menu-list {
+    .page-wrp ul.menu-list {
         opacity: 0;
         visibility: hidden;
         z-index: 1;
@@ -487,26 +487,26 @@ body.experinces .sub-page-area.getaquote{
         transform: translate(-50%, -50%);
         width: max-content;
     }
-    .page-wrp.addedMenu up.menu-list {
+    .page-wrp.addedMenu ul.menu-list {
         opacity: 1;
         visibility: visible;
     }
-    .page-wrp up.menu-list li {
+    .page-wrp ul.menu-list li {
         margin-right: -40px;
         opacity: 0;
         visibility: hidden;
         transition: .5s;
     }
-    .page-wrp up.menu-list li:nth-child(2){
+    .page-wrp ul.menu-list li:nth-child(2){
         transition-delay: .1s;
     }
-    .page-wrp up.menu-list li:nth-child(3){
+    .page-wrp ul.menu-list li:nth-child(3){
         transition-delay: .2s;
     }
-    .page-wrp up.menu-list li:nth-child(4){
+    .page-wrp ul.menu-list li:nth-child(4){
         transition-delay: .3s;
     } 
-    .page-wrp.addedMenu up.menu-list li {
+    .page-wrp.addedMenu ul.menu-list li {
         margin-right: 0px;
         opacity: 1;
         visibility: visible;
@@ -801,7 +801,7 @@ body.experinces .left-side{
     left: 0;
     z-index: 3;
 }
-ul#pills-tab li button {
+ul.nav li button {
     padding: 0 13px;
     margin-right: 4px;
     width: auto;
@@ -864,7 +864,7 @@ ul#pills-tab li button {
 .form-page form h1 {
     font-size: 24px;  
 }
-form-page ul#pills-tab { 
+form-page ul.nav { 
     margin-bottom: 40px;
 } 
 .inner_datail_pages.takeForm .thisClose.allcr {

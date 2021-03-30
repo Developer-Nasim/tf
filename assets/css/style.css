@@ -187,7 +187,7 @@ border-radius: 5px;
 /* Scroll css  END && Cursor css START */
  
 
-
+/* 
 html{ 
   cursor: none;
 }
@@ -221,7 +221,7 @@ html{
 .img-focus {
   height: 5rem;
   width: 5rem;
-} 
+}  */
 
 
  
@@ -544,14 +544,14 @@ body.pageIn .inner-wrp {
   transition: .3s;
 }
 
-.page-wrp up.menu-list {
+.page-wrp ul.menu-list {
   position: absolute;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
 }
 
-.page-wrp up.menu-list li a {
+.page-wrp ul.menu-list li a {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 24px;
@@ -567,11 +567,11 @@ body.pageIn .inner-wrp {
   transition: .3s;
 }
 
-.page-wrp up.menu-list li {
+.page-wrp ul.menu-list li {
   display: block;
 }
 
-.page-wrp up.menu-list li a:hover,.page-wrp up.menu-list li a.active {
+.page-wrp ul.menu-list li a:hover,.page-wrp ul.menu-list li a.active {
   background: var(--themeWhite);
   color: var(--themeBlack);
 }
@@ -933,7 +933,7 @@ body.pageIn .left-side {
     z-index: 2;
 }
 
-.page-wrp.addedMenu up.menu-list {
+.page-wrp.addedMenu ul.menu-list {
     z-index: 1;
     top: 50%;
     left: 50%;
@@ -942,7 +942,7 @@ body.pageIn .left-side {
     padding-top: 120px;
 }
 
-.page-wrp.addedMenu up.menu-list li a {
+.page-wrp.addedMenu ul.menu-list li a {
     border: 2px solid var(--themeWhite);
 }
 .page-wrp.addedMenu a.menuIcon {
@@ -1238,7 +1238,7 @@ body.pageIn .all-inner .sub-page-area.getaquote.upNow.multiCity {
 body.pageIn .all-inner .sub-page-area.getaquote.upNow {
   min-height: 1100px;
 }
-ul#pills-tab li button {
+ul.nav li button {
   padding: 0;
   border: none;
   background: var(--themeWhite);
@@ -1253,15 +1253,15 @@ ul#pills-tab li button {
   opacity: .5;
 }
 
-ul#pills-tab li button:hover {
+ul.nav li button:hover {
   opacity: 1;
 }
 
-ul#pills-tab li button.active {
+ul.nav li button.active {
   opacity: 1;
 }
 
-ul#pills-tab {
+ul.nav {
   margin-bottom: 45px;
   margin-top: 50px;
   justify-content: space-between;
@@ -1677,7 +1677,7 @@ button.theme-btn.addMore {
 .form-page form {
   width: 600px;
 }
-.form-page ul#pills-tab {
+.form-page ul.nav {
   margin: 0;
   margin-bottom: 60px;
 }
@@ -1705,7 +1705,7 @@ button.theme-btn.addMore {
 .form-page form .forAgree button.theme-btn {
   margin-bottom: 0;
 }
-.form-page ul#pills-tab li.nav-item {
+.form-page ul.nav li.nav-item {
   margin-bottom: 10px;
 }
 /* Inner_datail_pages page css START 
