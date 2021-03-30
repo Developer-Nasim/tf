@@ -284,13 +284,17 @@
                     formBlock.classList.add('takeForm');
                 } 
             })
-            btn.addEventListener('click', function () {
-                formBlock.classList.add('takeForm');
-            })
-            // Form sention closing
-            closeBtn.addEventListener('click', function () {
-                formBlock.classList.remove('takeForm');
-            })
+            if (btn) { 
+                btn.addEventListener('click', function () {
+                    formBlock.classList.add('takeForm');
+                })
+            }
+            // Form sention closing 
+            if (closeBtn) { 
+                closeBtn.addEventListener('click', function () {
+                    formBlock.classList.remove('takeForm');
+                }) 
+            }
         }
         SignupIn();
 
@@ -311,9 +315,11 @@
                     } 
                 })
                 // Form sention closing
-                closeBtn.addEventListener('click', function () {
-                    formBlock.classList.remove('touchNow');
-                }) 
+                if (closeBtn) { 
+                    closeBtn.addEventListener('click', function () {
+                        formBlock.classList.remove('touchNow');
+                    }) 
+                }
             }
             Flight();
             // hotels
@@ -329,10 +335,12 @@
                         formBlock.classList.add('touchNow');
                     } 
                 })
-                // Form sention closing
-                closeBtn.addEventListener('click', function () {
-                    formBlock.classList.remove('touchNow');
-                }) 
+                // Form sention closing 
+                if (closeBtn) { 
+                    closeBtn.addEventListener('click', function () {
+                        formBlock.classList.remove('touchNow');
+                    }) 
+                }
             }
             hotels();
             // experinces
@@ -348,9 +356,11 @@
                     } 
                 })
                 // Form sention closing
-                closeBtn.addEventListener('click', function () {
-                    formBlock.classList.remove('touchNow');
-                }) 
+                if (closeBtn) { 
+                    closeBtn.addEventListener('click', function () {
+                        formBlock.classList.remove('touchNow');
+                    }) 
+                }
             }
             experinces();
 
@@ -371,9 +381,11 @@
                 } 
             });
             // Form sention closing
-            closeBtn.addEventListener('click', function () {
-                formBlock.classList.remove('touchNow');
-            });
+            if (closeBtn) { 
+                closeBtn.addEventListener('click', function () {
+                    formBlock.classList.remove('touchNow');
+                });
+            }
 
         }
         privacy();
@@ -392,9 +404,11 @@
                 } 
             })
             // Form sention closing
-            closeBtn.addEventListener('click', function () {
-                formBlock.classList.remove('touchNow');
-            })
+            if (closeBtn) { 
+                closeBtn.addEventListener('click', function () {
+                    formBlock.classList.remove('touchNow');
+                })
+            }
 
         }
         cookie();
@@ -422,20 +436,25 @@
     GetForm();
  
     // Date-Picker
-    function DatePicker() {
+    function DatePicker() { 
         let list = document.querySelector('.qoutes');
-        list.addEventListener('click', function () {
-            setInterval(function () { 
-                $( "#datepicker" ).datepicker({dateFormat: "dd-mm-yy",duration: "fast"});
-                $( "#datepicker2" ).datepicker({dateFormat: "dd-mm-yy",duration: "fast"});
-                $( "#activitystart" ).datepicker({dateFormat: "dd-mm-yy",duration: "fast"});
-                $( "#activityend" ).datepicker({dateFormat: "dd-mm-yy",duration: "fast"});
-                $( "#activityend2" ).datepicker({dateFormat: "dd-mm-yy",duration: "fast"});
-                $( "#activityend3" ).datepicker({dateFormat: "dd-mm-yy",duration: "fast"});
-            }, 100);
-        })
+        if (list) { 
+            list.addEventListener('click', function () {
+                setInterval(function () { 
+                    $( "#datepicker" ).datepicker({dateFormat: "dd-mm-yy",duration: "fast"});
+                    $( "#datepicker2" ).datepicker({dateFormat: "dd-mm-yy",duration: "fast"});
+                    $( "#activitystart" ).datepicker({dateFormat: "dd-mm-yy",duration: "fast"});
+                    $( "#activityend" ).datepicker({dateFormat: "dd-mm-yy",duration: "fast"});
+                    $( "#activityend2" ).datepicker({dateFormat: "dd-mm-yy",duration: "fast"});
+                    $( "#activityend3" ).datepicker({dateFormat: "dd-mm-yy",duration: "fast"});
+                }, 100);
+            })
+        }
     }
     DatePicker();
+
+
+
 
 
     // Auto complete now
@@ -498,6 +517,46 @@
 
 
 
+    function FoOoSO() {
+        let date  = document.querySelector('#g_eactivityend2')
+        let date2 = document.querySelector('#g_activityend3')
+        let date3 = document.querySelector('#g_eactivityend2')
+        let date4 = document.querySelector('#g_activityend3')
+        let date5 = document.querySelector('#g_activitystart')
+        let date6 = document.querySelector('#g_activityend') 
+
+        let date7 = document.querySelector('#g_hactivitystart') 
+        let date8 = document.querySelector('#g_hactivityend') 
+
+
+        if (date) {
+            $( "#g_eactivityend2" ).datepicker({dateFormat: "dd-mm-yy",duration: "fast"});
+        }
+        if (date2) {
+            $( "#g_activityend3" ).datepicker({dateFormat: "dd-mm-yy",duration: "fast"});
+        }
+        if (date3) {
+            $( "#g_eactivityend2" ).datepicker({dateFormat: "dd-mm-yy",duration: "fast"});
+        }
+        if (date4) {
+            $( "#g_activityend3" ).datepicker({dateFormat: "dd-mm-yy",duration: "fast"});
+        }
+        if (date5) {
+            $( "#g_activitystart" ).datepicker({dateFormat: "dd-mm-yy",duration: "fast"});
+        }
+        if (date6) {
+            $( "#g_activityend" ).datepicker({dateFormat: "dd-mm-yy",duration: "fast"});
+        }
+        if (date7) {
+            $( "#g_hactivitystart" ).datepicker({dateFormat: "dd-mm-yy",duration: "fast"});
+        }
+        if (date8) {
+            $( "#g_hactivityend" ).datepicker({dateFormat: "dd-mm-yy",duration: "fast"});
+        }
+    }
+    FoOoSO()
+
+    
 
  }) 
  

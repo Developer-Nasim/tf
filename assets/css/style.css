@@ -1436,7 +1436,7 @@ button.theme-btn.addMore {
 	border-radius: 0.5rem;
 	padding: 0.5rem;
   position: absolute;
-  z-index: 9 !important;
+  /* z-index: 9 !important; */
 }
 .wrapper table {
 	border-collapse: collapse;
@@ -1604,37 +1604,7 @@ button.theme-btn.addMore {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 .fclasse .features ul li h1 {
   margin-bottom: 10px;
@@ -1708,26 +1678,15 @@ button.theme-btn.addMore {
 .form-page ul.nav li.nav-item {
   margin-bottom: 10px;
 }
+
+
+
+
 /* Inner_datail_pages page css START 
 =================================== */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
  
  
  /* Content-loading area START */ 
@@ -1749,3 +1708,1846 @@ button.theme-btn.addMore {
   opacity: 1; 
 }   
  /* Content-loading area START */ 
+
+
+
+
+ 
+ 
+
+
+
+/* ===========
+==============
+==============
+==============  The extra css for some pages
+==============  You will delete it will you will be work for the back-end or will dynamic the pahes
+==============
+==============
+============*/
+
+
+
+
+ 
+
+
+
+
+
+/* About page extra css START */
+
+.page-about .left-side{
+  height: 100vh;
+}
+.page-about .left-side:after { 
+  z-index: 4;
+  opacity: .4; 
+}
+.page-about .left-side a.logo{
+  z-index: 9;
+}
+.page-about .sub-page-area.about .thisClose{
+  z-index: 9;
+}
+.page-about .left-wrp{
+  position: relative;
+  z-index: 9;
+}
+.page-about .left-side .ken-img { 
+  z-index: 1;
+}
+.page-about .sub-page-area.about .right-side {
+  padding-top: 0;
+}
+
+@media (min-width: 766px) and (max-width: 991px){
+
+  .page-about .sub-page-area .footer {
+      bottom: 40px;
+  }
+  .page-about .sub-page-area{
+      height: 100%; 
+  }
+  
+}
+@media (max-width: 768px){
+
+  .page-about .sub-page-area .footer {
+      bottom: 20px;
+  }
+  .page-about .sub-page-area{
+      height: 100%; 
+  }
+  
+}
+
+
+/*
+ About page extra css END 
+ Blog page extra css STARTED 
+*/
+
+
+.page-blog .left-side{
+  height: 100vh;
+}
+.page-blog .left-side:after { 
+  z-index: 4;
+  opacity: .4; 
+}
+.page-blog .left-side a.logo{
+  z-index: 9;
+}
+.page-blog .sub-page-area.about .thisClose{
+  z-index: 9;
+}
+.page-blog .left-wrp{
+  position: relative;
+  z-index: 9;
+}
+.page-blog .left-side .ken-img { 
+  z-index: 1;
+}
+.page-blog .sub-page-area.about .right-side {
+  padding-top: 0;
+}
+.page-blog .right-wrp p {
+  margin-bottom: 36px;
+  font-size: 16px;
+  line-height: initial;
+}
+
+.page-blog .right-wrp h5 {
+  margin-bottom: 15px;
+}
+@media (min-width: 992px) and (max-width: 1200px){
+ .page-blog .left-side {
+      height: 930px;
+  }
+  
+}
+@media (min-width: 766px) and (max-width: 991px){
+
+  .page-blog .sub-page-area .footer {
+      bottom: 40px;
+  }
+  .page-blog .sub-page-area{
+      height: 100%; 
+  }
+  .page-blog .sub-page-area.about {
+      padding-bottom: 0px;
+  }
+}
+@media (max-width: 768px){
+
+  .page-blog .sub-page-area .footer {
+      bottom: 20px;
+  }
+  .page-blog .sub-page-area{
+      height: 100%; 
+  }
+  
+}
+
+
+/*
+ Blog page extra css END 
+ Contact page extra css STARTED 
+*/
+
+
+.page-contact .left-side .thisClose{
+  z-index: 9;
+}
+.page-contact .left-side{
+  height: 100vh;
+}
+.page-contact .left-side:after { 
+  z-index: 4;
+  opacity: .4; 
+}
+.page-contact .left-side a.logo{
+  z-index: 9;
+}
+.page-contact .sub-page-area.about .thisClose{
+  z-index: 9;
+}
+.page-contact .left-wrp{
+  position: relative;
+  z-index: 9;
+}
+.page-contact .left-side .ken-img { 
+  z-index: 1;
+}
+.page-contact .sub-page-area{
+  min-height: 100vh;
+}
+.page-contact .footer { 
+  bottom: -20px; 
+}
+@media (min-width: 766px) and (max-width: 991px){
+
+ .page-contact .sub-page-area .footer {
+      bottom: -20px;
+  }
+  .page-contact .sub-page-area{
+      height: 100%;
+      padding-bottom: 50px;
+  } 
+}
+@media (max-width: 768px){
+
+  .page-contact .sub-page-area .footer {
+      bottom: -20px;
+  }
+  .page-contact .sub-page-area{
+      height: 100%; 
+      padding-bottom: 50px;
+  } 
+}
+
+
+/*
+ Contact page extra css END 
+ Cookie page extra css STARTED 
+*/
+
+.page-cookie .privacy,
+.page-cookie .cookie,
+.page-cookie .blog {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  position: relative;
+}
+
+
+/*
+ Contact page extra css END 
+ Qoute page extra css STARTED 
+*/
+
+
+.page-qoute .left-side .thisClose{
+  z-index: 9;
+}
+.page-qoute .left-side{
+  height: 100vh;
+}
+.page-qoute .left-side:after { 
+  z-index: 4;
+  opacity: .4; 
+}
+.page-qoute .left-side a.logo{
+  z-index: 9;
+}
+.page-qoute .sub-page-area.about .thisClose{
+  z-index: 9;
+}
+.page-qoute .left-wrp{
+  position: relative;
+  z-index: 9;
+}
+.page-qoute .left-side .ken-img { 
+  z-index: 1;
+}
+.page-qoute .sub-page-area{
+  min-height: 100vh;
+}
+  .page-qoute .sub-page-area .footer {
+      bottom: -50px;
+  }
+@media (min-width: 992px) and (max-width: 1400px){
+
+  .page-qoute .sub-page-area .footer {
+      bottom: 25px;
+  }
+}
+@media (min-width: 766px) and (max-width: 991px){
+
+ .page-qoute .sub-page-area .footer {
+      bottom: -20px;
+  }
+  .page-qoute .sub-page-area{
+      height: 100%;
+      padding-bottom: 50px;
+  } 
+}
+@media (max-width: 768px){
+
+  .page-qoute .sub-page-area .footer {
+      bottom: -20px !important;
+  }
+  .page-qoute .sub-page-area{
+      height: 100%; 
+      padding-bottom: 50px;
+  } 
+}
+
+
+/*
+ Qoute page extra css END 
+ Services page extra css STARTED 
+*/
+
+
+.page-services .left-side .thisClose{
+  z-index: 9;
+}
+.page-services .left-side{
+  height: 100vh;
+}
+.page-services .left-side:after { 
+  z-index: 4;
+  opacity: .4; 
+}
+.page-services .left-side a.logo{
+  z-index: 9;
+}
+.page-services .sub-page-area.about .thisClose{
+  z-index: 9;
+}
+.page-services .left-wrp{
+  position: relative;
+  z-index: 9;
+}
+.page-services .left-side .ken-img { 
+  z-index: 1;
+}
+.page-services .sub-page-area{
+  min-height: 100vh;
+}
+.page-services .all-inner {
+  overflow: hidden;
+  position: relative;
+}
+
+
+.page-services .sub-page-area .footer {
+      bottom: -30px;
+  }
+@media (min-width: 992px) and (max-width: 1500px){
+  .page-services .right-wrp p {
+      margin-bottom: 45px;
+      font-size: 16px;
+  }
+  .page-services .ser-details ul li h1 {
+      font-size: 38px;
+      line-height: 40.66px;
+  }
+  .page-services .right-wrp h5 {
+      margin-bottom: 25px;
+      font-size: 19px;
+  }
+}
+@media (min-width: 766px) and (max-width: 991px){
+  .page-services .sub-page-area .footer {
+      bottom: -20px;
+  }
+  .page-services .sub-page-area{
+      height: 100%;
+      padding-bottom: 50px;
+  } 
+}
+@media (max-width: 767px){
+  .page-services .left-side.blk-in-md {
+      max-height: 309px;
+      padding-left: 20px;
+  }
+  .page-services .features ul li p {
+      margin-bottom: 30px;
+  }
+  .page-services .features ul li.touch-btn { 
+      margin-top: 40px;
+  }
+  .page-services .sub-page-area .footer {
+      bottom: -20px;
+  }
+  .page-services .sub-page-area{
+      height: 100%;
+      padding-bottom: 50px;
+  } 
+}
+
+
+/*
+ Services page extra css END 
+ CityCoutry page extra css STARTED 
+*/
+
+
+.page-cityCountry .left-side .thisClose{
+  z-index: 9;
+}
+.page-cityCountry .left-side{
+  height: 100vh;
+}
+.page-cityCountry .left-side:after { 
+  z-index: 4;
+  opacity: .4; 
+}
+.page-cityCountry .left-side a.logo{
+  z-index: 9;
+}
+.page-cityCountry .sub-page-area.about .thisClose{
+  z-index: 9;
+}
+.page-cityCountry .left-wrp{
+  position: relative;
+  z-index: 9;
+}
+.page-cityCountry .left-side .ken-img { 
+  z-index: 1;
+}
+.page-cityCountry .sub-page-area{
+  min-height: 100vh;
+}
+.page-cityCountry .all-inner {
+  overflow: hidden;
+  position: relative;
+}
+.page-cityCountry .service-sub-pages .ssp{
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+.page-cityCountry .fclasse {
+  transform: scale(1);
+  visibility: visible;
+  opacity: 1;
+  position: unset;
+}
+.page-cityCountry .fclasse .left-side, 
+.page-cityCountry .fclasse .right-side {
+  opacity: 1; 
+}
+
+
+@media (min-width: 992px) and (max-width: 1500px){
+  .page-cityCountry .right-wrp p {
+      margin-bottom: 45px;
+      font-size: 16px;
+  }
+  .page-cityCountry .ser-details ul li h1 {
+      font-size: 38px;
+      line-height: 40.66px;
+  }
+  .page-cityCountry .right-wrp h5 {
+      margin-bottom: 25px;
+      font-size: 19px;
+  }
+}
+@media (min-width: 766px) and (max-width: 991px){
+
+  .page-cityCountry .fclasse .footer {
+      bottom: -100px;
+  }
+  .page-cityCountry .fclasse{
+      height: 100%;
+      padding-bottom: 120px;
+  }
+  .page-cityCountry .features ul li.touch-btn {
+      display: block;
+      margin-top: 40px;
+  }
+
+}
+@media (max-width: 767px){
+  .page-cityCountry .left-side.blk-in-md {
+      max-height: 309px;
+      padding-left: 20px;
+  }
+  .page-cityCountry .features ul li p {
+      margin-bottom: 30px;
+  }
+  .page-cityCountry .features ul li.touch-btn { 
+      margin-top: 40px;
+  }
+  
+  .page-cityCountry .features ul li.touch-btn { 
+      margin-top: 40px;
+  }
+  .page-cityCountry .fclasse .footer {
+      bottom: -100px;
+  }
+  .page-cityCountry .fclasse{
+      height: 100%;
+      padding-bottom: 120px;
+  }
+}
+
+
+/*
+ CityCoutry page extra css END 
+ ExperincesIndex page extra css STARTED 
+*/
+
+
+.page-exIndex .left-side .thisClose{
+  z-index: 9;
+}
+.page-exIndex .left-side{
+  height: 100vh;
+}
+.page-exIndex .left-side:after { 
+  z-index: 4;
+  opacity: .4; 
+}
+.page-exIndex .left-side a.logo{
+  z-index: 9;
+}
+.page-exIndex .sub-page-area.about .thisClose{
+  z-index: 9;
+}
+.page-exIndex .left-wrp{
+  position: relative;
+  z-index: 9;
+}
+.page-exIndex .left-side .ken-img { 
+  z-index: 1;
+}
+.page-exIndex .sub-page-area{
+  min-height: 100vh;
+}
+.page-exIndex .all-inner {
+  overflow: hidden;
+  position: relative;
+}
+.page-exIndex .service-sub-pages .ssp{
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+@media (min-width: 992px) and (max-width: 1500px){
+  .page-exIndex .right-wrp p {
+      margin-bottom: 45px;
+      font-size: 16px;
+  }
+  .page-exIndex .ser-details ul li h1 {
+      font-size: 38px;
+      line-height: 40.66px;
+  }
+  .page-exIndex .right-wrp h5 {
+      margin-bottom: 25px;
+      font-size: 19px;
+  }
+  
+}
+@media (min-width: 766px) and (max-width: 991px){
+
+  .page-exIndex .ssp .footer {
+      bottom: -40px !important;
+  }
+  .page-exIndex .ssp.experiences{
+      height: 100%;
+      padding-bottom: 70px;
+  }
+  .page-exIndex .ssp .right-side {
+      padding-bottom: 100px;
+  } 
+  
+}
+@media (max-width: 767px){
+  .page-exIndex .left-side.blk-in-md {
+      max-height: 309px;
+      padding-left: 20px;
+  }
+  .page-exIndex .features ul li p {
+      margin-bottom: 30px;
+  }
+  .page-exIndex .features ul li.touch-btn { 
+      margin-top: 40px;
+  }
+  .page-exIndex .left-wrp h1 {
+      margin-bottom: 0px;
+      font-size: 54px;
+      line-height: 70px;
+      margin-left: -20px;
+  }
+  
+  .page-exIndex .ssp .footer {
+      bottom: -60px !important;
+  }
+  .page-exIndex .ssp.experiences{
+      height: 100%;
+      padding-bottom: 90px !important;
+  }
+}
+
+
+
+/*
+ ExperincesIndex page extra css END 
+ Tours page extra css STARTED 
+*/
+
+
+.page-tours .left-side .thisClose{
+  z-index: 9;
+}
+.page-tours .left-side{
+  height: 100vh;
+}
+.page-tours .left-side:after { 
+  z-index: 4;
+  opacity: .4; 
+}
+.page-tours .left-side a.logo{
+  z-index: 9;
+}
+.page-tours .sub-page-area.about .thisClose{
+  z-index: 9;
+}
+.page-tours .left-wrp{
+  position: relative;
+  z-index: 9;
+}
+.page-tours .left-side .ken-img { 
+  z-index: 1;
+}
+.page-tours .sub-page-area{
+  min-height: 100vh;
+}
+.page-tours .all-inner {
+  overflow: hidden;
+  position: relative;
+}
+.page-tours .service-sub-pages .ssp{
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+.page-tours .fclasse {
+  transform: scale(1);
+  visibility: visible;
+  opacity: 1;
+  position: unset;
+}
+.page-tours .fclasse .left-side, .page-tours .fclasse .right-side {
+  opacity: 1; 
+}
+
+
+@media (min-width: 992px) and (max-width: 1500px){
+  .page-tours .right-wrp p {
+      margin-bottom: 45px;
+      font-size: 16px;
+  }
+  .page-tours .ser-details ul li h1 {
+      font-size: 38px;
+      line-height: 40.66px;
+  }
+  .page-tours .right-wrp h5 {
+      margin-bottom: 25px;
+      font-size: 19px;
+  }
+}
+@media (min-width: 766px) and (max-width: 991px){
+
+ 
+  .page-tours .fclasse .footer {
+      bottom: -100px;
+  }
+  .page-tours .fclasse{
+      height: 100%;
+      padding-bottom: 120px;
+  }
+  .page-tours .features ul li.touch-btn {
+      display: block;
+      margin-top: 40px;
+  }
+
+}
+@media (max-width: 767px){
+  .page-tours .left-side.blk-in-md {
+      max-height: 309px;
+      padding-left: 20px;
+  }
+  .page-tours .features ul li p {
+      margin-bottom: 30px;
+  }
+  .page-tours .features ul li.touch-btn { 
+      margin-top: 40px;
+  }
+ 
+  .page-tours .features ul li.touch-btn { 
+      margin-top: 40px;
+  }
+  .page-tours .fclasse .footer {
+      bottom: -100px;
+  }
+  .page-tours .fclasse{
+      height: 100%;
+      padding-bottom: 120px;
+  }
+}
+
+
+/*
+ Tours page extra css END 
+ business-class page extra css STARTED 
+*/
+
+
+.page-business .left-side .thisClose{
+  z-index: 9;
+}
+.page-business .left-side{
+  height: 100vh;
+}
+.page-business .left-side:after { 
+  z-index: 4;
+  opacity: .4; 
+}
+.page-business .left-side a.logo{
+  z-index: 9;
+}
+.page-business .sub-page-area.about .thisClose{
+  z-index: 9;
+}
+.page-business .left-wrp{
+  position: relative;
+  z-index: 9;
+}
+.page-business .left-side .ken-img { 
+  z-index: 1;
+}
+.page-business .sub-page-area{
+  min-height: 100vh;
+}
+.page-business .all-inner {
+  overflow: hidden;
+  position: relative;
+}
+.page-business .service-sub-pages .ssp{
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+@media (min-width: 992px) and (max-width: 1500px){
+  .page-business .right-wrp p {
+      margin-bottom: 45px;
+      font-size: 16px;
+  }
+  .page-business .ser-details ul li h1 {
+      font-size: 38px;
+      line-height: 40.66px;
+  }
+  .page-business .right-wrp h5 {
+      margin-bottom: 25px;
+      font-size: 19px;
+  }
+}
+@media (min-width: 766px) and (max-width: 991px){
+
+  .page-business .fclasse .footer {
+      bottom: -100px;
+  }
+  .page-business .fclasse{
+      height: 100%;
+      padding-bottom: 120px;
+  }
+  .page-business .features ul li.touch-btn {
+      display: block;
+      margin-top: 40px;
+  }
+
+}
+@media (max-width: 767px){
+  .page-business .left-side.blk-in-md {
+      max-height: 309px;
+      padding-left: 20px;
+  }
+  .page-business .features ul li p {
+      margin-bottom: 30px;
+  }
+  .page-business .features ul li.touch-btn { 
+      margin-top: 40px;
+  }
+  .page-business .fclasse .footer {
+      bottom: -100px;
+  }
+  .page-business .fclasse{
+      height: 100%;
+      padding-bottom: 120px;
+  }
+}
+
+
+/*
+ business-class page extra css END 
+ first-class page extra css STARTED 
+*/
+
+
+.page-first .left-side .thisClose{
+  z-index: 9;
+}
+.page-first .left-side{
+  height: 100vh;
+}
+.page-first .left-side:after { 
+  z-index: 4;
+  opacity: .4; 
+}
+.page-first .left-side a.logo{
+  z-index: 9;
+}
+.page-first .sub-page-area.about .thisClose{
+  z-index: 9;
+}
+.page-first .left-wrp{
+  position: relative;
+  z-index: 9;
+}
+.page-first .left-side .ken-img { 
+  z-index: 1;
+}
+.page-first .sub-page-area{
+  min-height: 100vh;
+}
+.page-first .all-inner {
+  overflow: hidden;
+  position: relative;
+}
+.page-first .service-sub-pages .ssp{
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+@media (min-width: 992px) and (max-width: 1500px){
+  .page-first .right-wrp p {
+      margin-bottom: 45px;
+      font-size: 16px;
+  }
+  .page-first .ser-details ul li h1 {
+      font-size: 38px;
+      line-height: 40.66px;
+  }
+  .page-first .right-wrp h5 {
+      margin-bottom: 25px;
+      font-size: 19px;
+  }
+}     
+@media (min-width: 766px) and (max-width: 991px){
+
+  .page-first .fclasse .footer {
+      bottom: -100px;
+  }
+  .page-first .fclasse{
+      height: 100%;
+      padding-bottom: 120px;
+  }
+  .page-first .features ul li.touch-btn {
+      display: block;
+      margin-top: 40px;
+  }
+
+}
+@media (max-width: 767px){
+  .page-first .left-side.blk-in-md {
+      max-height: 309px;
+      padding-left: 20px;
+  }
+  .page-first .features ul li p {
+      margin-bottom: 30px;
+  }
+  .page-first .features ul li.touch-btn { 
+      margin-top: 40px;
+  }
+
+  
+  .page-first .fclasse .footer {
+      bottom: -100px;
+  }
+  .page-first .fclasse{
+      height: 100%;
+      padding-bottom: 120px;
+  }
+  .page-first .features ul li.touch-btn {
+      display: block;
+      margin-top: 40px;
+  }
+
+  
+}
+
+
+/*
+ first-class page extra css END 
+ class-index page extra css STARTED 
+*/
+
+
+.page-classIndex .left-side .thisClose{
+  z-index: 9;
+}
+.page-classIndex .left-side{
+  height: 100vh;
+}
+.page-classIndex .left-side:after { 
+  z-index: 4;
+  opacity: .4; 
+}
+.page-classIndex .left-side a.logo{
+  z-index: 9;
+}
+.page-classIndex .sub-page-area.about .thisClose{
+  z-index: 9;
+}
+.page-classIndex .left-wrp{
+  position: relative;
+  z-index: 9;
+}
+.page-classIndex .left-side .ken-img { 
+  z-index: 1;
+}
+.page-classIndex .sub-page-area{
+  min-height: 100vh;
+}
+.page-classIndex .all-inner {
+  overflow: hidden;
+  position: relative;
+}
+.page-classIndex .service-sub-pages .ssp{
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+@media (min-width: 992px) and (max-width: 1500px){
+  .page-classIndex .right-wrp p {
+      margin-bottom: 45px;
+      font-size: 16px;
+  }
+  .page-classIndex .ser-details ul li h1 {
+      font-size: 38px;
+      line-height: 40.66px;
+  }
+  .page-classIndex .right-wrp h5 {
+      margin-bottom: 25px;
+      font-size: 19px;
+  }
+}
+@media (min-width: 766px) and (max-width: 991px){
+
+  .page-classIndex .ssp .footer {
+      bottom: -40px !important;
+  }
+  .page-classIndex .service-sub-pages .ssp{
+      padding-bottom: 70px;
+  }  
+  .page-classIndex .ssp .right-side {
+      padding-bottom: 100px;
+  } 
+}
+@media (max-width: 767px){
+  .page-classIndex .left-side.blk-in-md {
+      max-height: 309px;
+      padding-left: 20px;
+  }
+  .page-classIndex .features ul li p {
+      margin-bottom: 30px;
+  }
+  .page-classIndex .features ul li.touch-btn { 
+      margin-top: 40px;
+  }
+  .page-classIndex .ssp .footer {
+   bottom: -60px !important;
+  }
+  .page-classIndex .service-sub-pages .ssp{
+      padding-bottom: 90px !important;
+  }
+  .page-classIndex .ssp.flights{
+      height: 100%;
+  }
+}
+
+
+
+/*
+ class-index page extra css END 
+ class-premium page extra css STARTED 
+*/
+
+
+.page-premium .left-side .thisClose{
+  z-index: 9;
+}
+.page-premium .left-side{
+  height: 100vh;
+}
+.page-premium .left-side:after { 
+  z-index: 4;
+  opacity: .4; 
+}
+.page-premium .left-side a.logo{
+  z-index: 9;
+}
+.page-premium .sub-page-area.about .thisClose{
+  z-index: 9;
+}
+.page-premium .left-wrp{
+  position: relative;
+  z-index: 9;
+}
+.page-premium .left-side .ken-img { 
+  z-index: 1;
+}
+.page-premium .sub-page-area{
+  min-height: 100vh;
+}
+.page-premium .all-inner {
+  overflow: hidden;
+  position: relative;
+}
+.page-premium .service-sub-pages .ssp{
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+@media (min-width: 992px) and (max-width: 1500px){
+  .page-premium .right-wrp p {
+      margin-bottom: 45px;
+      font-size: 16px;
+  }
+  .page-premium .ser-details ul li h1 {
+      font-size: 38px;
+      line-height: 40.66px;
+  }
+  .page-premium .right-wrp h5 {
+      margin-bottom: 25px;
+      font-size: 19px;
+  }
+} 
+@media (min-width: 766px) and (max-width: 991px){
+
+  .page-premium .fclasse .footer {
+      bottom: -100px;
+  }
+  .page-premium .fclasse{
+      height: 100%;
+      padding-bottom: 120px;
+  }
+  .page-premium .features ul li.touch-btn {
+      display: block;
+      margin-top: 40px;
+  }
+
+}
+@media (max-width: 767px){
+  .page-premium .left-side.blk-in-md {
+      max-height: 309px;
+      padding-left: 20px;
+  }
+  .page-premium .features ul li p {
+      margin-bottom: 30px;
+  }
+  .page-premium .features ul li.touch-btn { 
+      margin-top: 40px;
+  }
+
+  
+  .page-premium .fclasse .footer {
+      bottom: -100px;
+  }
+  .page-premium .fclasse{
+      height: 100%;
+      padding-bottom: 120px;
+  }
+ .page-premium .features ul li.touch-btn {
+      display: block;
+      margin-top: 40px;
+  }
+}
+
+
+/*
+ class-premium page extra css END 
+ city page extra css STARTED 
+*/
+
+
+.page-city .left-side .thisClose{
+  z-index: 9;
+}
+.page-city .left-side{
+  height: 100vh;
+}
+.page-city .left-side:after { 
+  z-index: 4;
+  opacity: .4; 
+}
+.page-city .left-side a.logo{
+  z-index: 9;
+}
+.page-city .sub-page-area.about .thisClose{
+  z-index: 9;
+}
+.page-city .left-wrp{
+  position: relative;
+  z-index: 9;
+}
+.page-city .left-side .ken-img { 
+  z-index: 1;
+}
+.page-city .sub-page-area{
+  min-height: 100vh;
+}
+.page-city .all-inner {
+  overflow: hidden;
+  position: relative;
+}
+.page-city .service-sub-pages .ssp{
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+.page-city .fclasse {
+  transform: scale(1);
+  visibility: visible;
+  opacity: 1;
+  position: unset;
+}
+.page-city .fclasse .left-side, .page-city .fclasse .right-side {
+  opacity: 1; 
+}
+
+
+@media (min-width: 992px) and (max-width: 1500px){
+  .page-city .right-wrp p {
+      margin-bottom: 45px;
+      font-size: 16px;
+  }
+  .page-city .ser-details ul li h1 {
+      font-size: 38px;
+      line-height: 40.66px;
+  }
+  .page-city .right-wrp h5 {
+      margin-bottom: 25px;
+      font-size: 19px;
+  }
+}
+@media (min-width: 766px) and (max-width: 991px){
+
+  .page-city .ssp .footer {
+      bottom: -40px;
+  }
+  .page-city .ssp{
+      height: 100%;
+      padding-bottom: 70px;
+  }
+  .page-city .fclasse .right-side {
+      padding-bottom: 100px;
+  }
+  .page-city .footer {
+      bottom: 30px; 
+  }
+}
+@media (max-width: 767px){
+  .page-city .left-side.blk-in-md {
+      max-height: 309px;
+      padding-left: 20px;
+  }
+  .page-city .features ul li p {
+      margin-bottom: 30px;
+  }
+  .page-city .features ul li.touch-btn { 
+      margin-top: 40px;
+  }
+  .page-city .ssp .footer {
+      bottom: -40px;
+  }
+  .page-city .ssp{
+      height: 100%;
+      padding-bottom: 70px;
+  }
+  .page-city .fclasse .right-side {
+      padding-bottom: 100px;
+  }
+  .page-city .footer {
+      bottom: 30px; 
+  }
+}
+
+
+
+/*
+ city page extra css END 
+ hotel page extra css STARTED 
+*/
+
+
+.page-hotel .left-side .thisClose{
+  z-index: 9;
+}
+.page-hotel .left-side{
+  height: 100vh;
+}
+.page-hotel .left-side:after { 
+  z-index: 4;
+  opacity: .4; 
+}
+.page-hotel .left-side a.logo{
+  z-index: 9;
+}
+.page-hotel .sub-page-area.about .thisClose{
+  z-index: 9;
+}
+.page-hotel .left-wrp{
+  position: relative;
+  z-index: 9;
+}
+.page-hotel .left-side .ken-img { 
+  z-index: 1;
+}
+.page-hotel .sub-page-area{
+  min-height: 100vh;
+}
+.page-hotel .all-inner {
+  overflow: hidden;
+  position: relative;
+}
+.page-hotel .service-sub-pages .ssp{
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+.page-hotel .fclasse {
+  transform: scale(1);
+  visibility: visible;
+  opacity: 1;
+  position: unset;
+}
+.page-hotel .fclasse .left-side, 
+.page-hotel .fclasse .right-side {
+  opacity: 1; 
+}
+
+
+@media (min-width: 992px) and (max-width: 1500px){
+  .page-hotel .right-wrp p {
+      margin-bottom: 45px;
+      font-size: 16px;
+  }
+  .page-hotel .ser-details ul li h1 {
+      font-size: 38px;
+      line-height: 40.66px;
+  }
+  .page-hotel .right-wrp h5 {
+      margin-bottom: 25px;
+      font-size: 19px;
+  }
+}
+@media (min-width: 766px) and (max-width: 991px){
+
+  .page-hotel .ssp .footer {
+      bottom: -40px;
+  }
+  .page-hotel .ssp{
+      height: 100%;
+      padding-bottom: 70px;
+  }
+
+  .page-hotel .fclasse .right-side {
+      padding-bottom: 100px;
+  }
+  .page-hotel .footer {
+      bottom: 30px; 
+  }
+}
+@media (max-width: 767px){
+  .page-hotel .left-side.blk-in-md {
+      max-height: 309px;
+      padding-left: 20px;
+  }
+  .page-hotel .features ul li p {
+      margin-bottom: 30px;
+  }
+  .page-hotel .features ul li.touch-btn { 
+      margin-top: 40px;
+  }
+  .page-hotel .ssp .footer {
+      bottom: -40px;
+  }
+  .page-hotel .ssp{
+      height: 100%;
+      padding-bottom: 70px;
+  }
+  .page-hotel .fclasse .right-side {
+      padding-bottom: 100px;
+  }
+  .page-hotel .footer {
+      bottom: 30px; 
+  }
+}
+
+
+
+/*
+ hotel page extra css END 
+ hotel-city page extra css STARTED 
+*/
+
+
+
+.page-hotelCity .left-side .thisClose{
+  z-index: 9;
+}
+.page-hotelCity .left-side{
+  height: 100vh;
+}
+.page-hotelCity .left-side:after { 
+  z-index: 4;
+  opacity: .4; 
+}
+.page-hotelCity .left-side a.logo{
+  z-index: 9;
+}
+.page-hotelCity .sub-page-area.about .thisClose{
+  z-index: 9;
+}
+.page-hotelCity .left-wrp{
+  position: relative;
+  z-index: 9;
+}
+.page-hotelCity .left-side .ken-img { 
+  z-index: 1;
+}
+.page-hotelCity .sub-page-area{
+  min-height: 100vh;
+}
+.page-hotelCity .all-inner {
+  overflow: hidden;
+  position: relative;
+}
+.page-hotelCity .service-sub-pages .ssp{
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+.page-hotelCity .fclasse {
+  transform: scale(1);
+  visibility: visible;
+  opacity: 1;
+  position: unset;
+}
+.page-hotelCity .fclasse .left-side, .page-hotelCity .fclasse .right-side {
+  opacity: 1; 
+}
+
+
+@media (min-width: 992px) and (max-width: 1500px){
+  .page-hotelCity .right-wrp p {
+      margin-bottom: 45px;
+      font-size: 16px;
+  }
+  .page-hotelCity .ser-details ul li h1 {
+      font-size: 38px;
+      line-height: 40.66px;
+  }
+  .page-hotelCity .right-wrp h5 {
+      margin-bottom: 25px;
+      font-size: 19px;
+  }
+}
+@media (min-width: 766px) and (max-width: 991px){
+
+  .page-hotelCity .ssp .footer {
+      bottom: -40px;
+  }
+  .page-hotelCity .ssp{
+      height: 100%;
+      padding-bottom: 70px;
+  }
+
+  .page-hotelCity .fclasse .right-side {
+      padding-bottom: 100px;
+  }
+  .page-hotelCity .footer {
+      bottom: 30px; 
+  }
+}
+@media (max-width: 767px){
+  .page-hotelCity .left-side.blk-in-md {
+      max-height: 309px;
+      padding-left: 20px;
+  }
+  .page-hotelCity .features ul li p {
+      margin-bottom: 30px;
+  }
+  .page-hotelCity .features ul li.touch-btn { 
+      margin-top: 40px;
+  }
+  .page-hotelCity .ssp .footer {
+      bottom: -40px;
+  }
+  .page-hotelCity .ssp{
+      height: 100%;
+      padding-bottom: 70px;
+  }
+  .page-hotelCity .fclasse .right-side {
+      padding-bottom: 100px;
+  }
+  .page-hotelCity .footer {
+      bottom: 30px; 
+  }
+}
+
+
+
+/*
+ hotel-city page extra css END 
+ hotel-index page extra css STARTED 
+*/
+
+
+
+.page-hotelIndex .left-side .thisClose{
+  z-index: 9;
+}
+.page-hotelIndex .left-side{
+  height: 100vh;
+}
+.page-hotelIndex .left-side:after { 
+  z-index: 4;
+  opacity: .4; 
+}
+.page-hotelIndex .left-side a.logo{
+  z-index: 9;
+}
+.page-hotelIndex .sub-page-area.about .thisClose{
+  z-index: 9;
+}
+.page-hotelIndex .left-wrp{
+  position: relative;
+  z-index: 9;
+}
+.page-hotelIndex .left-side .ken-img { 
+  z-index: 1;
+}
+.page-hotelIndex .sub-page-area{
+  min-height: 100vh;
+}
+.page-hotelIndex .all-inner {
+  overflow: hidden;
+  position: relative;
+}
+.page-hotelIndex .service-sub-pages .ssp{
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+@media (min-width: 992px) and (max-width: 1500px){
+  .page-hotelIndex .right-wrp p {
+      margin-bottom: 45px;
+      font-size: 16px;
+  }
+  .page-hotelIndex .ser-details ul li h1 {
+      font-size: 38px;
+      line-height: 40.66px;
+  }
+  .page-hotelIndex .right-wrp h5 {
+      margin-bottom: 25px;
+      font-size: 19px;
+  }
+}
+@media (min-width: 766px) and (max-width: 991px){
+
+  .page-hotelIndex .ssp .footer {
+      bottom: -40px !important;
+  }
+  .page-hotelIndex .ssp{
+      height: 100%;
+      padding-bottom: 70px;
+  }
+
+  .page-hotelIndex .ssp .right-side {
+      padding-bottom: 100px;
+  } 
+}
+@media (max-width: 767px){
+  .page-hotelIndex .left-side.blk-in-md {
+      max-height: 309px;
+      padding-left: 20px;
+  }
+  .page-hotelIndex .features ul li p {
+      margin-bottom: 30px;
+  }
+  .page-hotelIndex .features ul li.touch-btn { 
+      margin-top: 40px;
+  }
+  .page-hotelIndex .ssp .footer {
+      bottom: -60px !important;
+  }
+  .page-hotelIndex .ssp{
+      height: 100%;
+      padding-bottom: 90px !important;
+  }
+}
+
+
+
+/*
+ hotel-index page extra css END 
+ luxury-villas page extra css STARTED 
+*/
+
+
+
+
+.page-luxuryVillas .left-side .thisClose{
+  z-index: 9;
+}
+.page-luxuryVillas .left-side{
+  height: 100vh;
+}
+.page-luxuryVillas .left-side:after { 
+  z-index: 4;
+  opacity: .4; 
+}
+.page-luxuryVillas .left-side a.logo{
+  z-index: 9;
+}
+.page-luxuryVillas .sub-page-area.about .thisClose{
+  z-index: 9;
+}
+.page-luxuryVillas .left-wrp{
+  position: relative;
+  z-index: 9;
+}
+.page-luxuryVillas .left-side .ken-img { 
+  z-index: 1;
+}
+.page-luxuryVillas .sub-page-area{
+  min-height: 100vh;
+}
+.page-luxuryVillas .all-inner {
+  overflow: hidden;
+  position: relative;
+}
+.page-luxuryVillas .service-sub-pages .ssp{
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+.page-luxuryVillas .fclasse {
+  transform: scale(1);
+  visibility: visible;
+  opacity: 1;
+  position: unset;
+}
+.page-luxuryVillas .fclasse .left-side, 
+.page-luxuryVillas .fclasse .right-side {
+  opacity: 1; 
+}
+
+
+@media (min-width: 992px) and (max-width: 1500px){
+  .page-luxuryVillas .right-wrp p {
+      margin-bottom: 45px;
+      font-size: 16px;
+  }
+  .page-luxuryVillas .ser-details ul li h1 {
+      font-size: 38px;
+      line-height: 40.66px;
+  }
+  .page-luxuryVillas .right-wrp h5 {
+      margin-bottom: 25px;
+      font-size: 19px;
+  }
+}
+@media (min-width: 766px) and (max-width: 991px){
+
+  .page-luxuryVillas .ssp .footer {
+      bottom: -40px;
+  }
+  .page-luxuryVillas .ssp{
+      height: 100%;
+      padding-bottom: 70px;
+  }
+
+  .page-luxuryVillas .fclasse .right-side {
+      padding-bottom: 100px;
+  }
+  .page-luxuryVillas .footer {
+      bottom: 30px; 
+  }
+}
+@media (max-width: 767px){
+  .page-luxuryVillas .left-side.blk-in-md {
+      max-height: 309px;
+      padding-left: 20px;
+  }
+  .page-luxuryVillas .features ul li p {
+      margin-bottom: 30px;
+  }
+  .page-luxuryVillas .features ul li.touch-btn { 
+      margin-top: 40px;
+  }
+  .page-luxuryVillas .ssp .footer {
+      bottom: -40px;
+  }
+  .page-luxuryVillas .ssp{
+      height: 100%;
+      padding-bottom: 70px;
+  }
+  .page-luxuryVillas .fclasse .right-side {
+      padding-bottom: 100px;
+  }
+  .page-luxuryVillas .footer {
+      bottom: 30px; 
+  }
+}
+
+
+
+/*
+ luxury-villas page extra css END 
+ luxury page extra css STARTED 
+*/
+
+
+
+.page-luxary .left-side .thisClose{
+  z-index: 9;
+}
+.page-luxary .left-side{
+  height: 100vh;
+}
+.page-luxary .left-side:after { 
+  z-index: 4;
+  opacity: .4; 
+}
+.page-luxary .left-side a.logo{
+  z-index: 9;
+}
+.page-luxary .sub-page-area.about .thisClose{
+  z-index: 9;
+}
+.page-luxary .left-wrp{
+  position: relative;
+  z-index: 9;
+}
+.page-luxary .left-side .ken-img { 
+  z-index: 1;
+}
+.page-luxary .sub-page-area{
+  min-height: 100vh;
+}
+.page-luxary .all-inner {
+  overflow: hidden;
+  position: relative;
+}
+.page-luxary .service-sub-pages .ssp{
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+.page-luxary .fclasse {
+  transform: scale(1);
+  visibility: visible;
+  opacity: 1;
+  position: unset;
+}
+.page-luxary .fclasse .left-side, .page-luxary .fclasse .right-side {
+  opacity: 1; 
+}
+
+@media (min-width: 992px) and (max-width: 1500px){
+  .page-luxary .right-wrp p {
+      margin-bottom: 45px;
+      font-size: 16px;
+  }
+  .page-luxary .ser-details ul li h1 {
+      font-size: 38px;
+      line-height: 40.66px;
+  }
+  .page-luxary .right-wrp h5 {
+      margin-bottom: 25px;
+      font-size: 19px;
+  }
+}
+@media (min-width: 766px) and (max-width: 991px){
+
+  .page-luxary .ssp .footer {
+      bottom: -40px;
+  }
+  .page-luxary .ssp{
+      height: 100%;
+      padding-bottom: 70px;
+  }
+
+  .page-luxary .fclasse .right-side {
+      padding-bottom: 100px;
+  }
+  .page-luxary .footer {
+      bottom: 30px; 
+  }
+}
+@media (max-width: 767px){
+  .page-luxary .left-side.blk-in-md {
+      max-height: 309px;
+      padding-left: 20px;
+  }
+  .page-luxary .features ul li p {
+      margin-bottom: 30px;
+  }
+  .page-luxary .features ul li.touch-btn { 
+      margin-top: 40px;
+  }
+  .page-luxary .ssp .footer {
+      bottom: -40px;
+  }
+  .page-luxary .ssp{
+      height: 100%;
+      padding-bottom: 70px;
+  }
+  .page-luxary .fclasse .right-side {
+      padding-bottom: 100px;
+  }
+  .page-luxary .footer {
+      bottom: 30px; 
+  }
+}
+
+
+
+/*
+ luxury page extra css END 
+ Villa-page page extra css STARTED 
+*/
+
+
+.page-villaPage .left-side .thisClose{
+  z-index: 9;
+}
+.page-villaPage .left-side{
+  height: 100vh;
+}
+.page-villaPage .left-side:after { 
+  z-index: 4;
+  opacity: .4; 
+}
+.page-villaPage .left-side a.logo{
+  z-index: 9;
+}
+.page-villaPage .sub-page-area.about .thisClose{
+  z-index: 9;
+}
+.page-villaPage .left-wrp{
+  position: relative;
+  z-index: 9;
+}
+.page-villaPage .left-side .ken-img { 
+  z-index: 1;
+}
+.page-villaPage .sub-page-area{
+  min-height: 100vh;
+}
+.page-villaPage .all-inner {
+  overflow: hidden;
+  position: relative;
+}
+.page-villaPage .service-sub-pages .ssp{
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+.page-villaPage .fclasse {
+  transform: scale(1);
+  visibility: visible;
+  opacity: 1;
+  position: unset;
+}
+.page-villaPage .fclasse .left-side, .page-villaPage .fclasse .right-side {
+  opacity: 1; 
+}
+
+
+@media (min-width: 992px) and (max-width: 1500px){
+  .page-villaPage .right-wrp p {
+      margin-bottom: 45px;
+      font-size: 16px;
+  }
+  .page-villaPage .ser-details ul li h1 {
+      font-size: 38px;
+      line-height: 40.66px;
+  }
+  .page-villaPage .right-wrp h5 {
+      margin-bottom: 25px;
+      font-size: 19px;
+  }
+}
+@media (min-width: 766px) and (max-width: 991px){
+
+  .page-villaPage .ssp .footer {
+      bottom: -40px;
+  }
+  .page-villaPage .ssp{
+      height: 100%;
+      padding-bottom: 70px;
+  }
+
+  .page-villaPage .fclasse .right-side {
+      padding-bottom: 100px;
+  }
+  .page-villaPage .footer {
+      bottom: 30px; 
+  }
+}
+@media (max-width: 767px){
+  .page-villaPage .left-side.blk-in-md {
+      max-height: 309px;
+      padding-left: 20px;
+  }
+  .page-villaPage .features ul li p {
+      margin-bottom: 30px;
+  }
+  .page-villaPage .features ul li.touch-btn { 
+      margin-top: 40px;
+  }
+  .page-villaPage .ssp .footer {
+      bottom: -40px;
+  }
+  .page-villaPage .ssp{
+      height: 100%;
+      padding-bottom: 70px;
+  }
+  
+  .page-villaPage .fclasse .right-side {
+      padding-bottom: 100px;
+  }
+  .page-villaPage .footer {
+      bottom: 30px; 
+  } 
+}
+
+
+
